@@ -4,7 +4,7 @@ export type Question = {
   questionImage?: string;
   options: string[];
   correctIndex: number;
-  explanationImage?: string;
+  explanationImage?: string | string[];
 };
 
 export type QuestionSection = {

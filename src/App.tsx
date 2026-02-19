@@ -58,6 +58,11 @@ export default function App(): JSX.Element {
   const selectedOptionIndex = question ? answersByQuestionId[question.id] : undefined;
   const isChecked = question ? (checkedByQuestionId[question.id] ?? false) : false;
   const hasExplanation = Boolean(question?.explanationImage);
+  const explanationImages = question?.explanationImage 
+    ? Array.isArray(question.explanationImage) 
+      ? question.explanationImage 
+      : [question.explanationImage]
+    : [];
 
   const answeredCount = selectedSection.questions.filter(
     (item) => answersByQuestionId[item.id] !== undefined
@@ -367,7 +372,15 @@ export default function App(): JSX.Element {
                 Stäng
               </button>
             </div>
-            <img src={question.explanationImage} alt={`Förklaring till ${question.text}`} />
+            <div className="modal-content">
+              {explanationImages.map((img, index) => (
+                <img 
+                  key={index} 
+                  src={img} 
+                  alt={`Förklaring ${index + 1} till ${question.text}`} 
+                />
+              ))}
+            </div>
           </div>
         </section>
       )}
