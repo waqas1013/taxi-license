@@ -2441,7 +2441,7 @@ const sakerhet4Section: QuestionSection = {
 export const questionGroups: CategoryGroup[] = [
   {
     id: "main",
-    name: "Huvudämnen",
+    name: "Teoriprovet",
     categories: [
       {
         id: "sakerhet",
