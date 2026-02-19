@@ -220,9 +220,18 @@ export default function App(): JSX.Element {
         </div>
 
         <div className="nav-summary">
-          <span>Totalt frågor: {selectedSection.questions.length}</span>
-          <span>Klara: {answeredCount}</span>
-          <span>Kvar: {remainingCount}</span>
+          <span className="stat-item">
+            <span className="stat-label">Totalt frågor:</span>
+            <span className="stat-value stat-total">{selectedSection.questions.length}</span>
+          </span>
+          <span className="stat-item">
+            <span className="stat-label">Klara:</span>
+            <span className="stat-value stat-completed">{answeredCount}</span>
+          </span>
+          <span className="stat-item">
+            <span className="stat-label">Kvar:</span>
+            <span className="stat-value stat-remaining">{remainingCount}</span>
+          </span>
         </div>
       </section>
 
@@ -320,9 +329,16 @@ export default function App(): JSX.Element {
       {showOverview && (
         <section className="card">
           <h3>Översikt frågor</h3>
-          <p>
-            Klara: <strong>{answeredCount}</strong> | Kvar: <strong>{remainingCount}</strong>
-          </p>
+          <div className="nav-summary">
+            <span className="stat-item">
+              <span className="stat-label">Klara:</span>
+              <span className="stat-value stat-completed">{answeredCount}</span>
+            </span>
+            <span className="stat-item">
+              <span className="stat-label">Kvar:</span>
+              <span className="stat-value stat-remaining">{remainingCount}</span>
+            </span>
+          </div>
           <div className="question-grid">
             {selectedSection.questions.map((item, index) => {
               const isCurrent = index === questionIndex;
