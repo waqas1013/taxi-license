@@ -115,7 +115,7 @@ export default function App(): JSX.Element {
 
   const checkAnswer = (): void => {
     if (!question) return;
-    setCheckedByQuestionId((prev) => ({ ...prev, [question.id]: true }));
+    setCheckedByQuestionId((prev) => ({ ...prev, [question.id]: !prev[question.id] }));
   };
 
   const goNext = (): void => {
@@ -287,7 +287,7 @@ export default function App(): JSX.Element {
             type="button"
             disabled={!hasQuestions || selectedOptionIndex === undefined}
           >
-            Check answer
+            {isChecked ? "Dölj svar" : "Se svar"}
           </button>
           <button
             className="secondary"
