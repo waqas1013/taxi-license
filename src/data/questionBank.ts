@@ -121,6 +121,52 @@ import sakerhetRullatorFraga2Image from "../assets/sakerhet-rullator-fraga-2.png
 import sakerhetTungLastPlaceringForklaringImage from "../assets/sakerhet-tung-last-placering-forklaring.png";
 import sakerhetAvgassystemLackageForklaringImage from "../assets/sakerhet-avgassystem-lackage-forklaring.png";
 import sakerhetAvgaserFarligaAmnenForklaringImage from "../assets/sakerhet-avgaser-farliga-amnen-forklaring.png";
+import sakerhetBromsvatskaByteForklaringImage from "../assets/sakerhet-bromsvatska-byte-forklaring.png";
+import sakerhetSakringLagtAmperetalForklaringImage from "../assets/sakerhet-sakring-lagt-amperetal-forklaring.png";
+import sakerhetBilbatteriVatskenivaForklaringImage from "../assets/sakerhet-bilbatteri-vatskeniva-forklaring.png";
+import sakerhetBilDrarSnettForklaringImage from "../assets/sakerhet-bil-drar-snett-forklaring.png";
+import sakerhetNollvisionenCentrumForklaringImage from "../assets/sakerhet-nollvisionen-centrum-forklaring.png";
+import sakerhetServoBromsarForklaringImage from "../assets/sakerhet-servo-bromsar-forklaring.png";
+import sakerhetReservdackHastighetForklaringImage from "../assets/sakerhet-reservdack-hastighet-forklaring.png";
+import sakerhetKatalysatorReningsgradForklaringImage from "../assets/sakerhet-katalysator-reningsgrad-forklaring.png";
+import sakerhetOskyddadeTrafikanterHastighetForklaringImage from "../assets/sakerhet-oskyddade-trafikanter-hastighet-forklaring.png";
+import sakerhetTrotthetRiskTidForklaringImage from "../assets/sakerhet-trotthet-risk-tid-forklaring.png";
+import sakerhetAvbrytaTransportAlkoholForklaringImage from "../assets/sakerhet-avbryta-transport-alkohol-forklaring.png";
+import sakerhetKatalysatorVaxthuseffektForklaringImage from "../assets/sakerhet-katalysator-vaxthuseffekt-forklaring.png";
+import sakerhetDackOjamntSlitetFragaImage from "../assets/sakerhet-dack-ojamnt-slitet-fraga.png";
+import sakerhetDackOjamntSlitetForklaringImage from "../assets/sakerhet-dack-ojamnt-slitet-forklaring.png";
+import sakerhetMotorvarmareTemperaturForklaringImage from "../assets/sakerhet-motorvarmare-temperatur-forklaring.png";
+import sakerhetAirbagPassagerareLangdForklaringImage from "../assets/sakerhet-airbag-passagerare-langd-forklaring.png";
+import sakerhetBransleforbrukningMotorvarmareForklaringImage from "../assets/sakerhet-bransleforbrukning-motorvarmare-forklaring.png";
+import sakerhetMobiltelefonOlyckorForklaringImage from "../assets/sakerhet-mobiltelefon-olyckor-forklaring.png";
+import sakerhetAbsFordelForklaringImage from "../assets/sakerhet-abs-fordel-forklaring.png";
+import sakerhetKrockviktPassagerareForklaringImage from "../assets/sakerhet-krockvikt-passagerare-forklaring.png";
+import sakerhetVitKappSynskadadForklaringImage from "../assets/sakerhet-vit-kapp-synskadad-forklaring.png";
+import sakerhetDubbdackTaxiTidForklaringImage from "../assets/sakerhet-dubbdack-taxi-tid-forklaring.png";
+import sakerhetNyaDackMonteringForklaringImage from "../assets/sakerhet-nya-dack-montering-forklaring.png";
+import sakerhetMotorvagAccelerationFaltForklaringImage from "../assets/sakerhet-motorvag-acceleration-falt-forklaring.png";
+import sakerhetBromsvatskaBehallareFragaImage from "../assets/sakerhet-bromsvatska-behallare-fraga.png";
+import sakerhetKamaxelremByteForklaringImage from "../assets/sakerhet-kamaxelrem-byte-forklaring.png";
+import sakerhetMotortemperaturFlaktremForklaringImage from "../assets/sakerhet-motortemperatur-flaktrem-forklaring.png";
+import sakerhetTaxiprisBerakningFragaImage from "../assets/sakerhet-taxipris-berakning-fraga.png";
+import sakerhetTaxiprisBerakningForklaringImage from "../assets/sakerhet-taxipris-berakning-forklaring.png";
+import sakerhetRmeFordelarForklaringImage from "../assets/sakerhet-rme-fordelar-forklaring.png";
+import sakerhetBrytpunktstariffPrivatpersonerForklaringImage from "../assets/sakerhet-brytpunktstariff-privatpersoner-forklaring.png";
+import sakerhetRullstolTrappaFragaImage from "../assets/sakerhet-rullstol-trappa-fraga.png";
+import sakerhetRullstolTrappaForklaringImage from "../assets/sakerhet-rullstol-trappa-forklaring.png";
+import sakerhetRollatorHjalpForklaringImage from "../assets/sakerhet-rollator-hjalp-forklaring.png";
+import sakerhetTrotthetPausForklaringImage from "../assets/sakerhet-trotthet-paus-forklaring.png";
+import sakerhetTaxiprisBerakning2FragaImage from "../assets/sakerhet-taxipris-berakning-2-fraga.png";
+import sakerhetTaxiprisBerakning2ForklaringImage from "../assets/sakerhet-taxipris-berakning-2-forklaring.png";
+import sakerhetSkolbussBarnFragaImage from "../assets/sakerhet-skolbuss-barn-fraga.png";
+import sakerhetTaxiprisBerakning3FragaImage from "../assets/sakerhet-taxipris-berakning-3-fraga.png";
+import sakerhetTaxiprisBerakning3ForklaringImage from "../assets/sakerhet-taxipris-berakning-3-forklaring.png";
+import sakerhetTaxiprisBerakning4FragaImage from "../assets/sakerhet-taxipris-berakning-4-fraga.png";
+import sakerhetTaxiprisBerakning4ForklaringImage from "../assets/sakerhet-taxipris-berakning-4-forklaring.png";
+import sakerhetTaxiprisBerakning5FragaImage from "../assets/sakerhet-taxipris-berakning-5-fraga.png";
+import sakerhetTaxiprisBerakning5ForklaringImage from "../assets/sakerhet-taxipris-berakning-5-forklaring.png";
+import sakerhetFarligtGodsSkyltFragaImage from "../assets/sakerhet-farligt-gods-skylt-fraga.png";
+import sakerhetFarligtGodsSkyltForklaringImage from "../assets/sakerhet-farligt-gods-skylt-forklaring.png";
 import sakerhetKontrollampaGeneratorRemFragaImage from "../assets/sakerhet-kontrollampa-generator-rem-fraga.png";
 import sakerhetAbsLampaFragaImage from "../assets/sakerhet-abs-lampa-fraga.png";
 import sakerhetBromsvatskaBehallareFragaImage from "../assets/sakerhet-bromsvatska-behallare-fraga.png";
@@ -1770,6 +1816,628 @@ const sakerhet3Section: QuestionSection = {
   ]
 };
 
+const sakerhet4Section: QuestionSection = {
+  id: "sakerhet-4",
+  name: "Säkerhet & beteende 4",
+  questions: [
+    {
+      id: "sakerhet-4-q-real-1",
+      text: "Varför rekommenderas regelbundet byte av bromsvätskan?",
+      options: [
+        "Den drar till sig dammpartiklar",
+        "Den drar till sig vatten vilket sänker kokpunkten",
+        "Det är risk att den får paraffinutfällningar med tiden",
+        "Den blir trögflytande med tiden"
+      ],
+      correctIndex: 1,
+      explanationImage: sakerhetBromsvatskaByteForklaringImage
+    },
+    {
+      id: "sakerhet-4-q-real-2",
+      text: "Säkringen till en helljuslampa har gått sönder. Vad händer om du monterar en säkring med för lågt amperetal?",
+      options: [
+        "Det är större risk att säkringen går sönder",
+        "Lampan lyser starkare",
+        "Risken för kabelbrand ökar",
+        "Lampan lyser svagare"
+      ],
+      correctIndex: 0,
+      explanationImage: sakerhetSakringLagtAmperetalForklaringImage
+    },
+    {
+      id: "sakerhet-4-q-real-3",
+      text: "Om du byter säkringen för halvljus till en starkare säkring, vad händer?",
+      options: [
+        "Halvljuset blir starkare",
+        "Det överhettas i elkablarna",
+        "Kraften på ljuset blir högre"
+      ],
+      correctIndex: 1
+    },
+    {
+      id: "sakerhet-4-q-real-4",
+      text: "Vilket påstående är riktigt om bilbatterier?",
+      options: [
+        "Batteriets kapacitet minskar om vätskenivån är för låg vid upprepade tillfällen",
+        "Temperaturen har ingen inverkan på batteriets förmåga att avge energi",
+        "Batteriet är den del av fordonet som förbrukar mest ström",
+        "Innan ett batteri sätts på laddning bör man se till att det är helt urladdat"
+      ],
+      correctIndex: 0,
+      explanationImage: sakerhetBilbatteriVatskenivaForklaringImage
+    },
+    {
+      id: "sakerhet-4-q-real-5",
+      text: "Du kör personbil och upptäcker att bilen drar snett. Vad kan orsaken vara?",
+      options: [
+        "Framvagnsinställningen är felaktig",
+        "Drivremmen till styrservopumpen har gått av",
+        "Vätskenivån i styrservon är för låg",
+        "Det är obalans i framhjulen"
+      ],
+      correctIndex: 0,
+      explanationImage: sakerhetBilDrarSnettForklaringImage
+    },
+    {
+      id: "sakerhet-4-q-real-6",
+      text: "Vad sätts i centrum i Nollvisionen inom vägtrafiken?",
+      options: [
+        "Människors liv och hälsa",
+        "Fordonens miljöpåverkan",
+        "Fordonens framkomlighet",
+        "Polisens övervakning"
+      ],
+      correctIndex: 0,
+      explanationImage: sakerhetNollvisionenCentrumForklaringImage
+    },
+    {
+      id: "sakerhet-4-q-real-7",
+      text: "Hur kan du märka att servon till bromsarna inte fungerar?",
+      options: [
+        "Jag måste trampa hårdare än normalt när jag bromsar",
+        "Jag måste trampa upprepade gånger för att bromsa",
+        "Det finns inget motstånd i pedalen när jag bromsar"
+      ],
+      correctIndex: 0,
+      explanationImage: sakerhetServoBromsarForklaringImage
+    },
+    {
+      id: "sakerhet-4-q-real-8",
+      text: "Vad kan bli följden av att placera tung last baktill i bilen?",
+      options: [
+        "Bromssträckan blir kortare",
+        "Hjulinställningen förändras",
+        "Ytterkanterna på framdäcken slits hårdare",
+        "Bilens köregenskaper förändras"
+      ],
+      correctIndex: 3
+    },
+    {
+      id: "sakerhet-4-q-real-9",
+      text: "Ett hjul har gått sönder och du byter till reservdäck. Vad bör du göra?",
+      options: [
+        "Köra fram kunden och sedan byta däcken",
+        "Köra direkt till en gummifabrik",
+        "Det finns en viss hastighet där man får köra med reservdäck"
+      ],
+      correctIndex: 2,
+      explanationImage: sakerhetReservdackHastighetForklaringImage
+    },
+    {
+      id: "sakerhet-4-q-real-10",
+      text: "Vad är rätt angående en katalysator i en bil?",
+      options: [
+        "Den renar 50-60% av avgaser",
+        "Den renar 60-70% av avgaser",
+        "Den renar 70-80% av avgaser",
+        "Den renar 80-90% av avgaser"
+      ],
+      correctIndex: 3,
+      explanationImage: sakerhetKatalysatorReningsgradForklaringImage
+    },
+    {
+      id: "sakerhet-4-q-real-11",
+      text: "De flesta oskyddade trafikanter överlever om de blir påkörda av en bil i en viss hög hastighet. Vilken?",
+      options: [
+        "20 km/h",
+        "30 km/h",
+        "40 km/h",
+        "50 km/h",
+        "60 km/h",
+        "70 km/h"
+      ],
+      correctIndex: 1,
+      explanationImage: sakerhetOskyddadeTrafikanterHastighetForklaringImage
+    },
+    {
+      id: "sakerhet-4-q-real-12",
+      text: "När på dygnet anses risken vara störst för olyckor som beror på trötthet?",
+      options: [
+        "KL 21.00-24.00",
+        "KL 02.00-05.00",
+        "KL 07.00-10.00",
+        "KL 14.00-17.00"
+      ],
+      correctIndex: 1,
+      explanationImage: sakerhetTrotthetRiskTidForklaringImage
+    },
+    {
+      id: "sakerhet-4-q-real-13",
+      text: "En kund är alkoholpåverkad och han beter sig hotfull. Vad bör du göra?",
+      options: [
+        "Ring polisen",
+        "Avbryta transport",
+        "Ring beställning centralen"
+      ],
+      correctIndex: 1,
+      explanationImage: sakerhetAvbrytaTransportAlkoholForklaringImage
+    },
+    {
+      id: "sakerhet-4-q-real-14",
+      text: "Du hör ett metalliskt skrapande ljud när du bromsar. Måste du vidta någon åtgärd?",
+      options: [
+        "Ja, kontrollera bromsbeläggens tjocklek",
+        "Ja, kontrollera bromsvätskans nivå",
+        "Nej, eftersom ljudet beror på att ABS-bromsen aktiverades",
+        "Ja, kontrollera servocylinderns funktion"
+      ],
+      correctIndex: 0
+    },
+    {
+      id: "sakerhet-4-q-real-15",
+      text: "Din kund har en ledsagare som följer med vid resan. Hur bör du göra?",
+      options: [
+        "Jag frågar kunden om han behöver hjälp",
+        "Jag frågar ledsagaren om kunden behöver hjälp",
+        "Jag förutsätter att ledsagaren hjälper kunden"
+      ],
+      correctIndex: 0
+    },
+    {
+      id: "sakerhet-4-q-real-16",
+      text: "Vad är sant gällande katalysator?",
+      options: [
+        "Den minskar inte växthuseffekten",
+        "Den förstör trädens tillväxt",
+        "Den minskar växthuseffekten",
+        "Den minskar inte koloxid"
+      ],
+      correctIndex: 0,
+      explanationImage: sakerhetKatalysatorVaxthuseffektForklaringImage
+    },
+    {
+      id: "sakerhet-4-q-real-17",
+      text: "Varför är däcket ojämnt slitet?",
+      options: [
+        "För lågt lufttryck",
+        "Fel på hjulinställning",
+        "Obalans",
+        "Fel material"
+      ],
+      correctIndex: 1,
+      questionImage: sakerhetDackOjamntSlitetFragaImage,
+      explanationImage: sakerhetDackOjamntSlitetForklaringImage
+    },
+    {
+      id: "sakerhet-4-q-real-18",
+      text: "Du kör på landsväg, hastigheten på vägen är 70 km/h och du får motorstopp. Bör du placera ut en varningstriangel?",
+      options: [
+        "Ja, alltid",
+        "Nej, behövs inte"
+      ],
+      correctIndex: 0
+    },
+    {
+      id: "sakerhet-4-q-real-19",
+      text: "Under vilken högsta utetemperatur bör du använda den elektriska motorvärmaren före kallstart?",
+      options: [
+        "+10 °C",
+        "+5 °C",
+        "0 °C",
+        "-5 °C",
+        "-10 °C",
+        "-15 °C"
+      ],
+      correctIndex: 0,
+      explanationImage: sakerhetMotorvarmareTemperaturForklaringImage
+    },
+    {
+      id: "sakerhet-4-q-real-20",
+      text: "I din bil har du en airbag placerad på passagerarens framsäte. Hur lång bör passageraren vara för att kunna sitta där framme?",
+      options: [
+        "100 cm lång",
+        "120 cm lång",
+        "140 cm lång"
+      ],
+      correctIndex: 2,
+      explanationImage: sakerhetAirbagPassagerareLangdForklaringImage
+    },
+    {
+      id: "sakerhet-4-q-real-21",
+      text: "På vilket sätt kan du påverka bränsleförbrukningen i din bil?",
+      options: [
+        "Bränsleförbrukningen blir lägre om jag använder motorvärmare på vintern",
+        "Bränsleförbrukningen blir lägre om jag kör på låga växlar",
+        "Bränsleförbrukningen blir högre om bilen får regelbunden service",
+        "Bränsleförbrukningen blir högre om jag har högt lufttryck i däcken"
+      ],
+      correctIndex: 0,
+      explanationImage: sakerhetBransleforbrukningMotorvarmareForklaringImage
+    },
+    {
+      id: "sakerhet-4-q-real-22",
+      text: "Hur kan du på bästa sätt minska bränsleförbrukningen?",
+      options: [
+        "Släppa gasen i god tid så att du undviker hårda bromsar",
+        "Växla till låg växel i alla uppförsbackar",
+        "Använda farthållare",
+        "Jag försöker hela tiden att köra på höga motorvarv"
+      ],
+      correctIndex: 0
+    },
+    {
+      id: "sakerhet-4-q-real-23",
+      text: "Vilken typ av olyckor anses mest vanligt i samband med mobiltelefon?",
+      options: [
+        "Singelolyckor",
+        "Upphinnande olyckor",
+        "Korsnings olyckor",
+        "Omkörningsolyckor"
+      ],
+      correctIndex: 1,
+      explanationImage: sakerhetMobiltelefonOlyckorForklaringImage
+    },
+    {
+      id: "sakerhet-4-q-real-24",
+      text: "Du har en kund som har med sig ledsagare. Vad bör du göra?",
+      options: [
+        "Du frågar vad kunden behöver för hjälp",
+        "Du tar över kunden från ledsagaren",
+        "Du låter ledsagaren hjälpa kunden"
+      ],
+      correctIndex: 0
+    },
+    {
+      id: "sakerhet-4-q-real-25",
+      text: "Vad är fördelen med en ABS broms?",
+      options: [
+        "Den förhindrar låsningen på hjulen",
+        "Den minskar bromssträckan i alla vägar"
+      ],
+      correctIndex: 0,
+      explanationImage: sakerhetAbsFordelForklaringImage
+    },
+    {
+      id: "sakerhet-4-q-real-26",
+      text: "Du har en vuxen person i baksätet. Hur stor blir passagerarens krockvikt om du i 50km/h kör rakt in i stillastående tung lastbil?",
+      options: [
+        "Ca 100 kg",
+        "Ca 300 kg",
+        "Ca 1000 kg",
+        "Ca 3000 kg"
+      ],
+      correctIndex: 3,
+      explanationImage: sakerhetKrockviktPassagerareForklaringImage
+    },
+    {
+      id: "sakerhet-4-q-real-27",
+      text: "Du har en vuxen passagerare som sitter obältad i baksätet i din bil. Hur många gånger större än kroppsvikten blir passagerarens krockvikt om du frontalkrockar med en tung lastbil i ca 50 km/h?",
+      options: [
+        "Ca två gånger",
+        "Ca fyra gånger",
+        "Ca tio gånger",
+        "Ca 25 gånger",
+        "Ca 50 gånger"
+      ],
+      correctIndex: 4
+    },
+    {
+      id: "sakerhet-4-q-real-28",
+      text: "Du har en kund som har med sig en vit käpp. Vad har han för sjukdom?",
+      options: [
+        "Rörelsehindrad",
+        "Synskadad"
+      ],
+      correctIndex: 1,
+      explanationImage: sakerhetVitKappSynskadadForklaringImage
+    },
+    {
+      id: "sakerhet-4-q-real-29",
+      text: "Hur länge får du använda dubbdäck på din taxi om det inte är vinterväglag eller förväntas bli det?",
+      options: [
+        "Till och med 30 april",
+        "Till och med 28 februari",
+        "Till och med 31 mars",
+        "Till och med första vardagen efter påsk"
+      ],
+      correctIndex: 0,
+      explanationImage: sakerhetDubbdackTaxiTidForklaringImage
+    },
+    {
+      id: "sakerhet-4-q-real-30",
+      text: "Två av däcken på din taxi är så slitna att de bör bytas ut. Var bör de nya däcken monteras för att köregenskaperna skall bli så säkra som möjligt?",
+      options: [
+        "Båda däcken på framaxeln",
+        "Ett på vardera fram- och bakaxeln",
+        "Båda däcken på bakaxeln"
+      ],
+      correctIndex: 2,
+      explanationImage: sakerhetNyaDackMonteringForklaringImage
+    },
+    {
+      id: "sakerhet-4-q-real-31",
+      text: "Du kör på motorväg och närmar dig ett fordon från accelerationfält. Vad ska du göra?",
+      options: [
+        "Jag måste byta till vänstra körfält",
+        "Jag behöver inte anpassa hans inkörning",
+        "Jag måste anpassa hastigheten för att inkörning underlättas"
+      ],
+      correctIndex: 2,
+      explanationImage: sakerhetMotorvagAccelerationFaltForklaringImage
+    },
+    {
+      id: "sakerhet-4-q-real-32",
+      text: "Vilken typ av vätska finns i den inringade behållaren på bilden?",
+      options: [
+        "Glykolblandning med vatten",
+        "Bromsvätska",
+        "Styrservovätska",
+        "Spolvätska"
+      ],
+      correctIndex: 1,
+      questionImage: sakerhetBromsvatskaBehallareFragaImage
+    },
+    {
+      id: "sakerhet-4-q-real-33",
+      text: "Vad bör du byta eller åtgärda för att undvika motorhaveri samt dyrbara reparationer innan felet förvärras?",
+      options: [
+        "Kamaxelremmen byts regelbundet",
+        "Bromsklostret",
+        "Olja och filtret",
+        "Fläktremmen"
+      ],
+      correctIndex: 0,
+      explanationImage: sakerhetKamaxelremByteForklaringImage
+    },
+    {
+      id: "sakerhet-4-q-real-34",
+      text: "Din kund är synskadad och har med sig sin ledarhund som har vit sele. Vad bör du göra först?",
+      options: [
+        "Tala om att hundar inte får följa med i taxibilar",
+        "Fråga den synskadade hur jag ska uppträda mot hunden",
+        "Sätta mig ner bredvid hunden för att bekanta mig med den"
+      ],
+      correctIndex: 1
+    },
+    {
+      id: "sakerhet-4-q-real-35",
+      text: "Motortemperaturen stiger upp. Vad ska du göra?",
+      options: [
+        "Du kollar motoroljan",
+        "Byter batteriet",
+        "Tittar efter fläktremmen"
+      ],
+      correctIndex: 2,
+      explanationImage: sakerhetMotortemperaturFlaktremForklaringImage
+    },
+    {
+      id: "sakerhet-4-q-real-36",
+      text: "Hur många personer varje år beräknas dö i olyckor där någon inblandad har varit påverkad av alkohol?",
+      options: [
+        "Ca 50 personer",
+        "Ca 150 personer",
+        "Ca 250 personer",
+        "Ca 350 personer",
+        "Ca 500 personer"
+      ],
+      correctIndex: 1
+    },
+    {
+      id: "sakerhet-4-q-real-37",
+      text: "Två personer ska åka taxi en lördag kl 03.00. Resan beräknas ta ca 15 min och är 1,5 mil lång. Hur mycket kommer resan att kosta enligt prisinformationen?",
+      options: [
+        "Ca 195 kr",
+        "Ca 250 kr",
+        "Ca 310 kr",
+        "Ca 400 kr"
+      ],
+      correctIndex: 2,
+      questionImage: sakerhetTaxiprisBerakningFragaImage,
+      explanationImage: sakerhetTaxiprisBerakningForklaringImage
+    },
+    {
+      id: "sakerhet-4-q-real-38",
+      text: "Nya bilar använder (RME) som kommer ur raps. Vilka fördelar har det jämfört med diesel?",
+      options: [
+        "Den är fylld med svavel",
+        "Den bidrar till växthuseffekten, vilket medför klimatförändring",
+        "Den ökar inte på koldioxidhalten, alltså bidrar inte till växthuseffekten",
+        "Det minskar bränsleförbrukning vilket medför bättre bilekonomi"
+      ],
+      correctIndex: 2,
+      explanationImage: sakerhetRmeFordelarForklaringImage
+    },
+    {
+      id: "sakerhet-4-q-real-39",
+      text: "Till vem gäller inte brytpunktstariffen?",
+      options: [
+        "Färdtjänst",
+        "Skolskjuts",
+        "Företag",
+        "Privatpersoner"
+      ],
+      correctIndex: 3,
+      explanationImage: sakerhetBrytpunktstariffPrivatpersonerForklaringImage
+    },
+    {
+      id: "sakerhet-4-q-real-40",
+      text: "Du ska ensam hjälpa en rullstolsburen passagerare nerför en trappa. Vilken av bilderna beskriver rätt teknik?",
+      options: [
+        "Bild A",
+        "Bild B",
+        "Bild C",
+        "Bild D"
+      ],
+      correctIndex: 3,
+      questionImage: sakerhetRullstolTrappaFragaImage,
+      explanationImage: sakerhetRullstolTrappaForklaringImage
+    },
+    {
+      id: "sakerhet-4-q-real-41",
+      text: "Vilken växel ska du använda när du kör en ny bil i 50 km/h?",
+      options: [
+        "2:an",
+        "3:an",
+        "4:an"
+      ],
+      correctIndex: 2
+    },
+    {
+      id: "sakerhet-4-q-real-42",
+      text: "Din kund behöver rollator när han går och ska ha med rollatorn på resan. Hur gör du?",
+      options: [
+        "Jag erbjuder kunden hjälp in i bilen och tar sedan hand om rollatorn",
+        "Jag lägger in rollatorn i bagageutrymmet och hjälper sedan kunden in i bilen",
+        "Jag tar hand om rollatorn och ber kunden sätta sig i bilen"
+      ],
+      correctIndex: 0,
+      explanationImage: sakerhetRollatorHjalpForklaringImage
+    },
+    {
+      id: "sakerhet-4-q-real-43",
+      text: "Du har släppt av en kund och på vägen hem tillbaka känner du dig trött. Vad bör du göra?",
+      options: [
+        "Jag stanna bilen och springer några varv runt den",
+        "Jag öppnar fönstret för att få frisk luft",
+        "Jag höjer radio volymen",
+        "Jag tar en paus och sover lite"
+      ],
+      correctIndex: 3,
+      explanationImage: sakerhetTrotthetPausForklaringImage
+    },
+    {
+      id: "sakerhet-4-q-real-44",
+      text: "Vad är riktigt beträffande katalysatorn i en bensindriven bil?",
+      options: [
+        "Den fungerar effektivt redan från start",
+        "Avgaserna blir renade från alla skadliga ämnen",
+        "Alla sotpartiklar i avgaserna tas bort",
+        "För att fungera effektivt måste den uppnå en hög temperatur"
+      ],
+      correctIndex: 3
+    },
+    {
+      id: "sakerhet-4-q-real-45",
+      text: "Du får ett köruppdrag natten till en lördag kl 00.30. Två personer vill åka hem till sin bostad och vill veta vad det kostar. Sträckan är 1.5 mil. Vad blir priset för resan enligt prisinformationen?",
+      options: [
+        "Ca 250 kr",
+        "Ca 290 kr",
+        "Ca 310 kr",
+        "Ca 350 kr"
+      ],
+      correctIndex: 3,
+      questionImage: sakerhetTaxiprisBerakning2ForklaringImage,
+      explanationImage: sakerhetTaxiprisBerakning2FragaImage
+    },
+    {
+      id: "sakerhet-4-q-real-46",
+      text: "Du närmar dig skolbussen. Vad bör du vara mest uppmärksam på?",
+      options: [
+        "Personerna på andra sidan av gatan",
+        "Barnen som lämnar bussen",
+        "Mötande trafik",
+        "Bussen, när blinkern visar att den ska köra ut från hållplatsen"
+      ],
+      correctIndex: 1,
+      questionImage: sakerhetSkolbussBarnFragaImage
+    },
+    {
+      id: "sakerhet-4-q-real-47",
+      text: "Vad kan för låg kultryck innebära när du kör med tillkopplad släpvagn?",
+      options: [
+        "Att bilens köregenskaper försämras",
+        "Att jag måste öka lufttrycket i hjulen på släpvagnen",
+        "Att jag måste öka lufttrycket i bilens framhjul",
+        "Att halvljuset blir bländande"
+      ],
+      correctIndex: 0
+    },
+    {
+      id: "sakerhet-4-q-real-48",
+      text: "En person ska åka taxi en fredag kl 10.00. Resan beräknas ta ca 30 minuter och det är 1 mil. Hur mycket kommer resan att kosta enligt prisinformationen?",
+      options: [
+        "Ca 292 kr",
+        "Ca 326 kr",
+        "Ca 488 kr",
+        "Ca 526 kr"
+      ],
+      correctIndex: 1,
+      questionImage: sakerhetTaxiprisBerakning3FragaImage,
+      explanationImage: sakerhetTaxiprisBerakning3ForklaringImage
+    },
+    {
+      id: "sakerhet-4-q-real-49",
+      text: "Du kör en bil 2004 års-modell. Vilken sätt är mest bränsle spårande?",
+      options: [
+        "Frikoppla",
+        "Motorbromsa med litet gaspedal",
+        "Motorbromsa utan gaspedal"
+      ],
+      correctIndex: 2
+    },
+    {
+      id: "sakerhet-4-q-real-50",
+      text: "En person ska åka taxi en måndagsmorgon kl. 07.00. Resan beräknas ta 30 min och är 2 mil lång. Hur mycket kommer resan att kosta enligt prisinformationen?",
+      options: [
+        "Ca 240 kr",
+        "Ca 270 kr",
+        "Ca 420 kr",
+        "Ca 450 kr"
+      ],
+      correctIndex: 3,
+      questionImage: sakerhetTaxiprisBerakning4ForklaringImage,
+      explanationImage: sakerhetTaxiprisBerakning4FragaImage
+    },
+    {
+      id: "sakerhet-4-q-real-51",
+      text: "Vilka är den lägsta hastighet hos en bil som medför att de flesta oskyddade trafikanter omkommer om de blir påkörda?",
+      options: [
+        "30 km/h",
+        "50 km/h",
+        "70 km/h",
+        "90 km/h"
+      ],
+      correctIndex: 1
+    },
+    {
+      id: "sakerhet-4-q-real-52",
+      text: "Fyra personer ska åka från centrum till flygplatsen en söndagsmorgon kl. 05.30. Sträckan är 5 km. Vad blir priset för resan enligt prisinformationens jämförpris?",
+      options: [
+        "Ca 145 kr",
+        "Ca 160 kr",
+        "Ca 170 kr",
+        "Ca 185 kr"
+      ],
+      correctIndex: 3,
+      questionImage: sakerhetTaxiprisBerakning5FragaImage,
+      explanationImage: sakerhetTaxiprisBerakning5ForklaringImage
+    },
+    {
+      id: "sakerhet-4-q-real-53",
+      text: "Du kommer till en olycksplats. Vilken viktig information får du av denna skylt som sitter på ett av fordonen?",
+      options: [
+        "Fordonet är lastat med levande djur",
+        "Fordonet är lastat med livsmedel",
+        "Fordonets last är ömtålig",
+        "Fordonet är lastat med farligt gods"
+      ],
+      correctIndex: 3,
+      questionImage: sakerhetFarligtGodsSkyltFragaImage,
+      explanationImage: sakerhetFarligtGodsSkyltForklaringImage
+    }
+  ]
+};
+
 export const questionGroups: CategoryGroup[] = [
   {
     id: "main",
@@ -1778,7 +2446,7 @@ export const questionGroups: CategoryGroup[] = [
       {
         id: "sakerhet",
         name: "Säkerhet",
-        sections: [sakerhet1Section, sakerhet2Section, sakerhet3Section]
+        sections: [sakerhet1Section, sakerhet2Section, sakerhet3Section, sakerhet4Section]
       },
       {
         id: "lagstiftning",
