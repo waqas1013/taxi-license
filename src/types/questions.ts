@@ -1,9 +1,10 @@
 export type Question = {
   id: string;
   text: string;
+  questionImage?: string;
   options: string[];
   correctIndex: number;
-  explanationImage: string;
+  explanationImage?: string;
 };
 
 export type QuestionSection = {

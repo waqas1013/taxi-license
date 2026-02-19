@@ -5,6 +5,8 @@ import { Category, CategoryGroup, QuestionSection } from "./types/questions";
 type CheckedMap = Record<string, boolean>;
 type AnswerMap = Record<string, number>;
 
+const optionLabel = (index: number): string => String.fromCharCode(65 + index);
+
 const findInitial = (): {
   group: CategoryGroup;
   category: Category;
@@ -26,6 +28,7 @@ export default function App(): JSX.Element {
   const [answersByQuestionId, setAnswersByQuestionId] = useState<AnswerMap>({});
   const [showExplanation, setShowExplanation] = useState(false);
   const [showOverview, setShowOverview] = useState(false);
+  const [showTestResult, setShowTestResult] = useState(false);
 
   const selectedGroup = useMemo(
     () => questionGroups.find((item) => item.id === selectedGroupId) ?? questionGroups[0],
@@ -46,20 +49,36 @@ export default function App(): JSX.Element {
     [selectedCategory, selectedSectionId]
   );
 
-  const question = selectedSection.questions[questionIndex];
-  const selectedOptionIndex = answersByQuestionId[question.id];
-  const isChecked = checkedByQuestionId[question.id] ?? false;
+  const hasQuestions = selectedSection.questions.length > 0;
+  const safeQuestionIndex =
+    selectedSection.questions.length > 0
+      ? Math.min(questionIndex, selectedSection.questions.length - 1)
+      : 0;
+  const question = selectedSection.questions[safeQuestionIndex];
+  const selectedOptionIndex = question ? answersByQuestionId[question.id] : undefined;
+  const isChecked = question ? (checkedByQuestionId[question.id] ?? false) : false;
+  const hasExplanation = Boolean(question?.explanationImage);
 
   const answeredCount = selectedSection.questions.filter(
     (item) => answersByQuestionId[item.id] !== undefined
   ).length;
 
   const remainingCount = selectedSection.questions.length - answeredCount;
+  const correctCount = selectedSection.questions.filter((item) => {
+    const selected = answersByQuestionId[item.id];
+    return selected !== undefined && selected === item.correctIndex;
+  }).length;
+  const wrongCount = answeredCount - correctCount;
+  const scorePercent =
+    selectedSection.questions.length > 0
+      ? Math.round((correctCount / selectedSection.questions.length) * 100)
+      : 0;
 
   const resetQuestionView = (): void => {
     setQuestionIndex(0);
     setShowExplanation(false);
     setShowOverview(false);
+    setShowTestResult(false);
   };
 
   const selectGroup = (groupId: string): void => {
@@ -90,10 +109,12 @@ export default function App(): JSX.Element {
   };
 
   const selectAnswer = (optionIndex: number): void => {
+    if (!question) return;
     setAnswersByQuestionId((prev) => ({ ...prev, [question.id]: optionIndex }));
   };
 
   const checkAnswer = (): void => {
+    if (!question) return;
     setCheckedByQuestionId((prev) => ({ ...prev, [question.id]: true }));
   };
 
@@ -107,6 +128,35 @@ export default function App(): JSX.Element {
     if (questionIndex <= 0) return;
     setShowExplanation(false);
     setQuestionIndex((prev) => prev - 1);
+  };
+
+  const resetCurrentSectionAttempt = (): void => {
+    const questionIds = new Set(selectedSection.questions.map((item) => item.id));
+
+    setAnswersByQuestionId((prev) => {
+      const next: AnswerMap = {};
+      Object.entries(prev).forEach(([id, value]) => {
+        if (!questionIds.has(id)) {
+          next[id] = value;
+        }
+      });
+      return next;
+    });
+
+    setCheckedByQuestionId((prev) => {
+      const next: CheckedMap = {};
+      Object.entries(prev).forEach(([id, value]) => {
+        if (!questionIds.has(id)) {
+          next[id] = value;
+        }
+      });
+      return next;
+    });
+
+    setQuestionIndex(0);
+    setShowOverview(false);
+    setShowExplanation(false);
+    setShowTestResult(false);
   };
 
   return (
@@ -179,66 +229,90 @@ export default function App(): JSX.Element {
       <section className="card question-card">
         <div className="question-header">
           <h3>{selectedSection.name}</h3>
-          <span>
-            Fråga {questionIndex + 1} av {selectedSection.questions.length}
-          </span>
+          <span>{hasQuestions ? `Fråga ${safeQuestionIndex + 1} av ${selectedSection.questions.length}` : "Inga frågor ännu"}</span>
         </div>
 
-        <p className="question-text">{question.text}</p>
-        <div className="options">
-          {question.options.map((option, index) => {
-            const isSelected = selectedOptionIndex === index;
-            const isCorrect = index === question.correctIndex;
-            const showCorrect = isChecked && isCorrect;
-            const showWrong = isChecked && isSelected && !isCorrect;
+        {hasQuestions ? (
+          <>
+            <div className="question-prompt">
+              <span>Fråga</span>
+              <p className="question-text">{question.text}</p>
+            </div>
+            {question.questionImage && (
+              <div className="question-media">
+                <img src={question.questionImage} alt={`Bild till fråga: ${question.text}`} />
+              </div>
+            )}
+            <div className="options">
+              {question.options.map((option, index) => {
+                const isSelected = selectedOptionIndex === index;
+                const isCorrect = index === question.correctIndex;
+                const showCorrect = isChecked && isCorrect;
+                const showWrong = isChecked && isSelected && !isCorrect;
 
-            const classNames = [
-              "option",
-              isSelected ? "selected" : "",
-              showCorrect ? "correct" : "",
-              showWrong ? "wrong" : ""
-            ]
-              .filter(Boolean)
-              .join(" ");
+                const classNames = [
+                  "option",
+                  isSelected ? "selected" : "",
+                  showCorrect ? "correct" : "",
+                  showWrong ? "wrong" : ""
+                ]
+                  .filter(Boolean)
+                  .join(" ");
 
-            return (
-              <button
-                key={option}
-                className={classNames}
-                onClick={() => selectAnswer(index)}
-                type="button"
-              >
-                {option}
-              </button>
-            );
-          })}
-        </div>
+                return (
+                  <button
+                    key={`${question.id}-option-${index}`}
+                    className={classNames}
+                    onClick={() => selectAnswer(index)}
+                    type="button"
+                  >
+                    <span className="option-letter">{optionLabel(index)}</span>
+                    <span className="option-text">{option}</span>
+                  </button>
+                );
+              })}
+            </div>
+          </>
+        ) : (
+          <p className="question-text">Inga frågor tillagda i denna sektion ännu.</p>
+        )}
 
         <div className="actions">
-          <button className="secondary" onClick={goBack} type="button">
-            Tillbaka
+          <button className="secondary" onClick={goBack} type="button" disabled={!hasQuestions || safeQuestionIndex === 0}>
+            Föregående
           </button>
           <button
-            className="primary"
+            className={`check-button ${selectedOptionIndex === undefined ? "disabled-look" : ""}`}
             onClick={checkAnswer}
             type="button"
-            disabled={selectedOptionIndex === undefined}
+            disabled={!hasQuestions || selectedOptionIndex === undefined}
           >
             Check answer
           </button>
-          <button className="secondary" onClick={() => setShowExplanation(true)} type="button">
+          <button
+            className="secondary"
+            onClick={() => setShowExplanation(true)}
+            type="button"
+            disabled={!hasQuestions || !hasExplanation}
+          >
             Se förklaring
           </button>
           <button
             className="secondary"
             onClick={goNext}
             type="button"
-            disabled={questionIndex === selectedSection.questions.length - 1}
+            disabled={!hasQuestions || safeQuestionIndex === selectedSection.questions.length - 1}
           >
             Nästa fråga
           </button>
           <button className="secondary" onClick={() => setShowOverview((prev) => !prev)} type="button">
             Till översikt frågor
+          </button>
+          <button className="danger" onClick={() => setShowTestResult(true)} type="button">
+            End test
+          </button>
+          <button className="secondary" onClick={resetCurrentSectionAttempt} type="button">
+            Starta om test
           </button>
         </div>
       </section>
@@ -268,7 +342,7 @@ export default function App(): JSX.Element {
         </section>
       )}
 
-      {showExplanation && (
+      {showExplanation && hasQuestions && hasExplanation && (
         <section className="modal-backdrop" role="dialog" aria-modal="true">
           <div className="modal">
             <div className="modal-header">
@@ -278,6 +352,38 @@ export default function App(): JSX.Element {
               </button>
             </div>
             <img src={question.explanationImage} alt={`Förklaring till ${question.text}`} />
+          </div>
+        </section>
+      )}
+
+      {showTestResult && (
+        <section className="modal-backdrop" role="dialog" aria-modal="true">
+          <div className="modal result-modal">
+            <div className="modal-header">
+              <h3>Testresultat</h3>
+              <button className="secondary" onClick={() => setShowTestResult(false)} type="button">
+                Stäng
+              </button>
+            </div>
+            <div className="result-grid">
+              <p>Försökta frågor</p>
+              <strong>{answeredCount}</strong>
+              <p>Rätt svar</p>
+              <strong>{correctCount}</strong>
+              <p>Fel svar</p>
+              <strong>{wrongCount}</strong>
+              <p>Ej besvarade</p>
+              <strong>{remainingCount}</strong>
+              <p>Poäng</p>
+              <strong>
+                {correctCount}/{selectedSection.questions.length} ({scorePercent}%)
+              </strong>
+            </div>
+            <div className="result-actions">
+              <button className="secondary" onClick={resetCurrentSectionAttempt} type="button">
+                Starta om test
+              </button>
+            </div>
           </div>
         </section>
       )}
