@@ -73,6 +73,54 @@ import sakerhetDackDrarForklaringImage from "../assets/sakerhet-dack-drar-forkla
 import sakerhetSlitagevarnareForklaringImage from "../assets/sakerhet-slitagevarnare-forklaring.png";
 import sakerhetKamaxelremForklaringImage from "../assets/sakerhet-kamaxelrem-forklaring.png";
 import sakerhetKultryckForklaringImage from "../assets/sakerhet-kultryck-forklaring.png";
+import sakerhetAstmaAnfallForklaringImage from "../assets/sakerhet-astma-anfall-forklaring.png";
+import sakerhetDackLufttryckForklaringImage from "../assets/sakerhet-dack-lufttryck-forklaring.png";
+import sakerhetKonstgjordAndningForklaringImage from "../assets/sakerhet-konstgjord-andning-forklaring.png";
+import sakerhetAbsFordelarForklaringImage from "../assets/sakerhet-abs-fordelar-forklaring.png";
+import sakerhetTrotthetForklaringImage from "../assets/sakerhet-trotthet-forklaring.png";
+import sakerhetEkonomisktKorsattForklaringImage from "../assets/sakerhet-ekonomiskt-korsatt-forklaring.png";
+import sakerhetLyftteknikForklaringImage from "../assets/sakerhet-lyftteknik-forklaring.png";
+import sakerhetBilbalteLivForklaringImage from "../assets/sakerhet-bilbalte-liv-forklaring.png";
+import sakerhetTrotthetSingelolyckaForklaringImage from "../assets/sakerhet-trotthet-singelolycka-forklaring.png";
+import sakerhetHuvudstodFragaImage from "../assets/sakerhet-huvudstod-fraga.png";
+import sakerhetHuvudstodForklaringImage from "../assets/sakerhet-huvudstod-forklaring.png";
+import sakerhetDiabetesOmtocknadForklaringImage from "../assets/sakerhet-diabetes-omtocknad-forklaring.png";
+import sakerhetNollvisionenForklaringImage from "../assets/sakerhet-nollvisionen-forklaring.png";
+import sakerhetVinterKylsystemForklaringImage from "../assets/sakerhet-vinter-kylsystem-forklaring.png";
+import sakerhetHjartinfarktForklaringImage from "../assets/sakerhet-hjartinfarkt-forklaring.png";
+import sakerhetVinterdackMonsterdjupForklaringImage from "../assets/sakerhet-vinterdack-monsterdjup-forklaring.png";
+import sakerhetLedgangsreumatismForklaringImage from "../assets/sakerhet-ledgangsreumatism-forklaring.png";
+import sakerhetBilbarnstolForklaringImage from "../assets/sakerhet-bilbarnstol-forklaring.png";
+import sakerhetMobiltelefonUpphinnandeolyckorForklaringImage from "../assets/sakerhet-mobiltelefon-upphinnandeolyckor-forklaring.png";
+import sakerhetServostyrningForklaringImage from "../assets/sakerhet-servostyrning-forklaring.png";
+import sakerhetKallstartMiljoForklaringImage from "../assets/sakerhet-kallstart-miljo-forklaring.png";
+import sakerhetKatalysatorKoldioxidForklaringImage from "../assets/sakerhet-katalysator-koldioxid-forklaring.png";
+import sakerhetRollatorFragaImage from "../assets/sakerhet-rollator-fraga.png";
+import sakerhetRollatorForklaringImage from "../assets/sakerhet-rollator-forklaring.png";
+import sakerhetBromsvarningslampaFragaImage from "../assets/sakerhet-bromsvarningslampa-fraga.png";
+import sakerhetBromsvarningslampaForklaringImage from "../assets/sakerhet-bromsvarningslampa-forklaring.png";
+import sakerhetHydraulisktBromssystemForklaringImage from "../assets/sakerhet-hydrauliskt-bromssystem-forklaring.png";
+import sakerhetDemensForklaringImage from "../assets/sakerhet-demens-forklaring.png";
+import sakerhetSidokollisionForklaringImage from "../assets/sakerhet-sidokollision-forklaring.png";
+import sakerhetTungLastKurvorForklaringImage from "../assets/sakerhet-tung-last-kurvor-forklaring.png";
+import sakerhetLastsakringForklaringImage from "../assets/sakerhet-lastsakring-forklaring.png";
+import sakerhetRadialdackLufttryckLivslangdForklaringImage from "../assets/sakerhet-radialdack-lufttryck-livslangd-forklaring.png";
+import sakerhetOlycksplatsFlyttaFordonForklaringImage from "../assets/sakerhet-olycksplats-flytta-fordon-forklaring.png";
+import sakerhetSlapvagnKultryckForklaringImage from "../assets/sakerhet-slapvagn-kultryck-forklaring.png";
+import sakerhetTaxiprisBerakningFragaImage from "../assets/sakerhet-taxipris-berakning-fraga.png";
+import sakerhetTaxiprisBerakningForklaringImage from "../assets/sakerhet-taxipris-berakning-forklaring.png";
+import sakerhetEpilepsiSymbolFragaImage from "../assets/sakerhet-epilepsi-symbol-fraga.png";
+import sakerhetEpilepsiSymbolForklaringImage from "../assets/sakerhet-epilepsi-symbol-forklaring.png";
+import sakerhetStartkablarTaxiForklaringImage from "../assets/sakerhet-startkablar-taxi-forklaring.png";
+import sakerhetKrockkuddePassagerareForklaringImage from "../assets/sakerhet-krockkudde-passagerare-forklaring.png";
+import sakerhetMotorvarmareTidForklaringImage from "../assets/sakerhet-motorvarmare-tid-forklaring.png";
+import sakerhetReaktionsstrackaMobilForklaringImage from "../assets/sakerhet-reaktionsstracka-mobil-forklaring.png";
+import sakerhetBaltesstolBalteskuddeForklaringImage from "../assets/sakerhet-baltesstol-balteskudde-forklaring.png";
+import sakerhetFrontalkollisionHastighetForklaringImage from "../assets/sakerhet-frontalkollision-hastighet-forklaring.png";
+import sakerhetRullatorFraga2Image from "../assets/sakerhet-rullator-fraga-2.png";
+import sakerhetTungLastPlaceringForklaringImage from "../assets/sakerhet-tung-last-placering-forklaring.png";
+import sakerhetAvgassystemLackageForklaringImage from "../assets/sakerhet-avgassystem-lackage-forklaring.png";
+import sakerhetAvgaserFarligaAmnenForklaringImage from "../assets/sakerhet-avgaser-farliga-amnen-forklaring.png";
 import sakerhetKontrollampaGeneratorRemFragaImage from "../assets/sakerhet-kontrollampa-generator-rem-fraga.png";
 import sakerhetAbsLampaFragaImage from "../assets/sakerhet-abs-lampa-fraga.png";
 import sakerhetBromsvatskaBehallareFragaImage from "../assets/sakerhet-bromsvatska-behallare-fraga.png";
@@ -1108,6 +1156,620 @@ const sakerhet2Section: QuestionSection = {
   ]
 };
 
+const sakerhet3Section: QuestionSection = {
+  id: "sakerhet-3",
+  name: "Säkerhet & beteende 3",
+  questions: [
+    {
+      id: "sakerhet-3-q-real-1",
+      text: "Du närmar dig en skola under skoltid. Vad är viktigast att du som förare är uppmärksam på?",
+      options: [
+        "Lekande barn",
+        "Hastighetsbegränsningen",
+        "Övergångställe",
+        "Skolpatruller"
+      ],
+      correctIndex: 0
+    },
+    {
+      id: "sakerhet-3-q-real-2",
+      text: "Du har en kund som får ett astmaanfall med hosta och andningssvårigheter. Vilken hjälp bör du ge först?",
+      options: [
+        "Lyfta ut kunden ur bilen och placera honom eller henne i stabilt sidoläge (framstupa sidoläge).",
+        "Öppna bildörren så kunden får frisk luft och ta fram eventuell medicin.",
+        "Larma ambulans genom att ringa 112.",
+        "Tala lugnande och försöka få kundens uppmärksamhet riktad mot något annat."
+      ],
+      correctIndex: 1,
+      explanationImage: sakerhetAstmaAnfallForklaringImage
+    },
+    {
+      id: "sakerhet-3-q-real-3",
+      text: "Vilken förutsättning är viktigast när du ska kontrollera om lufttrycket i däcken är det som rekommenderas?",
+      options: [
+        "Att bilen är olastad",
+        "Att däcken är varma",
+        "Att däcken är kalla",
+        "Att bilen är maxlastad"
+      ],
+      correctIndex: 2,
+      explanationImage: sakerhetDackLufttryckForklaringImage
+    },
+    {
+      id: "sakerhet-3-q-real-4",
+      text: "Hur kan du kontrollera att luften kommer ner till lungorna när du ger konstgjord andning?",
+      options: [
+        "Jag ser att ansiktet återfår normal färg",
+        "Jag ser att bröstkorgen rör sig",
+        "Jag hör när luften kommer ned till lungorna",
+        "Jag känner att överskottsluft kommer ut via näsan"
+      ],
+      correctIndex: 1,
+      explanationImage: sakerhetKonstgjordAndningForklaringImage
+    },
+    {
+      id: "sakerhet-3-q-real-5",
+      text: "Vilken fördel har ABS-bromsar jämfört med bromsar utan ABS?",
+      options: [
+        "Vid hård bromsning är risken för sladd mindre med ABS",
+        "Bromssträckan blir alltid kortare med ABS",
+        "Bromssystemet är underhållsfritt eftersom ABS- systemet är slutet"
+      ],
+      correctIndex: 0,
+      explanationImage: sakerhetAbsFordelarForklaringImage
+    },
+    {
+      id: "sakerhet-3-q-real-6",
+      text: "Under vilken del av en långresa anses risken vara störst för att föraren råkar ut för en olycka på grund av trötthet?",
+      options: [
+        "Under de första 15 minuterna av resan",
+        "Efter ungefär halva restiden",
+        "Under de sista 15 minuterna av resan"
+      ],
+      correctIndex: 2,
+      explanationImage: sakerhetTrotthetForklaringImage
+    },
+    {
+      id: "sakerhet-3-q-real-7",
+      text: "Du kör en manuell växlad taxi. Vilket av följande körsätt är mest bränslebesparande?",
+      options: [
+        "Växla upp sent och köra på så låg växel som möjligt",
+        "Undvika hårda inbromsningar och stopp",
+        "Använda låg växel vid högt varvtal",
+        "Undvika att motorbromsa för att sänka farten"
+      ],
+      correctIndex: 1,
+      explanationImage: sakerhetEkonomisktKorsattForklaringImage
+    },
+    {
+      id: "sakerhet-3-q-real-8",
+      text: "Du ska lyfta tungt gods. Vilken lyftteknik bör du använda?",
+      options: [
+        "Jag lyfter med raka ben och rak rygg",
+        "Jag lyfter med böjda ben och rak rygg",
+        "Jag lyfter med raka ben och böjd rygg",
+        "Jag lyfter med böjda ben och böjd rygg"
+      ],
+      correctIndex: 1,
+      explanationImage: sakerhetLyftteknikForklaringImage
+    },
+    {
+      id: "sakerhet-3-q-real-9",
+      text: "Hur många liv skulle sparas årligen om alla alltid använde bilbälte",
+      options: [
+        "Ca 10-20",
+        "Ca 80-90",
+        "Ca 160-170",
+        "Ca 250-260"
+      ],
+      correctIndex: 1,
+      explanationImage: sakerhetBilbalteLivForklaringImage
+    },
+    {
+      id: "sakerhet-3-q-real-10",
+      text: "Vilken typ av olyckor anses mest vanliga I samband med trötthet?",
+      options: [
+        "Mötesolyckor",
+        "Omkörningsolyckor",
+        "Upphinnandeolyckor",
+        "Singelolyckor"
+      ],
+      correctIndex: 3,
+      explanationImage: sakerhetTrotthetSingelolyckaForklaringImage
+    },
+    {
+      id: "sakerhet-3-q-real-11",
+      text: "På vilken av bilderna sitter föraren säkrast för att skydda sig mot nackskador vid påkörning bakifrån?",
+      options: [
+        "Bild A",
+        "Bild B",
+        "Bild C",
+        "Bild D"
+      ],
+      correctIndex: 2,
+      questionImage: sakerhetHuvudstodFragaImage,
+      explanationImage: sakerhetHuvudstodForklaringImage
+    },
+    {
+      id: "sakerhet-3-q-real-12",
+      text: "På vilket sätt bör du i första hand hjälpa en person som är omtöcknad på grund av diabetes?",
+      options: [
+        "Placera i stabilt sidoläge (framstupa sidoläge)",
+        "Lossa kläderna kring halsen",
+        "Se till att personen genast blir förd till sjukhus",
+        "Ge något sött att äta"
+      ],
+      correctIndex: 3,
+      explanationImage: sakerhetDiabetesOmtocknadForklaringImage
+    },
+    {
+      id: "sakerhet-3-q-real-13",
+      text: "Vilket är det långsiktiga målet för trafiksäkerhetsarbetet enligt Nollvisionen?",
+      options: [
+        "Minskning med 10 procent av antalet dödade och allvarligt skadade per år",
+        "Minskning med 20 procent av antalet dödade och allvarligt skadade per år",
+        "Noll dödade och allvarligt skadade i vägtrafiken per år",
+        "Högst 500 dödade i vägtrafiken per år"
+      ],
+      correctIndex: 2,
+      explanationImage: sakerhetNollvisionenForklaringImage
+    },
+    {
+      id: "sakerhet-3-q-real-14",
+      text: "Vad bör du göra inför vintern för att undvika kostsamma reparationer på ditt fordon?",
+      options: [
+        "Kontrollera att frostskyddet i kylarvätskan är tillräckligt",
+        "Byta motor- och växellådsolja",
+        "Byta till vintertermostat",
+        "Justera framvagnen"
+      ],
+      correctIndex: 0,
+      explanationImage: sakerhetVinterKylsystemForklaringImage
+    },
+    {
+      id: "sakerhet-3-q-real-15",
+      text: "Vilka symtom kan vara tecken på att en person håller på att få en hjärtinfarkt?",
+      options: [
+        "Personen blir blek, darrig, kallsvettig och irriterad men förstår inte själv att han är sjuk",
+        "Personen får andnöd, blir kallsvettig och klagar över smärtor i bröstet som strålar ut mot hals och armar",
+        "Personen förlorar medvetandet och faller ihop med muskelryckningar och kramper",
+        "Personen blir förvirrad, blir aggressiv mot personer omgivningen och tappar känseln i armarna"
+      ],
+      correctIndex: 1,
+      explanationImage: sakerhetHjartinfarktForklaringImage
+    },
+    {
+      id: "sakerhet-3-q-real-16",
+      text: "Vilket är minsta tillåtna mönsterdjup på ett personbilsdäck när det används på vinterväglag i januari?",
+      options: [
+        "1.6 mm",
+        "2.0 mm",
+        "2.6 mm",
+        "3.0 mm",
+        "3.6 mm",
+        "4.0 mm"
+      ],
+      correctIndex: 3,
+      explanationImage: sakerhetVinterdackMonsterdjupForklaringImage
+    },
+    {
+      id: "sakerhet-3-q-real-17",
+      text: "Vilket av följande symtom kan tyda på ledgångsreumatism?",
+      options: [
+        "Skakningar",
+        "Balansrubbningar",
+        "Minskad rörlighet i ledarna"
+      ],
+      correctIndex: 2,
+      explanationImage: sakerhetLedgangsreumatismForklaringImage
+    },
+    {
+      id: "sakerhet-3-q-real-18",
+      text: "Din kund är gravt hörselskadad. Hur bör du göra för att kunden ska ha så stor chans som möjligt att uppfatta vad du säger?",
+      options: [
+        "Jag talar så högt jag kan",
+        "Jag söker ögonkontakt så att mina munrörelser syns",
+        "Jag talar så nära kundens öra eller hörapparat som möjligt",
+        "Jag talar så långsamt jag kan"
+      ],
+      correctIndex: 1
+    },
+    {
+      id: "sakerhet-3-q-real-19",
+      text: "Ett barn som är 17 månader ska åka i din taxi. Barnet kan sitta utan stöd. Vilken skyddsutrustning bör barnet använda?",
+      options: [
+        "Bältestol",
+        "Bälteskudde",
+        "Babyskydd",
+        "Bilbarnstol"
+      ],
+      correctIndex: 3,
+      explanationImage: sakerhetBilbarnstolForklaringImage
+    },
+    {
+      id: "sakerhet-3-q-real-20",
+      text: "Vilken av följande olyckstyper är överrepresenterade när föraren använder mobiltelefon under körning?",
+      options: [
+        "Viltolyckor",
+        "Korsningsolyckor",
+        "Mörkerolyckor",
+        "Upphinnandeolyckor"
+      ],
+      correctIndex: 3,
+      explanationImage: sakerhetMobiltelefonUpphinnandeolyckorForklaringImage
+    },
+    {
+      id: "sakerhet-3-q-real-21",
+      text: "Bilens servostyrning är urfunktion. Hur påverkas styrningen?",
+      options: [
+        "Bilen börjar dra snett",
+        "Bilen blir tungstyrd",
+        "Det rycker i ratten när jag svänger",
+        "Ratten låser sig"
+      ],
+      correctIndex: 1,
+      explanationImage: sakerhetServostyrningForklaringImage
+    },
+    {
+      id: "sakerhet-3-q-real-22",
+      text: "Vad bör du göra för att minska miljöeffekterna vid kallstart?",
+      options: [
+        "Köra direkt men med lätt gaspådrag",
+        "Tomgångsköra med förhöjt varvtal minst 1 minut",
+        "Tomgångsköra minst 2 minuter",
+        "Tomgångsköra minst 3 minuter"
+      ],
+      correctIndex: 0,
+      explanationImage: sakerhetKallstartMiljoForklaringImage
+    },
+    {
+      id: "sakerhet-3-q-real-23",
+      text: "Taxin är förbeställd av en kund som talat om att han är synskadad. Hur bör du göra när du kommer fram till kunden?",
+      options: [
+        "Jag går ur bilen, går fram till kunden, presenterar mig och frågar efter kundens namn",
+        "Jag går ur bilen, öppnar dörren på passagerarsidan och ber kunden sätta sig",
+        "Jag sitter kvar i bilen, öppnar dörren på passagerarsidan och ber kunden sätta sig",
+        "Jag sitter kvar i bilen, öppnar dörren på passagerarsidan och frågar efter kundens namn"
+      ],
+      correctIndex: 0
+    },
+    {
+      id: "sakerhet-3-q-real-24",
+      text: "Vilket av de skadliga ämnena i avgaserna minskas inte av bilens katalysator?",
+      options: [
+        "Kolväten",
+        "Kolmonoxid (Koloxid)",
+        "Kväveoxider",
+        "Koldioxid"
+      ],
+      correctIndex: 3,
+      explanationImage: sakerhetKatalysatorKoldioxidForklaringImage
+    },
+    {
+      id: "sakerhet-3-q-real-25",
+      text: "Du ska köra en kund som är rullstolsburen. Måste kunden använda bilbälte?",
+      options: [
+        "Nej, enligt bilbälteslagen behöver rullstolsburna inte använda bilbälte",
+        "Ja, om det finns bilbälte",
+        "Ja, men endast om kunden sitter i framsätet"
+      ],
+      correctIndex: 1
+    },
+    {
+      id: "sakerhet-3-q-real-26",
+      text: "Du ska lasta rollatorn på bilden i din taxi. Vilken bokstav markerar den spärr som måste frigöras när du ska fälla ihop rollatorn?",
+      options: [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      correctIndex: 2,
+      questionImage: sakerhetRollatorFragaImage,
+      explanationImage: sakerhetRollatorForklaringImage
+    },
+    {
+      id: "sakerhet-3-q-real-27",
+      text: "Vad innebär det om varningslampan tänds?",
+      options: [
+        "Parkeringsbromsen är ur funktion",
+        "Färdbromsens ABS-system är ur funktion",
+        "Temperaturen i kylarvätskan är för hög",
+        "Färdbromsen kan vara helt eller delvis ur funktion"
+      ],
+      correctIndex: 3,
+      questionImage: sakerhetBromsvarningslampaFragaImage,
+      explanationImage: sakerhetBromsvarningslampaForklaringImage
+    },
+    {
+      id: "sakerhet-3-q-real-28",
+      text: "Vid kontroll av bilens hydrauliska bromssystem upptäcker du att bromspedalen sakta sjunker mot golvet. Vad tyder det på?",
+      options: [
+        "Läckage i bromssystemet",
+        "Luft i bromssystemet",
+        "Att bromsarna måste justeras",
+        "Slitna bromsbelägg"
+      ],
+      correctIndex: 0,
+      explanationImage: sakerhetHydraulisktBromssystemForklaringImage
+    },
+    {
+      id: "sakerhet-3-q-real-29",
+      text: "Vad menas med demens tillstånd?",
+      options: [
+        "Sömnlöshet och oro",
+        "Minnessvårigheter orsakade av sjukdom i hjärnan",
+        "Ökad rädsla för andra människor",
+        "Nedsatt rörelseförmåga på grund av ålder"
+      ],
+      correctIndex: 1,
+      explanationImage: sakerhetDemensForklaringImage
+    },
+    {
+      id: "sakerhet-3-q-real-30",
+      text: "En modern och säker bil klarar att skydda de åkande vid en sidokollision, under förutsättning att de använder bilbälte och att fordonet som kör in i bilen inte kör alltför fort. Hur fort får det påkörande fordonet högst köra för att det ska gälla?",
+      options: [
+        "45-50 km/h",
+        "60-65 km/h",
+        "75-80 km/h",
+        "90-95 km/h"
+      ],
+      correctIndex: 0,
+      explanationImage: sakerhetSidokollisionForklaringImage
+    },
+    {
+      id: "sakerhet-3-q-real-31",
+      text: "Du har lastat tung last i bagageutrymmet på din taxi. Påverkar detta bilens köregenskaper vid körning i kurvor?",
+      options: [
+        "Ja, bilen vill svänga mer än i olastat skick",
+        "Nej, bilens köregenskaper förändras inte",
+        "Ja, bilen vill fortsätta rakt fram"
+      ],
+      correctIndex: 0,
+      explanationImage: sakerhetTungLastKurvorForklaringImage
+    },
+    {
+      id: "sakerhet-3-q-real-32",
+      text: "Du ska frakta gods med din taxi. Vilken belastning ska lastsäkringen minst motstå framåt och bakåt enligt allmänna bestämmelser?",
+      options: [
+        "Hela lastvikten framåt och halva lastvikten bakåt",
+        "Hela lastvikten både framåt och bakåt",
+        "Halva lastvikten både framåt och bakåt",
+        "Halva lastvikten framåt och hela lastvikten bakåt"
+      ],
+      correctIndex: 0,
+      explanationImage: sakerhetLastsakringForklaringImage
+    },
+    {
+      id: "sakerhet-3-q-real-33",
+      text: "Du har radialdäck på din taxi. Hur påverkar lufttrycket i däcken deras livslängd?",
+      options: [
+        "Lufttrycket har ingen betydelse för däckens livslängd",
+        "Ett par hekto för lågt lufttryck förkortar däckens livslängd",
+        "Ett par hekto för högt lufttryck förkortar däckens livslängd"
+      ],
+      correctIndex: 1,
+      explanationImage: sakerhetRadialdackLufttryckLivslangdForklaringImage
+    },
+    {
+      id: "sakerhet-3-q-real-34",
+      text: "Du kommer fram till en olycksplats. Får du flytta fordon som varit inblandade i olyckan?",
+      options: [
+        "Ja, alltid",
+        "Ja, om de är till fara för övriga trafikanter",
+        "Nej, de får endast räddningstjänsten",
+        "Nej, det får endast polisen"
+      ],
+      correctIndex: 1,
+      explanationImage: sakerhetOlycksplatsFlyttaFordonForklaringImage
+    },
+    {
+      id: "sakerhet-3-q-real-35",
+      text: "Du har kopplat en släpvagn till din taxi, men kultrycket är för högt. Vad kan det medföra?",
+      options: [
+        "Katastrofbromsen upphör att fungera",
+        "Halvljuset blir bländande",
+        "Framdäckens väggrepp blir bättre",
+        "Slitaget på bilens framdäck ökar"
+      ],
+      correctIndex: 1,
+      explanationImage: sakerhetSlapvagnKultryckForklaringImage
+    },
+    {
+      id: "sakerhet-3-q-real-36",
+      text: "Två personer ska åka taxi en måndag kl 07.00. Resan beräknas ta ca 10 min och är 5 km lång. Hur mycket kommer resan att kosta enligt prisinformationen?",
+      options: [
+        "Ca 90 kr",
+        "Ca 110 kr",
+        "Ca 155 kr",
+        "Ca 165 kr"
+      ],
+      correctIndex: 2,
+      questionImage: sakerhetTaxiprisBerakningFragaImage,
+      explanationImage: sakerhetTaxiprisBerakningForklaringImage
+    },
+    {
+      id: "sakerhet-3-q-real-37",
+      text: "En kund bär denna symbol på sitt ytterplagg. Vilken sjukdom har kunden?",
+      options: [
+        "Astma",
+        "Diabetes",
+        "Hjärtsjukdom",
+        "Epilepsi"
+      ],
+      correctIndex: 3,
+      questionImage: sakerhetEpilepsiSymbolFragaImage,
+      explanationImage: sakerhetEpilepsiSymbolForklaringImage
+    },
+    {
+      id: "sakerhet-3-q-real-38",
+      text: "Vilken risk finns med att använda startkablar när du använder taxin för att hjälpa någon annan att starta?",
+      options: [
+        "Glödlamporna kan gå sönder",
+        "Fordonen kan bli strömförande",
+        "Taxametern kan få driftstörningar",
+        "Startmotorn kan överhettas"
+      ],
+      correctIndex: 2,
+      explanationImage: sakerhetStartkablarTaxiForklaringImage
+    },
+    {
+      id: "sakerhet-3-q-real-39",
+      text: "Din taxi är utrustad med krockkuddar fram. Din passagerare är 120 cm lång. Var sitter han säkrast?",
+      options: [
+        "I baksätet",
+        "I framsätet",
+        "Han sitter lika säkrast i båda fram och baksätet"
+      ],
+      correctIndex: 0,
+      explanationImage: sakerhetKrockkuddePassagerareForklaringImage
+    },
+    {
+      id: "sakerhet-3-q-real-40",
+      text: "Utetemperaturen är 0 grader och din bil har stått ute hela natten. Hur länge bör den elektriska motorvärmaren vara inkopplad innan du startar motorn?",
+      options: [
+        "Ca 15 minuter",
+        "Ca 30 minuter",
+        "Ca 1 timme",
+        "Ca 2 timmar",
+        "Ca 3 timmar"
+      ],
+      correctIndex: 2,
+      explanationImage: sakerhetMotorvarmareTidForklaringImage
+    },
+    {
+      id: "sakerhet-3-q-real-41",
+      text: "En förare som talar i mobiltelefon har oftare sämre reaktionsförmåga än vanligt. Normal reaktionstid är ca 1 sekund. Hur lång blir reaktionssträckan i 70km/h om det istället tar 2 sekunder att reagera?",
+      options: [
+        "Ca 25 m",
+        "Ca 39 m",
+        "Ca 50 m",
+        "Ca 62 m",
+        "Ca 90 m"
+      ],
+      correctIndex: 1,
+      explanationImage: sakerhetReaktionsstrackaMobilForklaringImage
+    },
+    {
+      id: "sakerhet-3-q-real-42",
+      text: "Vilken fördel är det med en bältesstol jämfört med en bälteskudde som skyddsutrustning för barn?",
+      options: [
+        "Den monteras alltid bakåtvänd",
+        "Den hindrar att barnet glider i sidled",
+        "Den är lättare att förvara i en taxibil",
+        "Den har ett särskilt bilbälte inbyggt i stolen"
+      ],
+      correctIndex: 1,
+      explanationImage: sakerhetBaltesstolBalteskuddeForklaringImage
+    },
+    {
+      id: "sakerhet-3-q-real-43",
+      text: "Kan en alkoholpåverkad bilförare bli straffad för rattfylleri om han eller hon har mindre än 0.2 promille alkohol i blodet?",
+      options: [
+        "Ja, men endast om föraren blir inblandad i en trafikolycka",
+        "Ja, eftersom vi har en nollgräns för alkohol i samband med bilkörning",
+        "Ja, om det kan antas att föraren inte kan framföra fordonet på ett betryggande sätt",
+        "Nej"
+      ],
+      correctIndex: 2
+    },
+    {
+      id: "sakerhet-3-q-real-44",
+      text: "Hur påverkas i allmänhet en förare som använder mobiltelefon under körning?",
+      options: [
+        "Föraren får en förlängd stoppsträcka när han eller hon bromsar",
+        "En förare som har stor körvana blir inte påverkad",
+        "Förarens körförmåga påverkas inte vid körning på motorväg",
+        "Om föraren använder \"handsfreeutrustning\" påverkas inte körningen"
+      ],
+      correctIndex: 0
+    },
+    {
+      id: "sakerhet-3-q-real-45",
+      text: "En modern och säker bil klarar att skydda de åkande mot att dödas eller skadas allvarligt vid en frontalkollision mellan normalstora personbilar. Förutsättningen är att de använder bilbälte. Upp till vilken hastighet gäller detta?",
+      options: [
+        "30-35 km/h",
+        "60-65 km/h",
+        "80-85 km/h",
+        "100-110 km/h"
+      ],
+      correctIndex: 1,
+      explanationImage: sakerhetFrontalkollisionHastighetForklaringImage
+    },
+    {
+      id: "sakerhet-3-q-real-46",
+      text: "Vad är riktigt om vad du som taxiförare får berätta om vad som hänt i din bil?",
+      options: [
+        "Om jag ska vittna i en rättegång har jag rätt att låta bli att berätta sådant som har hänt i bilen",
+        "Vilken tystnadsplikt jag har framgår vanligen av en överenskommelse med åkeriet eller beställningscentralen",
+        "Jag är skyldig att berätta vad som har hänt i bilen om en journalist frågar",
+        "Jag har samma tystnadsplikt som en läkare eller advokat"
+      ],
+      correctIndex: 1
+    },
+    {
+      id: "sakerhet-3-q-real-47",
+      text: "Du ska lasta rullatorn på bilden i din taxi. Vilken bokstav markerar den spärr som måste frigöras när du ska fälla ihop rullatorn?",
+      options: [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      correctIndex: 0,
+      questionImage: sakerhetRullatorFraga2Image
+    },
+    {
+      id: "sakerhet-3-q-real-48",
+      text: "Vilket påstående speglar bäst grundtanken i 'Nollvisionen'?",
+      options: [
+        "Vi ska i olycksförebyggande syfte införa en lag som begränsar möjligheten för yngre förare att köra bil under helger och nätter",
+        "Vi ska i skadeförebyggande syfte se till att ett misstag i trafiken får så lindriga konsekvenser som möjligt för de inblandade",
+        "Vi ska i skadeförebyggande syfte kraftigt öka straffen för hastighetsöverträdelser",
+        "Vi ska i olycksförebyggande syfte döma rattfyllerister hårdare",
+        "Vi ska i olycksförebyggande syfte utöka kontrollera av våra bilar ute på vägarna"
+      ],
+      correctIndex: 1
+    },
+    {
+      id: "sakerhet-3-q-real-49",
+      text: "Hur bör du helst placera tung last i en personbil?",
+      options: [
+        "Långt fram och lågt",
+        "Långt fram och högt",
+        "Långt bak och lågt",
+        "Långt bak och högt"
+      ],
+      correctIndex: 0,
+      explanationImage: sakerhetTungLastPlaceringForklaringImage
+    },
+    {
+      id: "sakerhet-3-q-real-50",
+      text: "Din bil har en läcka i avgassystemet. Vad innebär det för risk?",
+      options: [
+        "Koloxid kan tränga in i bilen",
+        "Bränsleförbrukningen blir betydligt högre än normalt",
+        "Motorn blir svårstartad",
+        "Motortemperaturen blir högre än normalt"
+      ],
+      correctIndex: 0,
+      explanationImage: sakerhetAvgassystemLackageForklaringImage
+    },
+    {
+      id: "sakerhet-3-q-real-51",
+      text: "Vad är sant om de farliga ämnen som finns i bilarnas avgaser?",
+      options: [
+        "Alla försvinner ur kretsloppet inom högst ett år",
+        "Alla försvinner ur kretsloppet efter 3-5 år",
+        "Alla försvinner ur kretsloppet inom 10 år",
+        "Vissa ämnen kan stanna i kretsloppet i hundratals år"
+      ],
+      correctIndex: 3,
+      explanationImage: sakerhetAvgaserFarligaAmnenForklaringImage
+    }
+  ]
+};
+
 export const questionGroups: CategoryGroup[] = [
   {
     id: "main",
@@ -1116,7 +1778,7 @@ export const questionGroups: CategoryGroup[] = [
       {
         id: "sakerhet",
         name: "Säkerhet",
-        sections: [sakerhet1Section, sakerhet2Section]
+        sections: [sakerhet1Section, sakerhet2Section, sakerhet3Section]
       },
       {
         id: "lagstiftning",
