@@ -289,6 +289,39 @@ import lagstiftning2SvangaVansterReglerFragaImage from "../assets/lagstiftning-2
 import lagstiftning2SvangaVansterReglerForklaringImage from "../assets/lagstiftning-2-svanga-vanster-regler-forklaring.png";
 import lagstiftning2AterkallelseTaxiforarlegitimationForklaringImage from "../assets/lagstiftning-2-aterkallelse-taxiforarlegitimation-forklaring.png";
 import lagstiftning2TaxameterBesiktningForklaringImage from "../assets/lagstiftning-2-taxameter-besiktning-forklaring.png";
+import lagstiftning3ParkeraLordagHamtaFragaImage from "../assets/lagstiftning-3-parkera-lordag-hamta-fraga.png";
+import lagstiftning3VilkenTidInteParkeraFragaImage from "../assets/lagstiftning-3-vilken-tid-inte-parkera-fraga.png";
+import lagstiftning3PolisensTeckenFragaImage from "../assets/lagstiftning-3-polisens-tecken-fraga.png";
+import lagstiftning3PolisensTeckenForklaringImage from "../assets/lagstiftning-3-polisens-tecken-forklaring.png";
+import lagstiftning3FelparkeradFragaImage from "../assets/lagstiftning-3-felparkerad-fraga.png";
+import lagstiftning3MotorvagAccelerationsfaltFragaImage from "../assets/lagstiftning-3-motorvag-accelerationsfalt-fraga.png";
+import lagstiftning3VagmarkeVadGallerFragaImage from "../assets/lagstiftning-3-vagmarke-vad-galler-fraga.png";
+import lagstiftning3VilkenSituationFarStannaFragaImage from "../assets/lagstiftning-3-vilken-situation-far-stanna-fraga.png";
+import lagstiftning3VilkenSituationFarStannaForklaringImage from "../assets/lagstiftning-3-vilken-situation-far-stanna-forklaring.png";
+import lagstiftning3HogerregelTvaSituationerFragaImage from "../assets/lagstiftning-3-hogerregel-tva-situationer-fraga.png";
+import lagstiftning3HogerregelTvaSituationerBFragaImage from "../assets/lagstiftning-3-hogerregel-tva-situationer-b-fraga.png";
+import lagstiftning3TaxiLamnaAvKundVagFragaImage from "../assets/lagstiftning-3-taxi-lamna-av-kund-vag-fraga.png";
+import lagstiftning3PoliskontrollVilotidFragaImage from "../assets/lagstiftning-3-poliskontroll-vilotid-fraga.png";
+import lagstiftning3PoliskontrollVilotidForklaring1Image from "../assets/lagstiftning-3-poliskontroll-vilotid-forklaring-1.png";
+import lagstiftning3PoliskontrollVilotidForklaring2Image from "../assets/lagstiftning-3-poliskontroll-vilotid-forklaring-2.png";
+import lagstiftning3VajningspliktKorsningarFragaImage from "../assets/lagstiftning-3-vajningsplikt-korsningar-fraga.png";
+import lagstiftning3VajningspliktKorsningarForklaringImage from "../assets/lagstiftning-3-vajningsplikt-korsningar-forklaring.png";
+import lagstiftning3TidbokKalenderdygnForklaringImage from "../assets/lagstiftning-3-tidbok-kalenderdygn-forklaring.png";
+import lagstiftning3ViloperiodSondagForklaring1Image from "../assets/lagstiftning-3-viloperiod-sondag-forklaring-1.png";
+import lagstiftning3ViloperiodSondagForklaring2Image from "../assets/lagstiftning-3-viloperiod-sondag-forklaring-2.png";
+import lagstiftning3KorpassSlutaForklaring1Image from "../assets/lagstiftning-3-korpass-sluta-forklaring-1.png";
+import lagstiftning3KorpassSlutaForklaring2Image from "../assets/lagstiftning-3-korpass-sluta-forklaring-2.png";
+import lagstiftning3SkolskjutsForklaringImage from "../assets/lagstiftning-3-skolskjuts-forklaring.png";
+import lagstiftning3TaxiStannatFragaImage from "../assets/lagstiftning-3-taxi-stannat-fraga.png";
+import lagstiftning3TaxiStannatForklaringImage from "../assets/lagstiftning-3-taxi-stannat-forklaring.png";
+import lagstiftning370KmhSituationFragaImage from "../assets/lagstiftning-3-70-kmh-situation-fraga.png";
+import lagstiftning3KorpassSluta23Forklaring1Image from "../assets/lagstiftning-3-korpass-sluta-23-forklaring-1.png";
+import lagstiftning3KorpassSluta23Forklaring2Image from "../assets/lagstiftning-3-korpass-sluta-23-forklaring-2.png";
+import lagstiftning3CyklistKorsningFragaImage from "../assets/lagstiftning-3-cyklist-korsning-fraga.png";
+import lagstiftning3VagmarkeVantaPassagerareFragaImage from "../assets/lagstiftning-3-vagmarke-vanta-passagerare-fraga.png";
+import lagstiftning3StannaSituationerFragaImage from "../assets/lagstiftning-3-stanna-situationer-fraga.png";
+import lagstiftning3StannaSituationerForklaringImage from "../assets/lagstiftning-3-stanna-situationer-forklaring.png";
+import lagstiftning3MotorvagHastighetFragaImage from "../assets/lagstiftning-3-motorvag-hastighet-fraga.png";
 
 const emptySection = (id: string, name: string): QuestionSection => ({
   id,
@@ -3615,6 +3648,381 @@ const lagstiftning2Section: QuestionSection = {
   ]
 };
 
+const lagstiftning3Section: QuestionSection = {
+  id: "lagstiftning-3",
+  name: "Lagstiftning 3",
+  questions: [
+    {
+      id: "lagstiftning-3-q-real-1",
+      text: "Du parkerar din bil lördag kl. 20.00. När får du senast hämta den?",
+      options: [
+        "Söndag kl. 7.00",
+        "Söndag kl. 24.00",
+        "Måndag kl. 7.00",
+        "Lördag kl. 24.00"
+      ],
+      correctIndex: 2,
+      questionImage: lagstiftning3ParkeraLordagHamtaFragaImage
+    },
+    {
+      id: "lagstiftning-3-q-real-2",
+      text: "Vilken tid får du inte parkera?",
+      options: [
+        "Lördag kl 7",
+        "Lördag kl 13",
+        "Söndag kl 9",
+        "Söndag kl 17"
+      ],
+      correctIndex: 1,
+      questionImage: lagstiftning3VilkenTidInteParkeraFragaImage
+    },
+    {
+      id: "lagstiftning-3-q-real-3",
+      text: "Vad innebär polisens tecken?",
+      options: [
+        "Mötande ska stanna och du ska stanna",
+        "Mötande ska stanna och du ska köra",
+        "Mötande ska köra och du ska stanna",
+        "Både ska köra men långsamt"
+      ],
+      correctIndex: 2,
+      questionImage: lagstiftning3PolisensTeckenFragaImage,
+      explanationImage: lagstiftning3PolisensTeckenForklaringImage
+    },
+    {
+      id: "lagstiftning-3-q-real-4",
+      text: "Vad gäller när du kör personbil med en bromsad släpvagn?",
+      options: [
+        "Högsta tillåtna hastighet är 80 km/h",
+        "Jag måste ha med både bilens och släpvagnens registreringsbevis.",
+        "Jag måste köra på vägrenen om det finns en sådan",
+        "Släpvagnen måste ha sommardäck om bilen har sommardäck"
+      ],
+      correctIndex: 0
+    },
+    {
+      id: "lagstiftning-3-q-real-5",
+      text: "Är någon av bilarna felparkerad?",
+      options: [
+        "Ja, den mörka bilen",
+        "Nej, ingen av bilarna",
+        "Ja, båda bilarna",
+        "Ja, den ljusa bilen"
+      ],
+      correctIndex: 0,
+      questionImage: lagstiftning3FelparkeradFragaImage
+    },
+    {
+      id: "lagstiftning-3-q-real-6",
+      text: "Du kör på motorväg och närmar dig ett fordon från accelerationsfält",
+      options: [
+        "Jag måste byta till vänstra körfält",
+        "Jag behöver inte anpassa mig så att hans inkörning underlättas",
+        "Jag måste anpassa hastigheten för att inkörningen underlättas"
+      ],
+      correctIndex: 2,
+      questionImage: lagstiftning3MotorvagAccelerationsfaltFragaImage
+    },
+    {
+      id: "lagstiftning-3-q-real-7",
+      text: "Du kommer fram till det här vägmärket. Vad gäller?",
+      options: [
+        "Du måste svänga höger",
+        "Du får inte svänga vänster",
+        "Du får svänga höger eller vänster",
+        "Du måste svänga vänster"
+      ],
+      correctIndex: 2,
+      questionImage: lagstiftning3VagmarkeVadGallerFragaImage
+    },
+    {
+      id: "lagstiftning-3-q-real-8",
+      text: "I vilken situation får du stanna?",
+      options: [
+        "I situation på bild A",
+        "I situation på bild B",
+        "I situation på bild C"
+      ],
+      correctIndex: 1,
+      questionImage: lagstiftning3VilkenSituationFarStannaFragaImage,
+      explanationImage: lagstiftning3VilkenSituationFarStannaForklaringImage
+    },
+    {
+      id: "lagstiftning-3-q-real-9",
+      text: "På vilken av de två situationer gäller högerregel?",
+      options: [
+        "På bild A",
+        "På bild B",
+        "Ingen"
+      ],
+      correctIndex: 2,
+      questionImage: lagstiftning3HogerregelTvaSituationerFragaImage
+    },
+    {
+      id: "lagstiftning-3-q-real-10",
+      text: "På vilken av de två situationer gäller högerregel?",
+      options: [
+        "På bild A",
+        "På bild B",
+        "Ingen"
+      ],
+      correctIndex: 1,
+      questionImage: lagstiftning3HogerregelTvaSituationerBFragaImage
+    },
+    {
+      id: "lagstiftning-3-q-real-11",
+      text: "Får du köra in på den här vägen med taxi för att lämna av en kund?",
+      options: [
+        "Ja om jag kör i gångfart",
+        "Ja men endast om kunden bor vid den vägen",
+        "Ja om jag kör med lägre hastighet än 30 km/h",
+        "Nej"
+      ],
+      correctIndex: 3,
+      questionImage: lagstiftning3TaxiLamnaAvKundVagFragaImage
+    },
+    {
+      id: "lagstiftning-3-q-real-12",
+      text: "Du blir stoppad i en poliskontroll den 19 september kl 16.00 och visar detta tidboksbladet. Är uttagen vilotid tillräcklig?",
+      options: [
+        "Ja",
+        "Nej, det saknas 1 timme vilotid",
+        "Nej, det saknas 2 timmar vilotid",
+        "Nej, det saknas 3 timmar vilotid"
+      ],
+      correctIndex: 0,
+      questionImage: lagstiftning3PoliskontrollVilotidFragaImage,
+      explanationImage: [
+        lagstiftning3PoliskontrollVilotidForklaring1Image,
+        lagstiftning3PoliskontrollVilotidForklaring2Image
+      ]
+    },
+    {
+      id: "lagstiftning-3-q-real-13",
+      text: "Du ska fortsätta rakt fram. Har du väjningsplikt mot bilen i någon av korsningarna?",
+      options: [
+        "Ja, men endast i korsning A",
+        "Ja, men endast i korsning B",
+        "Ja, i båda korsningarna",
+        "Nej"
+      ],
+      correctIndex: 2,
+      questionImage: lagstiftning3VajningspliktKorsningarFragaImage,
+      explanationImage: lagstiftning3VajningspliktKorsningarForklaringImage
+    },
+    {
+      id: "lagstiftning-3-q-real-14",
+      text: "Vilken typ av tariff är inte tillåten att använda i trafik med privatpersoner som kunder?",
+      options: [
+        "Brytpunktstariff",
+        "Tidstariff",
+        "Summatariff",
+        "Sträcktariff"
+      ],
+      correctIndex: 0
+    },
+    {
+      id: "lagstiftning-3-q-real-15",
+      text: "Du kör på en väg där det finns båda vita och orangfärgade linjer på din del av körbanan. Vad innebär detta för dig?",
+      options: [
+        "Jag ska följa de orangfärgade linjerna",
+        "Jag ska följa de vita linjerna",
+        "Jag kan välja att följa antingen de vita eller de orangfärgade linjerna"
+      ],
+      correctIndex: 0
+    },
+    {
+      id: "lagstiftning-3-q-real-16",
+      text: "Under en vecka kör du taxi torsdag, fredag och lördag. Vid varje tillfälle kör du från 07.00 till 17.00. För hur många kalenderdygn måste du göra anteckningar i tidboken denna vecka?",
+      options: [
+        "Tre",
+        "Fyra",
+        "Fem",
+        "Sex"
+      ],
+      correctIndex: 1,
+      explanationImage: lagstiftning3TidbokKalenderdygnForklaringImage
+    },
+    {
+      id: "lagstiftning-3-q-real-17",
+      text: "Efter 11 timmar ledighet kör du taxi en lördag kl 18.00 – 04.00 med en ny viloperiod kl 20.00-21.00. På söndagen börjar du köra igen kl 12.00. När måste du senast påbörja ytterligare viloperiod under söndagen?",
+      options: [
+        "Kl 14.00",
+        "Kl 15.00",
+        "Kl 16.00",
+        "Kl 17.00"
+      ],
+      correctIndex: 1,
+      explanationImage: [
+        lagstiftning3ViloperiodSondagForklaring1Image,
+        lagstiftning3ViloperiodSondagForklaring2Image
+      ]
+    },
+    {
+      id: "lagstiftning-3-q-real-18",
+      text: "Du börjar ditt körpass kl. 06.00 efter ett dygns vila. Du gör uppehåll i arbetet mellan kl. 09.00 och 13.00. När måste du senast sluta köra taxi enligt vilotidsförordningen?",
+      options: [
+        "kl. 21.00",
+        "kl. 22.00",
+        "kl. 23.00",
+        "kl. 24.00",
+        "kl. 01.00"
+      ],
+      correctIndex: 1,
+      explanationImage: [
+        lagstiftning3KorpassSlutaForklaring1Image,
+        lagstiftning3KorpassSlutaForklaring2Image
+      ]
+    },
+    {
+      id: "lagstiftning-3-q-real-19",
+      text: "Vilken av följande personer har möjlighet att få taxiförarlegitimation?",
+      options: [
+        "En 19-åring som har körkort med behörighet B sedan ett år",
+        "En 25-åring som har körkort med behörighet B sedan ett år",
+        "En 20-åring som har körkort med behörighet B sedan två år",
+        "En 21-åring som har körkort med behörighet B sedan två år"
+      ],
+      correctIndex: 3
+    },
+    {
+      id: "lagstiftning-3-q-real-20",
+      text: "Du stannar vid vägkanten och väntar på en passagerare som dröjer. Det är mörkt och vägen saknar belysning. Vilket ljus ska du ha tänt i bilen?",
+      options: [
+        "Parkeringsljus",
+        "Halvljus",
+        "Varningsblinkers",
+        "Helljus"
+      ],
+      correctIndex: 0
+    },
+    {
+      id: "lagstiftning-3-q-real-21",
+      text: "Vad krävs för att du ska få köra en skolskjuts med en buss som har sittplats för 10 passagerare?",
+      options: [
+        "Enbart D-körkort",
+        "D-körkort och taxiförarlegitimation",
+        "Enbart taxiförarlegitimation",
+        "Enbart C-körkort",
+        "C-körkort och taxiförarlegitimation"
+      ],
+      correctIndex: 0,
+      explanationImage: lagstiftning3SkolskjutsForklaringImage
+    },
+    {
+      id: "lagstiftning-3-q-real-22",
+      text: "Har någon av taxibilarna stannat rätt?",
+      options: [
+        "Ja, taxibilen på bild A",
+        "Ja, taxibilen på bild B",
+        "Ja, både taxibilen på bild A och B",
+        "Nej, ingen av taxibilarna"
+      ],
+      correctIndex: 0,
+      questionImage: lagstiftning3TaxiStannatForklaringImage,
+      explanationImage: lagstiftning3TaxiStannatFragaImage
+    },
+    {
+      id: "lagstiftning-3-q-real-23",
+      text: "Du kör i 70 km/h i situationen på bilden. Vad är säkrast att göra?",
+      options: [
+        "Bromsa",
+        "Styra ut mot högerkanten",
+        "Signalera med signalhornet",
+        "Signalera med helljuset"
+      ],
+      correctIndex: 1,
+      questionImage: lagstiftning370KmhSituationFragaImage
+    },
+    {
+      id: "lagstiftning-3-q-real-24",
+      text: "Efter 11 timmars vila börjar du köra taxi kl. 07.00. Du har rast och vilar kl. 09.00 - 12.00. När måste du senast sluta detta körpass enligt vilotidsförordningen?",
+      options: [
+        "Kl. 20.00",
+        "Kl. 22.00",
+        "Kl. 23.00",
+        "Kl. 01.00"
+      ],
+      correctIndex: 2,
+      explanationImage: [
+        lagstiftning3KorpassSluta23Forklaring1Image,
+        lagstiftning3KorpassSluta23Forklaring2Image
+      ]
+    },
+    {
+      id: "lagstiftning-3-q-real-25",
+      text: "Du ska fortsätta rakt fram i korsningen. Hur kör du på säkraste sätt om cyklisten?",
+      options: [
+        "Jag fortsätter i höger körfält och kör om före korsningen",
+        "Jag avvaktar och kör sedan om i korsningen",
+        "Jag använder vänster körfält för att lämna god marginal",
+        "Jag väntar med omkörning till efter korsningen"
+      ],
+      correctIndex: 3,
+      questionImage: lagstiftning3CyklistKorsningFragaImage
+    },
+    {
+      id: "lagstiftning-3-q-real-26",
+      text: "Du ska svänga till höger in på en landsväg som är huvudled och har tät trafik. Får du använda vägrenen som ett accelerationsfält?",
+      options: [
+        "Ja, men enbart i dagsljus",
+        "Ja, alltid",
+        "Nej"
+      ],
+      correctIndex: 2
+    },
+    {
+      id: "lagstiftning-3-q-real-27",
+      text: "Får du stanna för att vänta på en passagerare efter något av vägmärkena?",
+      options: [
+        "Ja, men enbart efter vägmärke A",
+        "Ja, men enbart efter vägmärke B",
+        "Ja, efter båda vägmärkena",
+        "Nej"
+      ],
+      correctIndex: 3,
+      questionImage: lagstiftning3VagmarkeVantaPassagerareFragaImage
+    },
+    {
+      id: "lagstiftning-3-q-real-28",
+      text: "Du ska stanna för att släppa av en passagerare vid en vägkorsning. Vilket avstånd måste det minst vara till korsningen?",
+      options: [
+        "3 meter",
+        "5 meter",
+        "10 meter",
+        "20 meter",
+        "30 meter"
+      ],
+      correctIndex: 2
+    },
+    {
+      id: "lagstiftning-3-q-real-29",
+      text: "Hur många situationer måste du stanna, oavsett om det kommer fordon eller inte?",
+      options: [
+        "I en av situationerna",
+        "I två av situationerna",
+        "I tre av situationerna",
+        "I alla situationerna"
+      ],
+      correctIndex: 1,
+      questionImage: lagstiftning3StannaSituationerFragaImage,
+      explanationImage: lagstiftning3StannaSituationerForklaringImage
+    },
+    {
+      id: "lagstiftning-3-q-real-30",
+      text: "Vad är högsta tillåtna hastighet när du passerar detta vägmärke om inget annat anges?",
+      options: [
+        "50 km/h",
+        "70 km/h",
+        "90 km/h",
+        "110 km/h"
+      ],
+      correctIndex: 3,
+      questionImage: lagstiftning3MotorvagHastighetFragaImage
+    }
+  ]
+};
+
 const sakerhet5Section: QuestionSection = {
   id: "sakerhet-5",
   name: "Säkerhet & beteende 5",
@@ -3997,7 +4405,7 @@ export const questionGroups: CategoryGroup[] = [
       {
         id: "lagstiftning",
         name: "Lagstiftning",
-        sections: [lagstiftning1Section, lagstiftning2Section]
+        sections: [lagstiftning1Section, lagstiftning2Section, lagstiftning3Section]
       },
       {
         id: "karta",
