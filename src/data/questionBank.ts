@@ -84,6 +84,7 @@ import sakerhetBilbalteLivForklaringImage from "../assets/sakerhet-bilbalte-liv-
 import sakerhetTrotthetSingelolyckaForklaringImage from "../assets/sakerhet-trotthet-singelolycka-forklaring.png";
 import sakerhetHuvudstodFragaImage from "../assets/sakerhet-huvudstod-fraga.png";
 import sakerhetHuvudstodForklaringImage from "../assets/sakerhet-huvudstod-forklaring.png";
+import sakerhetHuvudstodSakerastFragaImage from "../assets/sakerhet-huvudstod-sakerast-fraga.png";
 import sakerhetDiabetesOmtocknadForklaringImage from "../assets/sakerhet-diabetes-omtocknad-forklaring.png";
 import sakerhetNollvisionenForklaringImage from "../assets/sakerhet-nollvisionen-forklaring.png";
 import sakerhetVinterKylsystemForklaringImage from "../assets/sakerhet-vinter-kylsystem-forklaring.png";
@@ -109,6 +110,12 @@ import sakerhetOlycksplatsFlyttaFordonForklaringImage from "../assets/sakerhet-o
 import sakerhetSlapvagnKultryckForklaringImage from "../assets/sakerhet-slapvagn-kultryck-forklaring.png";
 import sakerhetTaxiprisBerakningFragaImage from "../assets/sakerhet-taxipris-berakning-fraga.png";
 import sakerhetTaxiprisBerakningForklaringImage from "../assets/sakerhet-taxipris-berakning-forklaring.png";
+import sakerhetTaxiprisBerakning3FragaImage from "../assets/sakerhet-taxipris-berakning-3-fraga.png";
+import sakerhetTaxiprisBerakning3ForklaringImage from "../assets/sakerhet-taxipris-berakning-3-forklaring.png";
+import sakerhetVanstersvangSituationerFragaImage from "../assets/sakerhet-vanstersvang-situationer-fraga.png";
+import sakerhetBussHallplatsFotgangareFragaImage from "../assets/sakerhet-buss-hallplats-fotgangare-fraga.png";
+import sakerhetNodhjulForklaringImage from "../assets/sakerhet-nodhjul-forklaring.png";
+import sakerhetMoterandeFordonHastighetFragaImage from "../assets/sakerhet-moterande-fordon-hastighet-fraga.png";
 import sakerhetEpilepsiSymbolFragaImage from "../assets/sakerhet-epilepsi-symbol-fraga.png";
 import sakerhetEpilepsiSymbolForklaringImage from "../assets/sakerhet-epilepsi-symbol-forklaring.png";
 import sakerhetStartkablarTaxiForklaringImage from "../assets/sakerhet-startkablar-taxi-forklaring.png";
@@ -2438,6 +2445,375 @@ const sakerhet4Section: QuestionSection = {
   ]
 };
 
+const sakerhet5Section: QuestionSection = {
+  id: "sakerhet-5",
+  name: "Säkerhet & beteende 5",
+  questions: [
+    {
+      id: "sakerhet-5-q-real-1",
+      text: "Hur kan du minska risken för att slitbanan ska lossna från ett regummerat däck?",
+      options: [
+        "Genom att skifta hjulen mellan axlarna efter 1500 mil",
+        "Genom att alltid har rätt lufttryck",
+        "Genom att skifta hjulen mellan axlarna varannan månad"
+      ],
+      correctIndex: 1
+    },
+    {
+      id: "sakerhet-5-q-real-2",
+      text: "Du kommer fram till en olycksplats. Får du flytta fordon som varit inblandade i olyckan?",
+      options: [
+        "Nej, det får endast polisen",
+        "Ja, alltid",
+        "Ja, om de är till fara för övriga trafikanter",
+        "Nej, det får endast räddningstjänsten"
+      ],
+      correctIndex: 2
+    },
+    {
+      id: "sakerhet-5-q-real-3",
+      text: "Du använder en medicin som du inte vet om den är trafikfarlig. Du känner dig dock yr av medicinen. Kan du dömas för rattfylleri om du trots detta kör bil?",
+      options: [
+        "Ja, om det kan antas att jag inte kan köra bilen på ett betryggande sätt",
+        "Ja, men endast om jag döms som vållande till en trafikolycka",
+        "Nej, inte om jag har fått recept på medicinen av en läkare",
+        "Nej, eftersom medicinen inte kan likställas med alkohol eller droger"
+      ],
+      correctIndex: 0
+    },
+    {
+      id: "sakerhet-5-q-real-4",
+      text: "Du har en kund som tar sig för bröstet, har svårt att andas och blir kallsvettig och matt. Vad bör du göra först?",
+      options: [
+        "Ringa 112 och tillkalla ambulans",
+        "Lägga kunden i stabilt sidoläge (framstupa sidoläge) och lossa åtsittande kläder",
+        "Lossa åtsittande kläder och hjälpa till att ta fram eventuell medicin",
+        "Placerar kunden med benen högt och tala lugnande och låta kunden vila"
+      ],
+      correctIndex: 2
+    },
+    {
+      id: "sakerhet-5-q-real-5",
+      text: "Tre personer ska åka taxi en måndag kl 09.30. Resan beräknas ta 20 min och är 15 km lång. Hur mycket kommer resan att kosta enligt prisinformationen?",
+      options: [
+        "Ca 130 kr",
+        "Ca 190 kr",
+        "Ca 280 kr",
+        "Ca 350 kr"
+      ],
+      correctIndex: 2,
+      questionImage: sakerhetTaxiprisBerakning3FragaImage,
+      explanationImage: sakerhetTaxiprisBerakning3ForklaringImage
+    },
+    {
+      id: "sakerhet-5-q-real-6",
+      text: "Vilken sjukdom eller skada kännetecknas av halvsidig förlamning, känselnedsättning och talrubbning?",
+      options: [
+        "Parkinson",
+        "Stroke",
+        "Cerebral pares (CP)",
+        "Multipel skleros (MS)"
+      ],
+      correctIndex: 1
+    },
+    {
+      id: "sakerhet-5-q-real-7",
+      text: "Vilket påstående om ABS-bromsar är riktigt?",
+      options: [
+        "En bil med ABS kan styras trots maximal inbromsning",
+        "Föraren kopplar manuellt in eller ur ABS",
+        "Bromssträckan blir alltid kortare med ABS",
+        "ABS fungerar endast vid bromsning i halt väglag"
+      ],
+      correctIndex: 0
+    },
+    {
+      id: "sakerhet-5-q-real-8",
+      text: "Du kommer till en trafikolycksplats där flera personer har skadats och blöder. Vilken skyddsutrustning är viktigast att du använder?",
+      options: [
+        "Andningsskydd",
+        "Gummihandskar",
+        "Skyddsglasögon",
+        "Skoskydd"
+      ],
+      correctIndex: 1
+    },
+    {
+      id: "sakerhet-5-q-real-9",
+      text: "Vad är fobi?",
+      options: [
+        "En oförklarig nedstämdhet under en längre period",
+        "En stark överdriven rädsla för en sak eller situation",
+        "En psykisk störning som inverkar på synfältet",
+        "Ett stort behov av uppmärksamhet"
+      ],
+      correctIndex: 1
+    },
+    {
+      id: "sakerhet-5-q-real-10",
+      text: "På vilken av bilderna sitter föraren säkrast för att skydda sig mot nackskador vid påkörning bakifrån?",
+      options: [
+        "Bild A",
+        "Bild B",
+        "Bild C",
+        "Bild D"
+      ],
+      correctIndex: 2,
+      questionImage: sakerhetHuvudstodSakerastFragaImage
+    },
+    {
+      id: "sakerhet-5-q-real-11",
+      text: "Din bil av årsmodell 2005 är utrustad med bränsleinsprutning. Med vilket av följande körsätt kan du spara mest bränsle?",
+      options: [
+        "Jag motorbromsar för att minska farten",
+        "Jag trampar ner kopplingen och rullar på tomgång",
+        "Jag undviker att motorbromsa för att minska farten",
+        "Jag använder lägsta möjliga växel"
+      ],
+      correctIndex: 0
+    },
+    {
+      id: "sakerhet-5-q-real-12",
+      text: "Vilken är den viktigaste anledningen till att du inte bör använda mobiltelefonen när du kör taxi?",
+      options: [
+        "Jag ökar hastigheten omedvetet",
+        "Jag blir mindre uppmärksam på övrig trafik",
+        "Jag stör kunden",
+        "Strålningen från mobiltelefonen kan störa bilens elektronik"
+      ],
+      correctIndex: 1
+    },
+    {
+      id: "sakerhet-5-q-real-13",
+      text: "Högerblinkers slår snabbare än vänsterblinkers. Vad är felet?",
+      options: [
+        "För hög amperetal i säkringen",
+        "För låg amperetal i säkringen",
+        "Lampan är trasig"
+      ],
+      correctIndex: 2
+    },
+    {
+      id: "sakerhet-5-q-real-14",
+      text: "Ett barn som är 6 år ska åka i din taxi. Vilken typ av säkerhetsutrustning är lämpligast för detta barn?",
+      options: [
+        "Babyskydd",
+        "Bilbarnstol",
+        "Bälteskudde"
+      ],
+      correctIndex: 2
+    },
+    {
+      id: "sakerhet-5-q-real-15",
+      text: "Du ska skjutsa en mamma och hennes 14-åriga dotter i din taxi. Vem är ansvarig för att dottern använder bilbälte?",
+      options: [
+        "Mamman som vårdnadshavare",
+        "14-åringen själv",
+        "Jag som förare"
+      ],
+      correctIndex: 2
+    },
+    {
+      id: "sakerhet-5-q-real-16",
+      text: "Din taxibil har navigationsutrustning (GPS). Vilket navigationssystem stör uppmärksamheten mest under körning?",
+      options: [
+        "De olika typerna stör lika mycket",
+        "Ett med informationen som tal",
+        "Informationen genom bild och text"
+      ],
+      correctIndex: 2
+    },
+    {
+      id: "sakerhet-5-q-real-17",
+      text: "Vad är viktigt att kontrollera innan du placerar ett barn i en bakåtvänd bilbarnstol i framsätet på din taxi?",
+      options: [
+        "Att bilbarnstolen är S-märkt",
+        "Att det inte finns någon krockkudde på den platsen eller att den är urkopplad",
+        "Att bilbarnstolen vilar mot vindrutan",
+        "Att det inte finns någon bältessträckare på den platsen eller att den är urkopplad"
+      ],
+      correctIndex: 1
+    },
+    {
+      id: "sakerhet-5-q-real-18",
+      text: "Utetemperaturen är -15 grader och din bil har stått ut hela natten. Hur länge bör den elektriska motorvärmen vara inkopplad innan du startar motorn?",
+      options: [
+        "Ca 1 timme och 30 minuter",
+        "Ca 30 minuter",
+        "Ca 1 timme",
+        "Ca 15 minuter"
+      ],
+      correctIndex: 0
+    },
+    {
+      id: "sakerhet-5-q-real-19",
+      text: "I hur många av situationerna bör du avstå från att göra en vänstersväng?",
+      options: [
+        "I en av situationerna",
+        "I två av situationerna",
+        "I tre av situationerna",
+        "I alla situationerna"
+      ],
+      correctIndex: 2,
+      questionImage: sakerhetVanstersvangSituationerFragaImage
+    },
+    {
+      id: "sakerhet-5-q-real-20",
+      text: "Hur stor andel av personbilsförarna som dör i trafikolyckor varje år beräknas ha alkohol i kroppen?",
+      options: [
+        "5-10 %",
+        "15-20 %",
+        "25-30 %",
+        "55-60 %"
+      ],
+      correctIndex: 2
+    },
+    {
+      id: "sakerhet-5-q-real-21",
+      text: "Vilka däck är ur miljösynpunkt de bäst däck du kan köpa?",
+      options: [
+        "Däck som har högt innehåll av HA-oljor",
+        "Däck som har lågt innehåll av HA-oljor",
+        "Däck som inte alls innehåller HA-oljor"
+      ],
+      correctIndex: 2
+    },
+    {
+      id: "sakerhet-5-q-real-22",
+      text: "Bussen har stannat vid en hållplats och du ska köra rakt fram i situationen på bilden. Vad bör du först vara beredd på?",
+      options: [
+        "Att stanna för fotgängare som går ut på det andra övergångstället",
+        "Att släppa fram trafik som kommer från höger i korsningen",
+        "Att stanna för att bussen kör ut utan att tydligt visa sina avsikter",
+        "Att stanna för fotgängare som går ut framför bussen",
+        "Att stanna för fotgängare som går ut på det första övergångstället"
+      ],
+      correctIndex: 3,
+      questionImage: sakerhetBussHallplatsFotgangareFragaImage
+    },
+    {
+      id: "sakerhet-5-q-real-23",
+      text: "Din kund har ett barn i 7-årsåldern med sig och du har ingen skyddsutrustning för barn i bilen. Var ska barnet sitta?",
+      options: [
+        "I framsätet där det finns både säkerhetsbälte och krockkudde",
+        "I knät på den vuxna personen och använda samma bilbälte",
+        "I baksätet bakom förarplatsen utan att använda bilbältet",
+        "I baksätet och använda bilbältet"
+      ],
+      correctIndex: 3
+    },
+    {
+      id: "sakerhet-5-q-real-24",
+      text: "Du kör färdtjänstbuss. Hur ska en rullstol vara förankrad under färd?",
+      options: [
+        "Med minst 4 spännband",
+        "Med låsta hjul och 3-punktsbälte",
+        "Med minst 1 spännband",
+        "Med enbart säkerhetsbälte"
+      ],
+      correctIndex: 1
+    },
+    {
+      id: "sakerhet-5-q-real-25",
+      text: "En kund ska åka tillsammans med sitt barn och har med sig en bilbarnstol till barnet. Vad ska du göra?",
+      options: [
+        "Jag upplyser om att barnet inte får använda stolen",
+        "Jag tar stolen och sätter fast den på lämplig plats",
+        "Jag ber kunden att sätta fast stolen på lämplig plats"
+      ],
+      correctIndex: 1
+    },
+    {
+      id: "sakerhet-5-q-real-26",
+      text: "Du använder en medicin som du inte vet om den är trafikfarlig. Du känner dig dock yr av medicinen. Kan du dömas för rattfylleri om du trots detta kör bil?",
+      options: [
+        "Ja, om det kan antas att jag inte kan köra bilen på ett betryggande sätt",
+        "Ja, men endast om jag döms som vållande till en trafikolycka",
+        "Nej, inte om jag har fått recept på medicinen av en läkare",
+        "Nej, eftersom medicin inte kan likställas med alkohol eller droger"
+      ],
+      correctIndex: 0
+    },
+    {
+      id: "sakerhet-5-q-real-27",
+      text: "Hur påverkar ABS-bromsarna köregenskaperna när du gör en kraftig inbromsning, jämfört med bromsning utan ABS?",
+      options: [
+        "Risken för sladd är mindre",
+        "Risken för sladd är större",
+        "Undanmanöver är svårare",
+        "Risken för vattenplaning är mindre"
+      ],
+      correctIndex: 0
+    },
+    {
+      id: "sakerhet-5-q-real-28",
+      text: "Du kör taxi med en personbil. En passagerare har med sig tung last som du placerar i bagageutrymmet. Hur bör du göra?",
+      options: [
+        "Jag ser till att inte placera tunga väskor mot ryggstödet",
+        "Jag placerar den tyngsta lasten längst bak i bagageutrymmet",
+        "Jag kan placera lasten hur som helst i bagageutrymmet och behöver inte förankra tunga föremål",
+        "Jag spänner fast bilbältena korsvis i baksätet om ingen sitter där"
+      ],
+      correctIndex: 3
+    },
+    {
+      id: "sakerhet-5-q-real-29",
+      text: "När får du tidigast använda dubbdäck på din taxi om det inte är vinterväglag eller förväntas bli det?",
+      options: [
+        "1 september",
+        "1 oktober",
+        "1 november",
+        "1 december"
+      ],
+      correctIndex: 1
+    },
+    {
+      id: "sakerhet-5-q-real-30",
+      text: "Hur kan utsläppen av koldioxid från biltrafiken minskas?",
+      options: [
+        "Genom minskad förbrukning av bränsle",
+        "Genom ökad användning av katalysatorer",
+        "Genom ökad användning av ABS-tekniken"
+      ],
+      correctIndex: 0
+    },
+    {
+      id: "sakerhet-5-q-real-31",
+      text: "Inför en körning har du fått information om att kunden har en demenssjukdom. Vad innebär det?",
+      options: [
+        "Att kunden har nedsatt rörelseförmåga",
+        "Att kunden kan få andningssvårigheter",
+        "Att kunden kan vara förvirrad och ha svårt att minnas",
+        "Att kunden har hjärtbesvär"
+      ],
+      correctIndex: 2
+    },
+    {
+      id: "sakerhet-5-q-real-32",
+      text: "Du får punktering och måste tillfälligt köra med s.k. nödhjul på taxibilen. Vad bör du tänka på när du kör med ett sådant hjul?",
+      options: [
+        "Jag får inte använda nödhjulet om övriga däck på bilen är dubbade",
+        "Jag bör endast köra på torra vägbanor",
+        "Jag bör aldrig köra fortare än den hastighet som anges på däcket",
+        "Jag får aldrig köra fortare än 30 km/h"
+      ],
+      correctIndex: 2,
+      explanationImage: sakerhetNodhjulForklaringImage
+    },
+    {
+      id: "sakerhet-5-q-real-33",
+      text: "Du närmar dig en korsning på landsväg och ska svänga vänster. Vilket mötande fordon är det svårast att bedöma hastigheten på?",
+      options: [
+        "Personbil",
+        "Lastbil",
+        "Motorcykel"
+      ],
+      correctIndex: 2,
+      questionImage: sakerhetMoterandeFordonHastighetFragaImage
+    }
+  ]
+};
+
 export const questionGroups: CategoryGroup[] = [
   {
     id: "main",
@@ -2446,7 +2822,7 @@ export const questionGroups: CategoryGroup[] = [
       {
         id: "sakerhet",
         name: "Säkerhet",
-        sections: [sakerhet1Section, sakerhet2Section, sakerhet3Section, sakerhet4Section]
+        sections: [sakerhet1Section, sakerhet2Section, sakerhet3Section, sakerhet4Section, sakerhet5Section]
       },
       {
         id: "lagstiftning",
