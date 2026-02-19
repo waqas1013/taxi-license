@@ -37,6 +37,45 @@ import sakerhetMsForklaringImage from "../assets/sakerhet-ms-forklaring.png";
 import sakerhetAirbagLampaFragaImage from "../assets/sakerhet-airbag-lampa-fraga.png";
 import sakerhetPsykosFragaImage from "../assets/sakerhet-psykos-fraga.png";
 import sakerhetFobiFragaImage from "../assets/sakerhet-fobi-fraga.png";
+import sakerhetLambdasondForklaringImage from "../assets/sakerhet-lambdasond-forklaring.png";
+import sakerhetDackLufttryckForklaringImage from "../assets/sakerhet-dack-lufttryck-forklaring.png";
+import sakerhetDackSlitageForklaringImage from "../assets/sakerhet-dack-slitage-forklaring.png";
+import sakerhetBalanseringForklaringImage from "../assets/sakerhet-balansering-forklaring.png";
+import sakerhetFramhjulsinstallningForklaringImage from "../assets/sakerhet-framhjulsinstallning-forklaring.png";
+import sakerhetBromsbelaggForklaringImage from "../assets/sakerhet-bromsbelagg-forklaring.png";
+import sakerhetSkivbromsarForklaringImage from "../assets/sakerhet-skivbromsar-forklaring.png";
+import sakerhetSakringForklaringImage from "../assets/sakerhet-sakring-forklaring.png";
+import sakerhetDieselForklaringImage from "../assets/sakerhet-diesel-forklaring.png";
+import sakerhetForvarmningDieselForklaringImage from "../assets/sakerhet-forvarmning-diesel-forklaring.png";
+import sakerhetSvartRookForklaringImage from "../assets/sakerhet-svart-rook-forklaring.png";
+import sakerhetDieselKraftlosForklaringImage from "../assets/sakerhet-diesel-kraftlos-forklaring.png";
+import sakerhetDieselParkeringForklaringImage from "../assets/sakerhet-diesel-parkering-forklaring.png";
+import sakerhetKylsystemForklaringImage from "../assets/sakerhet-kylsystem-forklaring.png";
+import sakerhetOljelampaFragaImage from "../assets/sakerhet-oljelampa-fraga.png";
+import sakerhetOljetryckForklaringImage from "../assets/sakerhet-oljetryck-forklaring.png";
+import sakerhetKylvatskaLampaFragaImage from "../assets/sakerhet-kylvatska-lampa-fraga.png";
+import sakerhetKylvatskaLampaForklaringImage from "../assets/sakerhet-kylvatska-lampa-forklaring.png";
+import sakerhetTempHanteraFragaImage from "../assets/sakerhet-temp-hantera-fraga.png";
+import sakerhetTempHanteraForklaringImage from "../assets/sakerhet-temp-hantera-forklaring.png";
+import sakerhetBatteriVatskaForklaringImage from "../assets/sakerhet-batteri-vatska-forklaring.png";
+import sakerhetBatteriKapacitetForklaringImage from "../assets/sakerhet-batteri-kapacitet-forklaring.png";
+import sakerhetElsystemStromForklaringImage from "../assets/sakerhet-elsystem-strom-forklaring.png";
+import sakerhetGeneratorLaddarInteForklaringImage from "../assets/sakerhet-generator-laddar-inte-forklaring.png";
+import sakerhetKontrollampaGeneratorFragaImage from "../assets/sakerhet-kontrollampa-generator-fraga.png";
+import sakerhetStyrinrattningForklaringImage from "../assets/sakerhet-styrinrattning-forklaring.png";
+import sakerhetFotbromsForklaringImage from "../assets/sakerhet-fotbroms-forklaring.png";
+import sakerhetStyrservoKontrollForklaringImage from "../assets/sakerhet-styrservo-kontroll-forklaring.png";
+import sakerhetBromslampaFragaImage from "../assets/sakerhet-bromslampa-fraga.png";
+import sakerhetBromslampaForklaringImage from "../assets/sakerhet-bromslampa-forklaring.png";
+import sakerhetAbsForklaringImage from "../assets/sakerhet-abs-forklaring.png";
+import sakerhetSommardackForklaringImage from "../assets/sakerhet-sommardack-forklaring.png";
+import sakerhetDackDrarForklaringImage from "../assets/sakerhet-dack-drar-forklaring.png";
+import sakerhetSlitagevarnareForklaringImage from "../assets/sakerhet-slitagevarnare-forklaring.png";
+import sakerhetKamaxelremForklaringImage from "../assets/sakerhet-kamaxelrem-forklaring.png";
+import sakerhetKultryckForklaringImage from "../assets/sakerhet-kultryck-forklaring.png";
+import sakerhetKontrollampaGeneratorRemFragaImage from "../assets/sakerhet-kontrollampa-generator-rem-fraga.png";
+import sakerhetAbsLampaFragaImage from "../assets/sakerhet-abs-lampa-fraga.png";
+import sakerhetBromsvatskaBehallareFragaImage from "../assets/sakerhet-bromsvatska-behallare-fraga.png";
 
 const emptySection = (id: string, name: string): QuestionSection => ({
   id,
@@ -520,6 +559,555 @@ const sakerhet1Section: QuestionSection = {
   ]
 };
 
+const sakerhet2Section: QuestionSection = {
+  id: "sakerhet-2",
+  name: "Säkerhet & beteende 2",
+  questions: [
+    {
+      id: "sakerhet-2-q-real-1",
+      text: "Vad har lambdasonden för funktion?",
+      options: [
+        "Kontrollera hur mycket syre det är kvar i avgaserna.",
+        "Kontrollera att katalysatorn håller tillräckligt med värme.",
+        "Kontrollera bränsleblandningen i motorn.",
+        "Kontrollera mängden olja i växellådan."
+      ],
+      correctIndex: 0,
+      explanationImage: sakerhetLambdasondForklaringImage
+    },
+    {
+      id: "sakerhet-2-q-real-2",
+      text: "Under vilka omständigheter är det mest lämpligt att kontrollera lyfttrycket i dina personbildäck?",
+      options: [
+        "När bilen är fullastad.",
+        "När bilens däck är varma.",
+        "När bilen är tom från passageraren.",
+        "När bilens däck är kalla."
+      ],
+      correctIndex: 3,
+      explanationImage: sakerhetDackLufttryckForklaringImage
+    },
+    {
+      id: "sakerhet-2-q-real-3",
+      text: "Vad kan vara den stora orsaken för däckslitaget?",
+      options: [
+        "För mycket lågtryck i däcken.",
+        "Ett däck slits mindre vid 120km/h än vid 70 km/h på grund av att däcksvärmen blir lägre vid högre fart.",
+        "Ett däck slits ungefär dubbelt så snabbt vid 120km/h än vid 70 km/h på grund av att däcksvärmen blir högre vid högre fart.",
+        "Om lufttrycket är för lågt i höger framdäck drar bilen åt höger. För lite luft i båda framdäcken får till följd att bilen blir lättstyrd."
+      ],
+      correctIndex: 2,
+      explanationImage: sakerhetDackSlitageForklaringImage
+    },
+    {
+      id: "sakerhet-2-q-real-4",
+      text: "Vad kan orsaken vara om du känner skakningar i ratten vid en viss hastighet?",
+      options: [
+        "Lågt lufttryck i bakdäcken.",
+        "Obalans i bromsskivorna.",
+        "Obalans i hjul, vikten är inte jämt fördelad eller slitage på framdäcken.",
+        "Högt lufttryck i bakdäcken."
+      ],
+      correctIndex: 2,
+      explanationImage: sakerhetBalanseringForklaringImage
+    },
+    {
+      id: "sakerhet-2-q-real-5",
+      text: "När du kör, känner du att hjulen drar snett, samtidigt som den skakar i ratten, vad kan detta beror på?",
+      options: [
+        "Höger framhjul obalanserat.",
+        "Servopumben har hoppat av.",
+        "Höger bakhjul obalanserat.",
+        "Du har kört på en trottarkant eller balansvikter har lossnat."
+      ],
+      correctIndex: 3,
+      explanationImage: sakerhetFramhjulsinstallningForklaringImage
+    },
+    {
+      id: "sakerhet-2-q-real-6",
+      text: "Du hör ett metalliskt skrapande ljud när du bromsar. Måste du vidta någon åtgärd?",
+      options: [
+        "Ja, kontrollera bromsbeläggens tjocklek.",
+        "Ja, kontrollera bromsvätskans nivå.",
+        "Nej, eftersom ljudet beror på att ABS-bromsen aktiverades.",
+        "Ja, kontrollera servocylinderns funktion."
+      ],
+      correctIndex: 0,
+      explanationImage: sakerhetBromsbelaggForklaringImage
+    },
+    {
+      id: "sakerhet-2-q-real-7",
+      text: "Vad är det för skillnad mellan skivbromsar och trumbromsar?",
+      options: [
+        "Skivbromsarna är lättare att integrera med parkeringsbromsen.",
+        "Skivbromsarna ger något jämnare bromsverkan samt kyls snabbare",
+        "Skivbromsarna är mindre känsliga för fukt och lättare att servera",
+        "Skivbromsarna kräver inte servosystem och underhållsfria"
+      ],
+      correctIndex: 1,
+      explanationImage: sakerhetSkivbromsarForklaringImage
+    },
+    {
+      id: "sakerhet-2-q-real-8",
+      text: "Vilket påstående om säkringarnas amperetal är riktig?",
+      options: [
+        "Alla säkringar i en bil ska ha samma amperetal",
+        "Om en säkring har för högt amperetal kan för hög strömstyrka släppas fram",
+        "Har säkringen för låg amperetal släpps för svag ström fram till respektive funktion"
+      ],
+      correctIndex: 1,
+      explanationImage: sakerhetSakringForklaringImage
+    },
+    {
+      id: "sakerhet-2-q-real-9",
+      text: "Vad är sant om Dieselmotorn?",
+      options: [
+        "En dieselmotor har tändstift.",
+        "En dieselmotor går även att köra på bensin.",
+        "En dieselmotor har högre kompression än en bensinmotor.",
+        "En dieselmotor drar alltid mer bränsle än en motsvarande bensinmotor."
+      ],
+      correctIndex: 2,
+      explanationImage: sakerhetDieselForklaringImage
+    },
+    {
+      id: "sakerhet-2-q-real-10",
+      text: "Vilken funktion har en förglödningsanordning i en dieselmotor?",
+      options: [
+        "Den värmer upp motorblocket på en dieselmotor vid kallstart.",
+        "Den förvärmer katalysatorn vid kallstart.",
+        "En dieselmotor har högre kompression än en bensinmotor.",
+        "Den gör så att tändstiften antänds i rätt ögonblick."
+      ],
+      correctIndex: 0,
+      explanationImage: sakerhetForvarmningDieselForklaringImage
+    },
+    {
+      id: "sakerhet-2-q-real-11",
+      text: "Din bil har ovanligt svarta avgaser, vad kan detta bero på?",
+      options: [
+        "Hög förbrukning av motorolja.",
+        "Luft har kommit in i styrservosystemet.",
+        "För lite vätska i servobehållaren.",
+        "Smutsigt luftfilter eller för fet bränsle luft blandning."
+      ],
+      correctIndex: 3,
+      explanationImage: sakerhetSvartRookForklaringImage
+    },
+    {
+      id: "sakerhet-2-q-real-12",
+      text: "Din dieselmotor blir plötsligt kraftlös. Vad kan detta bero på?",
+      options: [
+        "Kylslangarna har gått av eller läcker.",
+        "Fel på förglödningsanordningen.",
+        "Igensatt bränslefilter.",
+        "Generatorremmen har gått av."
+      ],
+      correctIndex: 2,
+      explanationImage: sakerhetDieselKraftlosForklaringImage
+    },
+    {
+      id: "sakerhet-2-q-real-13",
+      text: "Hur bör du parkera din dieselbil?",
+      options: [
+        "Den normala vana att parkera vilken bil som helst.",
+        "Växeln i friläge samt åtdragen parkeringsbroms och hjulen ej vridna mot trottoarkanten.",
+        "Växeln i friläge samt åtdragen parkeringsbroms och hjulen vridna mot trottoarkanten.",
+        "Växeln i ettan samt åtdragen parkeringsbroms och hjulen vridna mot trottoarkanten."
+      ],
+      correctIndex: 2,
+      explanationImage: sakerhetDieselParkeringForklaringImage
+    },
+    {
+      id: "sakerhet-2-q-real-14",
+      text: "Vad är riktigt beträffande kylsystemet i ett fordon?",
+      options: [
+        "Du bör undvika att använda glykol sommartid.",
+        "Genom att använda ren glykol förhindra du att kylsystemet riskerar att frysa sönder.",
+        "Kylsystem med övertryck har ofta en normal arbetstemperaturen upp mot 120 C.",
+        "Kylvätskan byts regelbunden enligt biltillverkarens rekommendationen."
+      ],
+      correctIndex: 1,
+      explanationImage: sakerhetKylsystemForklaringImage
+    },
+    {
+      id: "sakerhet-2-q-real-15",
+      text: "Under körning upptäcker du att denna symbol tänds på instrumentpanelen. Vad ska du göra?",
+      options: [
+        "Köra till närmaste bensinstation och fylla på spolarvätska",
+        "Köra arbetspasset ut för att sedan kontrollera felet",
+        "Stanna snarast och kontrollera kylvätskans nivå",
+        "Stanna snarast och kontrollera oljenivån i motorn"
+      ],
+      correctIndex: 3,
+      questionImage: sakerhetOljelampaFragaImage,
+      explanationImage: sakerhetOljetryckForklaringImage
+    },
+    {
+      id: "sakerhet-2-q-real-16",
+      text: "Du upptäcker att motortemperaturen är för hög. Vad kan felet vara?",
+      options: [
+        "Kupévärmaren är för låg",
+        "Kylvätskan består enbart av glykol.",
+        "Kupévärmaren är för hög.",
+        "Elfläkten till kylaren har gått sönder."
+      ],
+      correctIndex: 3
+    },
+    {
+      id: "sakerhet-2-q-real-17",
+      text: "Vad varnar denna kontrollampa för?",
+      options: [
+        "Att bromsvätsketemperaturen är för hög.",
+        "Att motorns kylvätsketemperaturen är för hög.",
+        "Att växellådas olja är överhettad.",
+        "Att katalysator är överhettad."
+      ],
+      correctIndex: 1,
+      questionImage: sakerhetKylvatskaLampaFragaImage,
+      explanationImage: sakerhetKylvatskaLampaForklaringImage
+    },
+    {
+      id: "sakerhet-2-q-real-18",
+      text: "Hur bör du hantera situationen, när denna kontroll lampan lyser?",
+      options: [
+        "Kolla säkringar.",
+        "Stanna och fyll på glykolen.",
+        "Kontrollera batteriets vatten.",
+        "Stanna på tomgång tills temperaturen sänkts, stäng av motorn, därefter kolla kylsvätskan."
+      ],
+      correctIndex: 3,
+      questionImage: sakerhetTempHanteraFragaImage,
+      explanationImage: sakerhetTempHanteraForklaringImage
+    },
+    {
+      id: "sakerhet-2-q-real-19",
+      text: "Vilken vätska ska vid behov fyllas på bilbatteriet och till vilken nivå?",
+      options: [
+        "Svavelsyra till cirka i cm över blyplattorna.",
+        "Destillerat eller avjoniserat vatten till i höjd med blyplattorna.",
+        "Svavelsyra till höjd med blyplattorna.",
+        "Destillerat eller avjoniserat vatten till cirka 1cm över blyplattorna."
+      ],
+      correctIndex: 3,
+      explanationImage: sakerhetBatteriVatskaForklaringImage
+    },
+    {
+      id: "sakerhet-2-q-real-20",
+      text: "Vad är sant angående elsystemet / belysningen i bilbatteriet i bilen?",
+      options: [
+        "Batteriet drar ström från bilen.",
+        "Om batteriet är urladdat kan det inte frysa sönder 5-10 minusgrader.",
+        "När det är låg vätskenivå i batteriet kan blyoxidplattorna förstöras.",
+        "Vid behov på vintern skall du fylla glykol i batteriet."
+      ],
+      correctIndex: 2,
+      explanationImage: sakerhetBatteriVatskaForklaringImage
+    },
+    {
+      id: "sakerhet-2-q-real-21",
+      text: "Vad är sant om batteriet?",
+      options: [
+        "Batteriets kapaciteten måste kontrolleras före laddningen.",
+        "Batteriets locken minskar bilens vätskenivån om den är inte ordentligt stängt.",
+        "Batteriet är den starkaste delen som driver energi för bilen.",
+        "Batteriet vätska måste bytas vartannat år."
+      ],
+      correctIndex: 0,
+      explanationImage: sakerhetBatteriKapacitetForklaringImage
+    },
+    {
+      id: "sakerhet-2-q-real-22",
+      text: "Vilket av elsystemet tar mest ström i bilen?",
+      options: [
+        "Batteriet",
+        "Start motorn",
+        "Generatorn",
+        "Lamporna"
+      ],
+      correctIndex: 1,
+      explanationImage: sakerhetElsystemStromForklaringImage
+    },
+    {
+      id: "sakerhet-2-q-real-23",
+      text: "Hur kan du se att generatorremmen gått av då du kör?",
+      options: [
+        "Laddningslampan lyser.",
+        "Helljuset fungerar inte.",
+        "Inre belysning fungerar inte.",
+        "Oljetryckslampan lyser."
+      ],
+      correctIndex: 0,
+      explanationImage: sakerhetGeneratorLaddarInteForklaringImage
+    },
+    {
+      id: "sakerhet-2-q-real-24",
+      text: "Vad betyder nedanstående kontrollampa?",
+      options: [
+        "Generatorn laddar inte.",
+        "Batteriets cellerna är helt urladdade.",
+        "Batteriet är tomt på vätskan",
+        "En batterikabel har glapp."
+      ],
+      correctIndex: 0,
+      questionImage: sakerhetKontrollampaGeneratorFragaImage
+    },
+    {
+      id: "sakerhet-2-q-real-25",
+      text: "Du kör taxi och känner skakningar i ratten. Vad är den troligaste orsaken?",
+      options: [
+        "Styrservopumpen är ur funktion.",
+        "En balansvikt har lossnat från ett framhjul",
+        "Vätskenivån i styrservon är för låg.",
+        "Bakvagnsinställningen är felaktig"
+      ],
+      correctIndex: 1,
+      explanationImage: sakerhetStyrinrattningForklaringImage
+    },
+    {
+      id: "sakerhet-2-q-real-26",
+      text: "Om du trycker på fotbromspedalen, vilka hjul påverkas av din bromsning?",
+      options: [
+        "Alla hjul tar jämnt bromsverkan.",
+        "Om bilen är understyrd påverkas då framhjulen.",
+        "Om bilen är överstyrd påverkas bakhjulen.",
+        "Framhjulen bara, eftersom handbromsen påverkar bakhjulen."
+      ],
+      correctIndex: 0,
+      explanationImage: sakerhetFotbromsForklaringImage
+    },
+    {
+      id: "sakerhet-2-q-real-27",
+      text: "Hur kontrollerar man på bästa sätt att styrservon fungerar?",
+      options: [
+        "Man kontrollerar att vätskenivån i behållaren för styrservooljan är rätt.",
+        "Man krypkör och styr maximalt åt båda hållen och kontrollerar att styrningen går lätt.",
+        "Man står still med påslagen motor och styr maximalt åt båda hållen och kontrollerar att styrningen går lätt.",
+        "Håll ratten med lätt tryck åt endera hållet. Starta motorn. Om du känner ett ryck i ratten när motorn startar vet du att styrservon fungerar."
+      ],
+      correctIndex: 3,
+      explanationImage: sakerhetStyrservoKontrollForklaringImage
+    },
+    {
+      id: "sakerhet-2-q-real-28",
+      text: "Vilket är troligen felet om lampan tänds under körning?",
+      options: [
+        "Bromsarna kan lätt låsa sig vid hårdbromsning.",
+        "Parkering bromsen är ur funktionen.",
+        "ABS bromsarna har slutat fungera.",
+        "En bromskrets har slutat fungera, eller för låg vätska nivå."
+      ],
+      correctIndex: 3,
+      questionImage: sakerhetBromslampaFragaImage,
+      explanationImage: sakerhetBromslampaForklaringImage
+    },
+    {
+      id: "sakerhet-2-q-real-29",
+      text: "Hur kan du veta att en ABS broms börjar arbeta?",
+      options: [
+        "Bromspedalen blir hårdare.",
+        "Genom att hålla in bromspedalen och känna hur den vibrerar.",
+        "Det börjar lukta vid inbromsning."
+      ],
+      correctIndex: 1,
+      explanationImage: sakerhetAbsForklaringImage
+    },
+    {
+      id: "sakerhet-2-q-real-30",
+      text: "Vilket förnybart bränsle blandas in i nästan all bensin i Sverige i dag?",
+      options: [
+        "Etanol",
+        "Benzen",
+        "Biogas",
+        "Diesel"
+      ],
+      correctIndex: 0
+    },
+    {
+      id: "sakerhet-2-q-real-31",
+      text: "Vad händer med däck som innehålla enbart syntetgummi i stark kyla?",
+      options: [
+        "Vinterdäck innehåller mer plats och gummi än sommar däck.",
+        "Plastinblandningen i sommardäcket gör att dessa hårdnar vid minusgrader, vilket medför sämre väggrep än vinterdäck.",
+        "Plastinblandningen i sommardäcket gör att dessa mjuknar vid minusgrader, vilket medför bättre väggrep än vinterdäck.",
+        "Sommardäck är innehåller mer cancerframkallande ämne än vinterdäck."
+      ],
+      correctIndex: 1,
+      explanationImage: sakerhetSommardackForklaringImage
+    },
+    {
+      id: "sakerhet-2-q-real-32",
+      text: "Vad påverkar fordonet så att det drar på sidan, när man kör rakt?",
+      options: [
+        "För lite luft i ett framhjul gör att fordonet drar åt det hållet.",
+        "Styrenheten behöver justeras.",
+        "För lite servovätska.",
+        "För lite luft i ett framhjul gör att fordonet drar åt andra hållet."
+      ],
+      correctIndex: 0,
+      explanationImage: sakerhetDackDrarForklaringImage
+    },
+    {
+      id: "sakerhet-2-q-real-33",
+      text: "Vad bör du byta när du ser slitagevarnare?",
+      options: [
+        "Byta batteriet",
+        "Byta bromsklossar",
+        "Byta generatorrem",
+        "Byta däck"
+      ],
+      correctIndex: 3,
+      explanationImage: sakerhetSlitagevarnareForklaringImage
+    },
+    {
+      id: "sakerhet-2-q-real-34",
+      text: "Vad bör du byta eller åtgärda för att undvika motorhavari samt dyrbara reperationer innan felet förvärras?",
+      options: [
+        "Kamaxelremmen byts regelbundet.",
+        "Bromsklostret.",
+        "Olja och filtret.",
+        "Fläckt remmen."
+      ],
+      correctIndex: 0,
+      explanationImage: sakerhetKamaxelremForklaringImage
+    },
+    {
+      id: "sakerhet-2-q-real-35",
+      text: "Hur förändras köregenskaperna när du ändrar bilens vikt från tjänstevikt till totalvikt?",
+      options: [
+        "Bromssträckan blir längre.",
+        "Vingligare körning.",
+        "Bilen blir svårstyrd i nedförslut."
+      ],
+      correctIndex: 0
+    },
+    {
+      id: "sakerhet-2-q-real-36",
+      text: "Du har kopplat en släpvagn till din taxi, men kultrycket är för högt. Vad kan det medföra?",
+      options: [
+        "Katastrofbromsen upphör att fungera",
+        "Halvljuset blir bländande",
+        "Framdäckens väggrepp blir bättre",
+        "Slitaget på bilens framdäck ökar"
+      ],
+      correctIndex: 1,
+      explanationImage: sakerhetKultryckForklaringImage
+    },
+    {
+      id: "sakerhet-2-q-real-37",
+      text: "Kontrollampan på bilden tänds under körning. Vilken bör din första åtgärd vara?",
+      options: [
+        "Jag kontrollerar motorolja.",
+        "Jag byter batteri.",
+        "Jag kontrollerar generatorremmen.",
+        "Jag fyller på destillerat vatten i batteriet."
+      ],
+      correctIndex: 2,
+      questionImage: sakerhetKontrollampaGeneratorRemFragaImage
+    },
+    {
+      id: "sakerhet-2-q-real-38",
+      text: "Vad kan du göra för att minska fordonets bränsleförbrukning?",
+      options: [
+        "Alltid använda konstantfarthållaren",
+        "Undvika att använda den elektriska motorvärmare vid temperaturer över + 15 °C",
+        "Värma upp motorn på tomgång",
+        "Utföra regelbunden service"
+      ],
+      correctIndex: 3
+    },
+    {
+      id: "sakerhet-2-q-real-39",
+      text: "Du har fått punktering och monterat ett nödhjul. Vilket alternativ är riktigt?",
+      options: [
+        "Det finns särskilda begränsningar för hur fort jag får köra med nödhjulet.",
+        "Bilen får endast köras utan passagerare",
+        "Bilen får endast bogseras till närmaste gummiverkstad.",
+        "Nödhjulet får endast användas på sommarväglag."
+      ],
+      correctIndex: 0
+    },
+    {
+      id: "sakerhet-2-q-real-40",
+      text: "Vad innebär det om den här kontrollampan tänds under färd?",
+      options: [
+        "Det låsningsfria bromssystemet är ur funktion",
+        "Det låsningsfria bromssystemet är aktiverat",
+        "Det automatiska bränslesystemet är ur funktion",
+        "Det är för lite vätska i bromssystemet"
+      ],
+      correctIndex: 0,
+      questionImage: sakerhetAbsLampaFragaImage
+    },
+    {
+      id: "sakerhet-2-q-real-41",
+      text: "Vilket påstående om fordons koldioxidutsläpp är riktigt?",
+      options: [
+        "De påverkar inte växthuseffekten",
+        "De påverkas av förarens körsätt",
+        "De försämrar trädens tillväxt",
+        "De minskas av katalysatorn"
+      ],
+      correctIndex: 1
+    },
+    {
+      id: "sakerhet-2-q-real-42",
+      text: "Din bil är manuellt växlad. Vad kan du göra för att minska bilens bränsleförbrukning?",
+      options: [
+        "Växla upp tidigt och köra på så hög växel som möjligt",
+        "Växla upp sent och köra på så låg växel som möjligt.",
+        "Använd konstatfarthållare så ofta som möjligt",
+        "Alltid köra på 4:ans växel vid farter under 50 km i timmen"
+      ],
+      correctIndex: 0
+    },
+    {
+      id: "sakerhet-2-q-real-43",
+      text: "Hur påverkas koldioxid utsläppen om bränsleförbrukningen i din bil minskar?",
+      options: [
+        "De minskar proportionellt lika mycket som bränsle förbrukningen",
+        "De minskar dubbelt så mycket som bränsle förbrukningen",
+        "De minskar 4 gånger så mycket som bränsleförbrukningen",
+        "De påverkas inte alls"
+      ],
+      correctIndex: 0
+    },
+    {
+      id: "sakerhet-2-q-real-44",
+      text: "I vilken behållare finns vätskan som kan visa om det är något fel på bromsarna?",
+      options: [
+        "Behållaren i ring A",
+        "Behållaren i ring B",
+        "Behållaren i ring C",
+        "Behållaren i ring D"
+      ],
+      correctIndex: 0,
+      questionImage: sakerhetBromsvatskaBehallareFragaImage
+    },
+    {
+      id: "sakerhet-2-q-real-45",
+      text: "Vilka däck är ur miljösynpunkt bäst att köpa till din taxi?",
+      options: [
+        "Däck som innehåller hög HA-olja",
+        "Däck som innehåller låg HA-olja",
+        "Däck som innehåller ingen HA-olja"
+      ],
+      correctIndex: 2
+    },
+    {
+      id: "sakerhet-2-q-real-46",
+      text: "Vad bör du göra inför vintern för att undvika dyra reparationer på ditt fordon?",
+      options: [
+        "Byta bränslefilter",
+        "Kontrollera att glykoltillsatsen i kylsystemet är tillräckligt",
+        "Byta bromsvätska",
+        "Byta växellådsolja"
+      ],
+      correctIndex: 1
+    }
+  ]
+};
+
 export const questionGroups: CategoryGroup[] = [
   {
     id: "main",
@@ -528,7 +1116,7 @@ export const questionGroups: CategoryGroup[] = [
       {
         id: "sakerhet",
         name: "Säkerhet",
-        sections: [sakerhet1Section, emptySection("sakerhet-2", "Säkerhet 2")]
+        sections: [sakerhet1Section, sakerhet2Section]
       },
       {
         id: "lagstiftning",
