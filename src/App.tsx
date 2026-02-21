@@ -165,82 +165,72 @@ export default function App(): JSX.Element {
   };
 
   return (
-    <main className="app-shell">
-      <header className="topbar">
-        <div>
-          <h1>Taxi Licens - Frågebank</h1>
-          <p>Träna ämnen och sektioner med tydlig översikt.</p>
+    <div className="app-wrap">
+      <header className="top-nav">
+        <div className="top-nav-inner">
+          <div className="top-nav-brand">
+            <span className="top-nav-logo">Taxi Licens</span>
+            <span className="top-nav-tagline">Frågebank</span>
+          </div>
+          <nav className="top-nav-tabs" role="tablist">
+            {questionGroups.map((group) => (
+              <button
+                key={group.id}
+                role="tab"
+                type="button"
+                className={`top-nav-tab ${selectedGroup.id === group.id ? "active" : ""}`}
+                onClick={() => selectGroup(group.id)}
+              >
+                {group.name}
+              </button>
+            ))}
+          </nav>
+          <div className="top-nav-stats">
+            <span className="top-nav-stat">{selectedSection.questions.length} frågor</span>
+            <span className="top-nav-stat accent">{answeredCount} klara</span>
+            <span className="top-nav-stat muted">{remainingCount} kvar</span>
+          </div>
         </div>
       </header>
 
-      <section className="card">
-        <div className="nav-header">
-          <h2>Navigation</h2>
-          <p>
-            {selectedGroup.name} / {selectedCategory.name} / {selectedSection.name}
-          </p>
-        </div>
-
-        <div className="group-tabs">
-          {questionGroups.map((group) => (
-            <button
-              key={group.id}
-              className={`group-tab ${selectedGroup.id === group.id ? "active" : ""}`}
-              onClick={() => selectGroup(group.id)}
-              type="button"
-            >
-              {group.name}
-            </button>
-          ))}
-        </div>
-
-        <div className="category-grid">
-          {selectedGroup.categories.map((category) => (
-            <button
-              key={category.id}
-              className={`category-card ${selectedCategory.id === category.id ? "active" : ""}`}
-              onClick={() => selectCategory(category.id)}
-              type="button"
-            >
-              <span>{category.name}</span>
-              <small>{category.sections.length} sektioner</small>
-            </button>
-          ))}
-        </div>
-
-        <div className="section-selector">
-          <strong>Sektioner</strong>
-          <div className="chips">
-            {selectedCategory.sections.map((section) => (
-              <button
-                key={section.id}
-                className={`chip ${selectedSection.id === section.id ? "active" : ""}`}
-                onClick={() => selectSection(section.id)}
-                type="button"
-              >
-                {section.name}
-              </button>
-            ))}
+      <div className="nav-strip">
+        <div className="nav-strip-inner">
+          <div className="nav-strip-group">
+            <span className="nav-strip-label">Kategori</span>
+            <div className="nav-strip-pills">
+              {selectedGroup.categories.map((category) => (
+                <button
+                  key={category.id}
+                  type="button"
+                  className={`nav-pill ${selectedCategory.id === category.id ? "active" : ""}`}
+                  onClick={() => selectCategory(category.id)}
+                >
+                  {category.name}
+                </button>
+              ))}
+            </div>
+          </div>
+          <div className="nav-strip-group">
+            <span className="nav-strip-label">Sektion</span>
+            <div className="nav-strip-chips">
+              {selectedCategory.sections.map((section) => (
+                <button
+                  key={section.id}
+                  type="button"
+                  className={`nav-chip ${selectedSection.id === section.id ? "active" : ""}`}
+                  onClick={() => selectSection(section.id)}
+                >
+                  {section.name}
+                </button>
+              ))}
+            </div>
           </div>
         </div>
+      </div>
 
-        <div className="nav-summary">
-          <span className="stat-item">
-            <span className="stat-label">Totalt frågor:</span>
-            <span className="stat-value stat-total">{selectedSection.questions.length}</span>
-          </span>
-          <span className="stat-item">
-            <span className="stat-label">Klara:</span>
-            <span className="stat-value stat-completed">{answeredCount}</span>
-          </span>
-          <span className="stat-item">
-            <span className="stat-label">Kvar:</span>
-            <span className="stat-value stat-remaining">{remainingCount}</span>
-          </span>
-        </div>
-      </section>
+      <main className="main-content">
 
-      <section className="card question-card">
+        <section className="card question-card">
         <div className="question-header">
           <h3>{selectedSection.name}</h3>
           <span>{hasQuestions ? `Fråga ${safeQuestionIndex + 1} av ${selectedSection.questions.length}` : "Inga frågor ännu"}</span>
@@ -329,9 +319,9 @@ export default function App(): JSX.Element {
             Starta om test
           </button>
         </div>
-      </section>
+        </section>
 
-      {showOverview && (
+          {showOverview && (
         <section className="card">
           <h3>Översikt frågor</h3>
           <div className="nav-summary">
@@ -361,9 +351,9 @@ export default function App(): JSX.Element {
             })}
           </div>
         </section>
-      )}
+        )}
 
-      {showExplanation && hasQuestions && hasExplanation && (
+        {showExplanation && hasQuestions && hasExplanation && (
         <section className="modal-backdrop" role="dialog" aria-modal="true">
           <div className="modal">
             <div className="modal-header">
@@ -385,7 +375,7 @@ export default function App(): JSX.Element {
         </section>
       )}
 
-      {showTestResult && (
+        {showTestResult && (
         <section className="modal-backdrop" role="dialog" aria-modal="true">
           <div className="modal result-modal">
             <div className="modal-header">
@@ -415,7 +405,8 @@ export default function App(): JSX.Element {
             </div>
           </div>
         </section>
-      )}
-    </main>
+        )}
+      </main>
+    </div>
   );
 }
