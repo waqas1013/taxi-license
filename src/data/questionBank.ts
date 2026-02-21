@@ -361,6 +361,37 @@ import lagstiftning4VagmarkeFarligKorsningFragaImage from "../assets/lagstiftnin
 import lagstiftning4HastighetVagmarkeFragaImage from "../assets/lagstiftning-4-hastighet-vagmarke-fraga.png";
 import lagstiftning4JarnvagkorsningFragaImage from "../assets/lagstiftning-4-jarnvagkorsning-fraga.png";
 import lagstiftning4LattSlapfordonFragaImage from "../assets/lagstiftning-4-latt-slapfordon-fraga.png";
+import lagstiftning5VolvoV70PassagerareFragaImage from "../assets/lagstiftning-5-volvo-v70-passagerare-fraga.png";
+import lagstiftning5VolvoV70PassagerareForklaringImage from "../assets/lagstiftning-5-volvo-v70-passagerare-forklaring.png";
+import lagstiftning5TaxiforarlegitimationTransportForklaringImage from "../assets/lagstiftning-5-taxiforarlegitimation-transport-forklaring.png";
+import lagstiftning5VilotidHemresaForklaring1Image from "../assets/lagstiftning-5-vilotid-hemresa-forklaring-1.png";
+import lagstiftning5VilotidHemresaForklaring2Image from "../assets/lagstiftning-5-vilotid-hemresa-forklaring-2.png";
+import lagstiftning5VagmarkeOmkorningFragaImage from "../assets/lagstiftning-5-vagmarke-omkorning-fraga.png";
+import lagstiftning5VajningspliktHogerFragaImage from "../assets/lagstiftning-5-vajningsplikt-hoger-fraga.png";
+import lagstiftning5ForetradeHogerFragaImage from "../assets/lagstiftning-5-foretrade-hoger-fraga.png";
+import lagstiftning5Korpass4OktFragaImage from "../assets/lagstiftning-5-korpass-4-okt-fraga.png";
+import lagstiftning5Korpass4OktForklaring1Image from "../assets/lagstiftning-5-korpass-4-okt-forklaring-1.png";
+import lagstiftning5Korpass4OktForklaring2Image from "../assets/lagstiftning-5-korpass-4-okt-forklaring-2.png";
+import lagstiftning5VilotidsnoteringarFragaImage from "../assets/lagstiftning-5-vilotidsnoteringar-fraga.png";
+import lagstiftning5VilotidsnoteringarForklaring1Image from "../assets/lagstiftning-5-vilotidsnoteringar-forklaring-1.png";
+import lagstiftning5VilotidsnoteringarForklaring2Image from "../assets/lagstiftning-5-vilotidsnoteringar-forklaring-2.png";
+import lagstiftning5VilotidTisdagForklaring1Image from "../assets/lagstiftning-5-vilotid-tisdag-forklaring-1.png";
+import lagstiftning5VilotidTisdagForklaring2Image from "../assets/lagstiftning-5-vilotid-tisdag-forklaring-2.png";
+import lagstiftning5VagmarkeTaxiStannaFragaImage from "../assets/lagstiftning-5-vagmarke-taxi-stanna-fraga.png";
+import lagstiftning5SvangaVansterVajningspliktFragaImage from "../assets/lagstiftning-5-svanga-vanster-vajningsplikt-fraga.png";
+import lagstiftning5StannaHeldragenKantlinjeFragaImage from "../assets/lagstiftning-5-stanna-heldragen-kantlinje-fraga.png";
+import lagstiftning5ParkeraTaxiDatumzonFragaImage from "../assets/lagstiftning-5-parkera-taxi-datumzon-fraga.png";
+import lagstiftning5StannaParkera15minFragaImage from "../assets/lagstiftning-5-stanna-parkera-15min-fraga.png";
+import lagstiftning5TaxiZonStannaFragaImage from "../assets/lagstiftning-5-taxi-zon-stanna-fraga.png";
+import lagstiftning5VilotidSenastSlutaForklaring1Image from "../assets/lagstiftning-5-vilotid-senast-sluta-forklaring-1.png";
+import lagstiftning5VilotidSenastSlutaForklaring2Image from "../assets/lagstiftning-5-vilotid-senast-sluta-forklaring-2.png";
+import lagstiftning5VilotidSenastAvslutaForklaring1Image from "../assets/lagstiftning-5-vilotid-senast-avsluta-forklaring-1.png";
+import lagstiftning5VilotidSenastAvslutaForklaring2Image from "../assets/lagstiftning-5-vilotid-senast-avsluta-forklaring-2.png";
+import lagstiftning5VolvoV70BagagePassagerareFragaImage from "../assets/lagstiftning-5-volvo-v70-bagage-passagerare-fraga.png";
+import lagstiftning5SvangaHogerKorsningFragaImage from "../assets/lagstiftning-5-svanga-hoger-korsning-fraga.png";
+import lagstiftning5VilotidHemfardStockholmForklaring1Image from "../assets/lagstiftning-5-vilotid-hemfard-stockholm-forklaring-1.png";
+import lagstiftning5VilotidHemfardStockholmForklaring2Image from "../assets/lagstiftning-5-vilotid-hemfard-stockholm-forklaring-2.png";
+import lagstiftning5VagmarkePasseraFordonFragaImage from "../assets/lagstiftning-5-vagmarke-passera-fordon-fraga.png";
 
 const emptySection = (id: string, name: string): QuestionSection => ({
   id,
@@ -4561,6 +4592,316 @@ const lagstiftning4Section: QuestionSection = {
   ]
 };
 
+const lagstiftning5Section: QuestionSection = {
+  id: "lagstiftning-5",
+  name: "Lagstiftning 5",
+  questions: [
+    {
+      id: "lagstiftning-5-q-real-1",
+      text: "Din taxi är en Volvo V70. Du har i bagageutrymmet last som väger 350kg. Hur många passagerare kan du ta om varje passagerare väger 70kg?",
+      options: [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      correctIndex: 1,
+      questionImage: lagstiftning5VolvoV70PassagerareFragaImage,
+      explanationImage: lagstiftning5VolvoV70PassagerareForklaringImage
+    },
+    {
+      id: "lagstiftning-5-q-real-2",
+      text: "För vilket av dessa transporter krävs det att du har taxiförarlegitimation?",
+      options: [
+        "En persontransport med motorcykel",
+        "En persontransport med en buss som tar 9-17 passagerare",
+        "En persontransport med en personbil i linjetrafik",
+        "En persontransport med en buss som tar fler än 17 passagerare"
+      ],
+      correctIndex: 2,
+      explanationImage: lagstiftning5TaxiforarlegitimationTransportForklaringImage
+    },
+    {
+      id: "lagstiftning-5-q-real-3",
+      text: "Efter ett dygns vila har du kört taxi från kl. 16.00. Du har gjort uppehåll i arbetet mellan 19.00 och 22.00 då du får en långkörning till Stockholm. Den tar precis 10 timmar utan paus och lika lång tid tillbaka. Du startar hemresan från Stockholm kl. 16.00. Hur många timmar får du då köra som mest utan ny vila enligt vilotidsförordningen?",
+      options: [
+        "Tre",
+        "Fem",
+        "Sju",
+        "Tio",
+        "Tio"
+      ],
+      correctIndex: 0,
+      explanationImage: [
+        lagstiftning5VilotidHemresaForklaring1Image,
+        lagstiftning5VilotidHemresaForklaring2Image
+      ]
+    },
+    {
+      id: "lagstiftning-5-q-real-4",
+      text: "Vad innebär vägmärket?",
+      options: [
+        "En tvåhjulig motorcykel får köra om en personbil",
+        "All omkörning är förbjuden",
+        "En personbil får köra om en lastbil",
+        "En lastbil får köra om en tvåhjulig motorcykel"
+      ],
+      correctIndex: 3,
+      questionImage: lagstiftning5VagmarkeOmkorningFragaImage
+    },
+    {
+      id: "lagstiftning-5-q-real-5",
+      text: "Får en taxiförare göra tillfälliga avvikelser från reglerna om dygnsvila?",
+      options: [
+        "Ja, på direkt order av arbetsgivaren, som då tar över ansvaret.",
+        "Ja, om föraren har blivit inblandad i en trafikolycka och därför är försenad.",
+        "Ja, körningen får slutföras om föraren inte hinner tillbaka till stationeringsorten i tid.",
+        "Ja, när föraren utfört andra arbetsuppgifter än körning får dygnsvilan förkortas med högst två timmar",
+        "Nej, aldrig"
+      ],
+      correctIndex: 1
+    },
+    {
+      id: "lagstiftning-5-q-real-6",
+      text: "Du ska fortsätta köra rakt fram. Vilken av följande situationer har du väjningsplikt mot bilen från höger?",
+      options: [
+        "I situation A",
+        "I situation B",
+        "I situation C",
+        "I situation D"
+      ],
+      correctIndex: 3,
+      questionImage: lagstiftning5VajningspliktHogerFragaImage
+    },
+    {
+      id: "lagstiftning-5-q-real-7",
+      text: "Du ska fortsätta rakt fram. I vilken situation ska du lämna företräde till bilen från höger?",
+      options: [
+        "I situation A",
+        "I situation B",
+        "I situation C",
+        "I situation D"
+      ],
+      correctIndex: 0,
+      questionImage: lagstiftning5ForetradeHogerFragaImage
+    },
+    {
+      id: "lagstiftning-5-q-real-8",
+      text: "Du har slutat ditt körpass den 4 oktober kl. 04.00. När kan du tidigast börja nästa körpass enligt tidboksbladet?",
+      options: [
+        "13.00",
+        "14.00",
+        "15.00",
+        "16.00"
+      ],
+      correctIndex: 1,
+      questionImage: lagstiftning5Korpass4OktFragaImage,
+      explanationImage: [
+        lagstiftning5Korpass4OktForklaring1Image,
+        lagstiftning5Korpass4OktForklaring2Image
+      ]
+    },
+    {
+      id: "lagstiftning-5-q-real-9",
+      text: "Du ska svänga till höger. Vad är rätt?",
+      options: [
+        "Jag får köra men måste först stanna vid stopplinjen.",
+        "Jag ska stanna på stopplinjen och vänta på grönt ljus.",
+        "Jag får köra utan att stanna vid stopplinjen."
+      ],
+      correctIndex: 2
+    },
+    {
+      id: "lagstiftning-5-q-real-10",
+      text: "Du jobbar som tidningsbud kl. 04.00-07.00, kör skolbarn i 07.00-10.00, arbetar i beställningscentralens växel kl. 12.00-13.00 samt kör skolbarn igen kl. 13.00-15.00. Vilka vilotidsnoteringar är riktiga för denna arbetsdag enligt vilotidsförordningen?",
+      options: ["Bild A", "Bild B", "Bild C", "Bild D"],
+      correctIndex: 0,
+      questionImage: lagstiftning5VilotidsnoteringarFragaImage,
+      explanationImage: [
+        lagstiftning5VilotidsnoteringarForklaring1Image,
+        lagstiftning5VilotidsnoteringarForklaring2Image
+      ]
+    },
+    {
+      id: "lagstiftning-5-q-real-11",
+      text: "Efter 11 timmars ledighet kör du taxi en måndag kl. 17.00 – 02.00 med en ny viloperiod kl. 20.00 – 21.00. När får du tidigast börja köra taxi på tisdagen enligt vilotidsförordningen?",
+      options: ["Kl. 09.00", "Kl. 10.00", "Kl. 11.00", "Kl. 12.00"],
+      correctIndex: 1,
+      explanationImage: [
+        lagstiftning5VilotidTisdagForklaring1Image,
+        lagstiftning5VilotidTisdagForklaring2Image
+      ]
+    },
+    {
+      id: "lagstiftning-5-q-real-12",
+      text: "Du kör taxi en måndag kl. 8.00. Efter vilket eller vilka vägmärken får du stanna för att vänta på en passagerare som dröjer?",
+      options: [
+        "Enbart efter märkena på bild A",
+        "Enbart efter märket på bild B",
+        "Efter märken på både bild A och B"
+      ],
+      correctIndex: 2,
+      questionImage: lagstiftning5VagmarkeTaxiStannaFragaImage
+    },
+    {
+      id: "lagstiftning-5-q-real-13",
+      text: "Vad gäller när ett fordon ska köra in på motorväg från ett accelerationsfält?",
+      options: [
+        "Den som kör på motorväg har väjningsplikt mot trafik som kommer från accelerationsfält",
+        "Den som kör på motorväg är skyldig att underlätta infart för trafik som kommer från accelerationsfält",
+        "Den som ska lämna accelerationsfältet ska göra det så sent som möjligt",
+        "Den som ska lämna accelerationsfältet ska alltid köra i högsta tillåtna hastighet."
+      ],
+      correctIndex: 1
+    },
+    {
+      id: "lagstiftning-5-q-real-14",
+      text: "Du ska svänga vänster i korsningen. Vad gäller?",
+      options: [
+        "Jag har väjningsplikt mot all korsande trafik",
+        "Jag har väjningsplikt mot mötande trafik",
+        "Jag har väjningsplikt mot trafik från höger",
+        "All korsande trafik har väjningsplikt mot mig"
+      ],
+      correctIndex: 3,
+      questionImage: lagstiftning5SvangaVansterVajningspliktFragaImage
+    },
+    {
+      id: "lagstiftning-5-q-real-15",
+      text: "Du behöver stanna för att släppa av en passagerare. Vad gäller här?",
+      options: [
+        "Jag får stanna intill den heldragna kantlinjen.",
+        "Jag får stanna intill trottoarkanten.",
+        "Jag får inte stanna."
+      ],
+      correctIndex: 0,
+      questionImage: lagstiftning5StannaHeldragenKantlinjeFragaImage
+    },
+    {
+      id: "lagstiftning-5-q-real-16",
+      text: "Du är anställd som förare i ett taxiföretag. Får du köra en skolskjuts med en buss som har sittplats för 10 passagerare?",
+      options: [
+        "Ja, alltid",
+        "Ja, men enbart om bussen är registrerad som taxifordon",
+        "Ja, men enbart om jag har körkort med behörigheten D",
+        "Nej, aldrig"
+      ],
+      correctIndex: 2
+    },
+    {
+      id: "lagstiftning-5-q-real-17",
+      text: "Du ska parkera din taxi fredagen den 12:e så att den kan stå kvar så länge som möjligt. På vilken sida av gatan ska du enligt vägmärket parkera och hur länge får taxin stå kvar innan du måste flytta den?",
+      options: [
+        "På den sida som har jämna husnummer. Taxin får stå kvar till lördag kl. 24.00",
+        "På den sida som har udda husnummer. Taxin får stå kvar till lördag 24.00",
+        "På den sida som har udda husnummer. Taxin får stå kvar till söndag kl. 24.00",
+        "På den sida som har jämna husnummer. Taxin får stå kvar till söndag kl. 24.00"
+      ],
+      correctIndex: 0,
+      questionImage: lagstiftning5ParkeraTaxiDatumzonFragaImage
+    },
+    {
+      id: "lagstiftning-5-q-real-18",
+      text: "Polisen begär att få se dina körpassrapporter vid en poliskontroll. För vilket eller vilka körpass är du skyldig att visa upp kopior av körpassrapporter?",
+      options: [
+        "Enbart för det senaste föregående körpasset",
+        "Enbart körpassen under det senaste dygnet",
+        "Enbart körpassen under de två senaste dygnen",
+        "Körpassen under de sju senaste dygnen."
+      ],
+      correctIndex: 2
+    },
+    {
+      id: "lagstiftning-5-q-real-19",
+      text: "Vid vilken av följande tidpunkter är det enligt vägmärkena tillåtet att stanna och parkera 15 min?",
+      options: [
+        "En vardag som inte är dag före helgdag kl. 07.00",
+        "En vardag som inte är dag före helgdag kl. 17.00",
+        "En vardag som inte är dag före helgdag kl. 15.00",
+        "En lördag kl. 08.00"
+      ],
+      correctIndex: 3,
+      questionImage: lagstiftning5StannaParkera15minFragaImage
+    },
+    {
+      id: "lagstiftning-5-q-real-20",
+      text: "Du kör taxi en vardag tisdag och klockan är 20.00. Får du stanna efter vägmärkena för att släppa av en kund?",
+      options: [
+        "Ja, det är tillåtet",
+        "Nej, det är förbjudet både att stanna och parkera",
+        "Nej, det är tillåtet enbart klockan 06-18"
+      ],
+      correctIndex: 0,
+      questionImage: lagstiftning5TaxiZonStannaFragaImage
+    },
+    {
+      id: "lagstiftning-5-q-real-21",
+      text: "Du är ledig måndag och tisdag och börjar köra taxi onsdag kl. 07.00. Du gör ett uppehåll i arbetet mellan 11.00 och 15.00. När måste du senast sluta köra enligt vilotidsförordningen om du inte gör ett nytt uppehåll?",
+      options: ["kl. 22.00", "kl. 23.00", "kl. 24.00", "kl. 01.00"],
+      correctIndex: 1,
+      explanationImage: [
+        lagstiftning5VilotidSenastSlutaForklaring1Image,
+        lagstiftning5VilotidSenastSlutaForklaring2Image
+      ]
+    },
+    {
+      id: "lagstiftning-5-q-real-22",
+      text: "Efter 11 timmars ledighet börjar du köra taxi kl. 07.00. Du har uppehåll och vila både kl. 11.00 – 12.00 och kl. 18.00 – 19.00. När måste du senast avsluta detta körpass enligt kör- och vilotidsförordningen?",
+      options: ["kl. 20.00", "kl. 21.00", "kl. 22.00", "kl. 23.00"],
+      correctIndex: 1,
+      explanationImage: [
+        lagstiftning5VilotidSenastAvslutaForklaring1Image,
+        lagstiftning5VilotidSenastAvslutaForklaring2Image
+      ]
+    },
+    {
+      id: "lagstiftning-5-q-real-23",
+      text: "Du kör taxi med en Volvo V70 enligt registreringsbeviset. Dina kunders bagage väger 320 kg. Hur många passagerare får du ta med dig om de i genomsnitt väger 70 kg?",
+      options: [
+        "1 passagerare",
+        "2 passagerare",
+        "3 passagerare",
+        "4 passagerare"
+      ],
+      correctIndex: 2,
+      questionImage: lagstiftning5VolvoV70BagagePassagerareFragaImage
+    },
+    {
+      id: "lagstiftning-5-q-real-24",
+      text: "Får du svänga höger i korsningen på bilden?",
+      options: [
+        "Ja, jag får svänga höger utan att stanna",
+        "Ja, men jag måste först stanna eftersom det finns en stoppskylt",
+        "Nej, jag måste stanna och vänta tills konturpilen visar grönt ljus"
+      ],
+      correctIndex: 0,
+      questionImage: lagstiftning5SvangaHogerKorsningFragaImage
+    },
+    {
+      id: "lagstiftning-5-q-real-25",
+      text: "Efter en dags vila har du kört taxi från kl. 16.00. Du har tagit uppehåll i arbetet mellan kl. 19.00 och 22.00 när du får en långkörande till Stockholm. Det tar exakt 10 timmar utan uppehåll och lika lång tid tillbaka. När får du tidigast starta hemfärden från Stockholm enligt vilotidsförordningen?",
+      options: ["Kl. 10.00", "Kl. 12.00", "Kl. 14.00", "Kl. 16.00", "Kl. 19.00"],
+      correctIndex: 3,
+      explanationImage: [
+        lagstiftning5VilotidHemfardStockholmForklaring1Image,
+        lagstiftning5VilotidHemfardStockholmForklaring2Image
+      ]
+    },
+    {
+      id: "lagstiftning-5-q-real-26",
+      text: "Vilka av följande fordon får passera vägmärket?",
+      options: [
+        "Tvåhjuliga fordon och motorcyklar med sidvagn",
+        "Tvåhjuliga motorcyklar och mopeder",
+        "Enbart cyklar och mopeder klass II",
+        "Alla fordon utom personbilar"
+      ],
+      correctIndex: 1,
+      questionImage: lagstiftning5VagmarkePasseraFordonFragaImage
+    }
+  ]
+};
+
 const sakerhet5Section: QuestionSection = {
   id: "sakerhet-5",
   name: "Säkerhet & beteende 5",
@@ -4943,7 +5284,7 @@ export const questionGroups: CategoryGroup[] = [
       {
         id: "lagstiftning",
         name: "Lagstiftning",
-        sections: [lagstiftning1Section, lagstiftning2Section, lagstiftning3Section, lagstiftning4Section]
+        sections: [lagstiftning1Section, lagstiftning2Section, lagstiftning3Section, lagstiftning4Section, lagstiftning5Section]
       },
       {
         id: "karta",
