@@ -74,7 +74,6 @@ import sakerhetSlitagevarnareForklaringImage from "../assets/sakerhet-slitagevar
 import sakerhetKamaxelremForklaringImage from "../assets/sakerhet-kamaxelrem-forklaring.png";
 import sakerhetKultryckForklaringImage from "../assets/sakerhet-kultryck-forklaring.png";
 import sakerhetAstmaAnfallForklaringImage from "../assets/sakerhet-astma-anfall-forklaring.png";
-import sakerhetDackLufttryckForklaringImage from "../assets/sakerhet-dack-lufttryck-forklaring.png";
 import sakerhetKonstgjordAndningForklaringImage from "../assets/sakerhet-konstgjord-andning-forklaring.png";
 import sakerhetAbsFordelarForklaringImage from "../assets/sakerhet-abs-fordelar-forklaring.png";
 import sakerhetTrotthetForklaringImage from "../assets/sakerhet-trotthet-forklaring.png";
@@ -91,7 +90,6 @@ import sakerhetVinterKylsystemForklaringImage from "../assets/sakerhet-vinter-ky
 import sakerhetHjartinfarktForklaringImage from "../assets/sakerhet-hjartinfarkt-forklaring.png";
 import sakerhetVinterdackMonsterdjupForklaringImage from "../assets/sakerhet-vinterdack-monsterdjup-forklaring.png";
 import sakerhetLedgangsreumatismForklaringImage from "../assets/sakerhet-ledgangsreumatism-forklaring.png";
-import sakerhetBilbarnstolForklaringImage from "../assets/sakerhet-bilbarnstol-forklaring.png";
 import sakerhetMobiltelefonUpphinnandeolyckorForklaringImage from "../assets/sakerhet-mobiltelefon-upphinnandeolyckor-forklaring.png";
 import sakerhetServostyrningForklaringImage from "../assets/sakerhet-servostyrning-forklaring.png";
 import sakerhetKallstartMiljoForklaringImage from "../assets/sakerhet-kallstart-miljo-forklaring.png";
@@ -155,8 +153,6 @@ import sakerhetMotorvagAccelerationFaltForklaringImage from "../assets/sakerhet-
 import sakerhetBromsvatskaBehallareFragaImage from "../assets/sakerhet-bromsvatska-behallare-fraga.png";
 import sakerhetKamaxelremByteForklaringImage from "../assets/sakerhet-kamaxelrem-byte-forklaring.png";
 import sakerhetMotortemperaturFlaktremForklaringImage from "../assets/sakerhet-motortemperatur-flaktrem-forklaring.png";
-import sakerhetTaxiprisBerakningFragaImage from "../assets/sakerhet-taxipris-berakning-fraga.png";
-import sakerhetTaxiprisBerakningForklaringImage from "../assets/sakerhet-taxipris-berakning-forklaring.png";
 import sakerhetRmeFordelarForklaringImage from "../assets/sakerhet-rme-fordelar-forklaring.png";
 import sakerhetBrytpunktstariffPrivatpersonerForklaringImage from "../assets/sakerhet-brytpunktstariff-privatpersoner-forklaring.png";
 import sakerhetRullstolTrappaFragaImage from "../assets/sakerhet-rullstol-trappa-fraga.png";
@@ -166,8 +162,6 @@ import sakerhetTrotthetPausForklaringImage from "../assets/sakerhet-trotthet-pau
 import sakerhetTaxiprisBerakning2FragaImage from "../assets/sakerhet-taxipris-berakning-2-fraga.png";
 import sakerhetTaxiprisBerakning2ForklaringImage from "../assets/sakerhet-taxipris-berakning-2-forklaring.png";
 import sakerhetSkolbussBarnFragaImage from "../assets/sakerhet-skolbuss-barn-fraga.png";
-import sakerhetTaxiprisBerakning3FragaImage from "../assets/sakerhet-taxipris-berakning-3-fraga.png";
-import sakerhetTaxiprisBerakning3ForklaringImage from "../assets/sakerhet-taxipris-berakning-3-forklaring.png";
 import sakerhetTaxiprisBerakning4FragaImage from "../assets/sakerhet-taxipris-berakning-4-fraga.png";
 import sakerhetTaxiprisBerakning4ForklaringImage from "../assets/sakerhet-taxipris-berakning-4-forklaring.png";
 import sakerhetTaxiprisBerakning5FragaImage from "../assets/sakerhet-taxipris-berakning-5-fraga.png";
@@ -176,7 +170,6 @@ import sakerhetFarligtGodsSkyltFragaImage from "../assets/sakerhet-farligt-gods-
 import sakerhetFarligtGodsSkyltForklaringImage from "../assets/sakerhet-farligt-gods-skylt-forklaring.png";
 import sakerhetKontrollampaGeneratorRemFragaImage from "../assets/sakerhet-kontrollampa-generator-rem-fraga.png";
 import sakerhetAbsLampaFragaImage from "../assets/sakerhet-abs-lampa-fraga.png";
-import sakerhetBromsvatskaBehallareFragaImage from "../assets/sakerhet-bromsvatska-behallare-fraga.png";
 import lagstiftningGulHeldragenLinjeTrottoarFragaImage from "../assets/lagstiftning-gul-heldragen-linje-trottoar-fraga.png";
 import lagstiftningTidbokAnsvarForklaringImage from "../assets/lagstiftning-tidbok-ansvar-forklaring.png";
 import lagstiftningBussLamnaHallplatsFragaImage from "../assets/lagstiftning-buss-lamna-hallplats-fraga.png";
@@ -288,7 +281,6 @@ import lagstiftning2SvangaVansterTeckenForklaringImage from "../assets/lagstiftn
 import lagstiftning2SvangaVansterReglerFragaImage from "../assets/lagstiftning-2-svanga-vanster-regler-fraga.png";
 import lagstiftning2SvangaVansterReglerForklaringImage from "../assets/lagstiftning-2-svanga-vanster-regler-forklaring.png";
 import lagstiftning2AterkallelseTaxiforarlegitimationForklaringImage from "../assets/lagstiftning-2-aterkallelse-taxiforarlegitimation-forklaring.png";
-import lagstiftning2TaxameterBesiktningForklaringImage from "../assets/lagstiftning-2-taxameter-besiktning-forklaring.png";
 import lagstiftning3ParkeraLordagHamtaFragaImage from "../assets/lagstiftning-3-parkera-lordag-hamta-fraga.png";
 import lagstiftning3VilkenTidInteParkeraFragaImage from "../assets/lagstiftning-3-vilken-tid-inte-parkera-fraga.png";
 import lagstiftning3PolisensTeckenFragaImage from "../assets/lagstiftning-3-polisens-tecken-fraga.png";
