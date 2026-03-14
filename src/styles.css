@@ -1,55 +1,59 @@
 :root {
-  /* Modern Color System - Easy to customize */
-  /* Primary Colors */
-  --color-primary: #3b82f6;
-  --color-primary-hover: #2563eb;
-  --color-primary-light: #dbeafe;
-  --color-primary-lighter: #eff6ff;
-  
-  /* Secondary Colors */
-  --color-secondary: #64748b;
-  --color-secondary-hover: #475569;
-  --color-secondary-light: #f1f5f9;
-  
-  /* Success Colors */
-  --color-success: #10b981;
-  --color-success-hover: #059669;
-  --color-success-light: #d1fae5;
-  --color-success-lighter: #ecfdf5;
-  
-  /* Danger/Error Colors */
-  --color-danger: #ef4444;
-  --color-danger-hover: #dc2626;
-  --color-danger-light: #fee2e2;
-  --color-danger-lighter: #fef2f2;
-  
-  /* Neutral Colors */
-  --color-text-primary: #0f172a;
-  --color-text-secondary: #475569;
-  --color-text-tertiary: #64748b;
-  
-  /* Background Colors */
-  --color-bg-primary: #ffffff;
-  --color-bg-secondary: #f8fafc;
-  --color-bg-tertiary: #f1f5f9;
-  --color-bg-page: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
-  
-  /* Border Colors */
-  --color-border-light: #e2e8f0;
-  --color-border-medium: #cbd5e1;
-  --color-border-dark: #94a3b8;
-  
-  /* Shadow System */
-  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.05);
-  --shadow-md: 0 4px 6px rgba(15, 23, 42, 0.07);
-  --shadow-lg: 0 10px 15px rgba(15, 23, 42, 0.1);
-  --shadow-xl: 0 20px 25px rgba(15, 23, 42, 0.15);
-  
+  /* ── Slate + Teal theme ─────────────────────────────────
+     Slate:  cool gray-blue family  (backgrounds, text, borders)
+     Teal:   fresh green-cyan family (primary actions, accents)
+  ──────────────────────────────────────────────────────── */
+
+  /* Primary – Teal */
+  --color-primary:        #0d9488;   /* teal-600 */
+  --color-primary-hover:  #0f766e;   /* teal-700 */
+  --color-primary-light:  #99f6e4;   /* teal-200 */
+  --color-primary-lighter:#f0fdfa;   /* teal-50  */
+
+  /* Secondary – Slate mid */
+  --color-secondary:       #64748b;  /* slate-500 */
+  --color-secondary-hover: #475569;  /* slate-600 */
+  --color-secondary-light: #e2e8f0;  /* slate-200 */
+
+  /* Success – teal-leaning green */
+  --color-success:         #059669;  /* emerald-600 */
+  --color-success-hover:   #047857;  /* emerald-700 */
+  --color-success-light:   #a7f3d0;  /* emerald-200 */
+  --color-success-lighter: #ecfdf5;  /* emerald-50  */
+
+  /* Danger */
+  --color-danger:          #e11d48;  /* rose-600 */
+  --color-danger-hover:    #be123c;  /* rose-700 */
+  --color-danger-light:    #fecdd3;  /* rose-200 */
+  --color-danger-lighter:  #fff1f2;  /* rose-50  */
+
+  /* Text – slate scale */
+  --color-text-primary:   #0f172a;   /* slate-900 */
+  --color-text-secondary: #334155;   /* slate-700 */
+  --color-text-tertiary:  #64748b;   /* slate-500 */
+
+  /* Backgrounds – off-white / warm slate */
+  --color-bg-primary:   #f8fafc;     /* slate-50  – main card bg (off-white) */
+  --color-bg-secondary: #f1f5f9;     /* slate-100 – subtle section bg       */
+  --color-bg-tertiary:  #e2e8f0;     /* slate-200 – tertiary / disabled     */
+  --color-bg-page:      linear-gradient(160deg, #f1f5f9 0%, #e9f0f4 100%);
+
+  /* Borders – slate */
+  --color-border-light:  #e2e8f0;    /* slate-200 */
+  --color-border-medium: #cbd5e1;    /* slate-300 */
+  --color-border-dark:   #94a3b8;    /* slate-400 */
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.06);
+  --shadow-md: 0 4px 8px rgba(15, 23, 42, 0.09);
+  --shadow-lg: 0 10px 20px rgba(15, 23, 42, 0.12);
+  --shadow-xl: 0 20px 30px rgba(15, 23, 42, 0.16);
+
   /* Transitions */
   --transition-fast: 150ms ease;
   --transition-base: 200ms ease;
   --transition-slow: 300ms ease;
-  
+
   /* Typography */
   font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
   line-height: 1.4;
@@ -82,9 +86,9 @@ button {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: var(--color-bg-primary);
-  border-bottom: 1px solid var(--color-border-light);
-  box-shadow: var(--shadow-sm);
+  background: linear-gradient(90deg, #134e4a 0%, #0f766e 100%); /* teal-900 → teal-700 */
+  border-bottom: 1px solid #0d9488;
+  box-shadow: 0 2px 8px rgba(13, 148, 136, 0.25);
 }
 
 .top-nav-inner {
@@ -105,12 +109,12 @@ button {
 .top-nav-logo {
   font-size: 1.25rem;
   font-weight: 700;
-  color: var(--color-text-primary);
+  color: #f0fdfa;          /* teal-50 – bright on dark bg */
   letter-spacing: -0.02em;
 }
 .top-nav-tagline {
   font-size: 0.7rem;
-  color: var(--color-text-tertiary);
+  color: #5eead4;          /* teal-300 – softer on dark bg */
   text-transform: uppercase;
   letter-spacing: 0.08em;
   margin-top: 1px;
@@ -127,7 +131,7 @@ button {
   padding: 10px 16px;
   border: 0;
   background: transparent;
-  color: var(--color-text-secondary);
+  color: #99f6e4;          /* teal-200 – readable on dark bg */
   font-weight: 500;
   font-size: 0.95rem;
   cursor: pointer;
@@ -136,12 +140,13 @@ button {
   transition: color var(--transition-fast), background var(--transition-fast);
 }
 .top-nav-tab:hover {
-  color: var(--color-primary);
-  background: var(--color-primary-lighter);
+  color: #f0fdfa;
+  background: rgba(255, 255, 255, 0.12);
 }
 .top-nav-tab.active {
-  color: var(--color-primary);
+  color: #f0fdfa;
   font-weight: 600;
+  background: rgba(255, 255, 255, 0.15);
 }
 .top-nav-tab.active::after {
   content: "";
@@ -150,7 +155,7 @@ button {
   right: 16px;
   bottom: 6px;
   height: 2px;
-  background: var(--color-primary);
+  background: #5eead4;    /* teal-300 underline */
   border-radius: 1px;
 }
 
@@ -159,22 +164,23 @@ button {
   align-items: center;
   gap: 16px;
   font-size: 0.85rem;
-  color: var(--color-text-tertiary);
+  color: #99f6e4;          /* teal-200 on dark nav */
 }
 .top-nav-stat {
   white-space: nowrap;
 }
 .top-nav-stat.accent {
-  color: var(--color-success);
+  color: #5eead4;
   font-weight: 600;
 }
 .top-nav-stat.muted {
-  color: var(--color-text-tertiary);
+  color: #5eead4;
+  opacity: 0.75;
 }
 
 .nav-strip {
-  background: var(--color-bg-secondary);
-  border-bottom: 1px solid var(--color-border-light);
+  background: #e9f0f4;     /* custom warm slate – slightly teal-tinted */
+  border-bottom: 1px solid var(--color-border-medium);
 }
 .nav-strip-inner {
   max-width: 1200px;
@@ -314,12 +320,12 @@ button {
 }
 
 .group-tab:hover {
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.5);
   color: var(--color-primary);
 }
 
 .group-tab.active {
-  background: linear-gradient(135deg, var(--color-bg-primary) 0%, #ffffff 100%);
+  background: var(--color-bg-primary);
   border-color: var(--color-border-medium);
   color: var(--color-primary);
   box-shadow: var(--shadow-sm);
@@ -364,7 +370,7 @@ button {
 
 .category-card.active {
   border-color: var(--color-primary);
-  background: linear-gradient(135deg, var(--color-primary-lighter) 0%, #ffffff 100%);
+  background: linear-gradient(135deg, var(--color-primary-lighter) 0%, #f0fdfa 100%);
   box-shadow: var(--shadow-md);
   transform: translateY(-2px);
 }
@@ -459,7 +465,7 @@ button {
 }
 
 .stat-remaining {
-  background: linear-gradient(135deg, var(--color-secondary-light) 0%, #f8fafc 100%);
+  background: linear-gradient(135deg, var(--color-secondary-light) 0%, var(--color-bg-primary) 100%);
   color: var(--color-secondary);
 }
 
@@ -528,7 +534,7 @@ button {
 
 .question-prompt {
   border: 2px solid var(--color-primary-light);
-  background: linear-gradient(135deg, var(--color-primary-lighter) 0%, #ffffff 100%);
+  background: linear-gradient(135deg, var(--color-primary-lighter) 0%, #f0fdfa 100%);
   border-radius: 14px;
   padding: 16px 18px;
   display: grid;
@@ -606,7 +612,7 @@ button {
 
 .option.selected {
   border-color: var(--color-primary);
-  background: linear-gradient(135deg, var(--color-primary-lighter) 0%, #ffffff 100%);
+  background: linear-gradient(135deg, var(--color-primary-lighter) 0%, #f0fdfa 100%);
   box-shadow: var(--shadow-sm);
 }
 
@@ -618,7 +624,7 @@ button {
 
 .option.correct {
   border-color: var(--color-success);
-  background: linear-gradient(135deg, var(--color-success-lighter) 0%, #ffffff 100%);
+  background: linear-gradient(135deg, var(--color-success-lighter) 0%, #ecfdf5 100%);
   box-shadow: var(--shadow-sm);
 }
 
@@ -630,7 +636,7 @@ button {
 
 .option.wrong {
   border-color: var(--color-danger);
-  background: linear-gradient(135deg, var(--color-danger-lighter) 0%, #ffffff 100%);
+  background: linear-gradient(135deg, var(--color-danger-lighter) 0%, #fff1f2 100%);
   box-shadow: var(--shadow-sm);
 }
 
