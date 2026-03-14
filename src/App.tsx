@@ -29,6 +29,7 @@ export default function App(): JSX.Element {
   const [showExplanation, setShowExplanation] = useState(false);
   const [showOverview, setShowOverview] = useState(false);
   const [showTestResult, setShowTestResult] = useState(false);
+  const [confirmAction, setConfirmAction] = useState<"reset" | "end" | null>(null);
 
   const selectedGroup = useMemo(
     () => questionGroups.find((item) => item.id === selectedGroupId) ?? questionGroups[0],
@@ -232,8 +233,18 @@ export default function App(): JSX.Element {
 
         <section className="card question-card">
         <div className="question-header">
-          <h3>{selectedSection.name}</h3>
-          <span>{hasQuestions ? `Fråga ${safeQuestionIndex + 1} av ${selectedSection.questions.length}` : "Inga frågor ännu"}</span>
+          <div className="question-header-left">
+            <h3>{selectedSection.name}</h3>
+            <span>{hasQuestions ? `Fråga ${safeQuestionIndex + 1} av ${selectedSection.questions.length}` : "Inga frågor ännu"}</span>
+          </div>
+          <div className="question-header-actions">
+            <button type="button" className="question-top-btn" onClick={() => setConfirmAction("reset")}>
+              Starta om test
+            </button>
+            <button type="button" className="question-top-btn question-top-btn-danger" onClick={() => setConfirmAction("end")}>
+              Avsluta test
+            </button>
+          </div>
         </div>
 
         {hasQuestions ? (
@@ -282,42 +293,49 @@ export default function App(): JSX.Element {
         )}
 
         <div className="actions">
-          <button className="secondary" onClick={goBack} type="button" disabled={!hasQuestions || safeQuestionIndex === 0}>
-            Föregående
-          </button>
-          <button
-            className={`check-button ${selectedOptionIndex === undefined ? "disabled-look" : ""}`}
-            onClick={checkAnswer}
-            type="button"
-            disabled={!hasQuestions || selectedOptionIndex === undefined}
-          >
-            {isChecked ? "Dölj svar" : "Se svar"}
-          </button>
-          <button
-            className="secondary"
-            onClick={() => setShowExplanation(true)}
-            type="button"
-            disabled={!hasQuestions || !hasExplanation}
-          >
-            Se förklaring
-          </button>
-          <button
-            className="secondary"
-            onClick={goNext}
-            type="button"
-            disabled={!hasQuestions || safeQuestionIndex === selectedSection.questions.length - 1}
-          >
-            Nästa fråga
-          </button>
-          <button className="secondary" onClick={() => setShowOverview((prev) => !prev)} type="button">
-            Till översikt frågor
-          </button>
-          <button className="danger" onClick={() => setShowTestResult(true)} type="button">
-            End test
-          </button>
-          <button className="secondary" onClick={resetCurrentSectionAttempt} type="button">
-            Starta om test
-          </button>
+          <div className="actions-primary">
+            <button
+              className="actions-prev"
+              onClick={goBack}
+              type="button"
+              disabled={!hasQuestions || safeQuestionIndex === 0}
+            >
+              ← Föregående
+            </button>
+            <button
+              className={`actions-check ${selectedOptionIndex === undefined ? "disabled-look" : ""}`}
+              onClick={checkAnswer}
+              type="button"
+              disabled={!hasQuestions || selectedOptionIndex === undefined}
+            >
+              {isChecked ? "Dölj svar" : "Se svar"}
+            </button>
+            <button
+              className="actions-next"
+              onClick={goNext}
+              type="button"
+              disabled={!hasQuestions || safeQuestionIndex === selectedSection.questions.length - 1}
+            >
+              Nästa →
+            </button>
+          </div>
+          <div className="actions-secondary">
+            <button
+              className="actions-extra"
+              onClick={() => setShowExplanation(true)}
+              type="button"
+              disabled={!hasQuestions || !hasExplanation}
+            >
+              Se förklaring
+            </button>
+            <button
+              className="actions-extra"
+              onClick={() => setShowOverview((prev) => !prev)}
+              type="button"
+            >
+              Till översikt frågor
+            </button>
+          </div>
         </div>
         </section>
 
@@ -374,6 +392,43 @@ export default function App(): JSX.Element {
           </div>
         </section>
       )}
+
+        {confirmAction && (
+        <section className="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="confirm-title">
+          <div className="modal confirm-modal">
+            <h3 id="confirm-title" className="confirm-title">
+              {confirmAction === "reset" ? "Starta om test?" : "Avsluta test?"}
+            </h3>
+            <p className="confirm-message">
+              {confirmAction === "reset"
+                ? "Alla dina svar i denna sektion tas bort. Vill du fortsätta?"
+                : "Vill du avsluta och se resultatet?"}
+            </p>
+            <div className="confirm-actions">
+              <button type="button" className="question-top-btn" onClick={() => setConfirmAction(null)}>
+                Avbryt
+              </button>
+              {confirmAction === "reset" ? (
+                <button
+                  type="button"
+                  className="actions-check"
+                  onClick={() => { resetCurrentSectionAttempt(); setConfirmAction(null); }}
+                >
+                  Ja, starta om
+                </button>
+              ) : (
+                <button
+                  type="button"
+                  className="question-top-btn question-top-btn-danger"
+                  onClick={() => { setShowTestResult(true); setConfirmAction(null); }}
+                >
+                  Ja, avsluta
+                </button>
+              )}
+            </div>
+          </div>
+        </section>
+        )}
 
         {showTestResult && (
         <section className="modal-backdrop" role="dialog" aria-modal="true">
