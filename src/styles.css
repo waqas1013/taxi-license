@@ -1,53 +1,54 @@
 :root {
-  /* ── Slate + Teal theme ─────────────────────────────────
-     Slate:  cool gray-blue family  (backgrounds, text, borders)
-     Teal:   fresh green-cyan family (primary actions, accents)
+  /* ── Indigo + Warm Sand theme ────────────────────────────
+     Indigo: deep violet-blue family  (nav, primary actions)
+     Sand:   warm stone/cream family  (backgrounds, borders)
+     Amber:  golden highlight         (stats accent)
   ──────────────────────────────────────────────────────── */
 
-  /* Primary – Teal */
-  --color-primary:        #0d9488;   /* teal-600 */
-  --color-primary-hover:  #0f766e;   /* teal-700 */
-  --color-primary-light:  #99f6e4;   /* teal-200 */
-  --color-primary-lighter:#f0fdfa;   /* teal-50  */
+  /* Primary – Indigo */
+  --color-primary:        #4f46e5;   /* indigo-600 */
+  --color-primary-hover:  #4338ca;   /* indigo-700 */
+  --color-primary-light:  #c7d2fe;   /* indigo-200 */
+  --color-primary-lighter:#eef2ff;   /* indigo-50  */
 
-  /* Secondary – Slate mid */
-  --color-secondary:       #64748b;  /* slate-500 */
-  --color-secondary-hover: #475569;  /* slate-600 */
-  --color-secondary-light: #e2e8f0;  /* slate-200 */
+  /* Secondary – Warm Stone */
+  --color-secondary:       #78716c;  /* stone-500  */
+  --color-secondary-hover: #57534e;  /* stone-600  */
+  --color-secondary-light: #e7e5e4;  /* stone-200  */
 
-  /* Success – teal-leaning green */
-  --color-success:         #059669;  /* emerald-600 */
-  --color-success-hover:   #047857;  /* emerald-700 */
-  --color-success-light:   #a7f3d0;  /* emerald-200 */
-  --color-success-lighter: #ecfdf5;  /* emerald-50  */
+  /* Success */
+  --color-success:         #16a34a;  /* green-600  */
+  --color-success-hover:   #15803d;  /* green-700  */
+  --color-success-light:   #bbf7d0;  /* green-200  */
+  --color-success-lighter: #f0fdf4;  /* green-50   */
 
   /* Danger */
-  --color-danger:          #e11d48;  /* rose-600 */
-  --color-danger-hover:    #be123c;  /* rose-700 */
-  --color-danger-light:    #fecdd3;  /* rose-200 */
-  --color-danger-lighter:  #fff1f2;  /* rose-50  */
+  --color-danger:          #dc2626;  /* red-600    */
+  --color-danger-hover:    #b91c1c;  /* red-700    */
+  --color-danger-light:    #fecaca;  /* red-200    */
+  --color-danger-lighter:  #fef2f2;  /* red-50     */
 
-  /* Text – slate scale */
-  --color-text-primary:   #0f172a;   /* slate-900 */
-  --color-text-secondary: #334155;   /* slate-700 */
-  --color-text-tertiary:  #64748b;   /* slate-500 */
+  /* Text – warm stone scale */
+  --color-text-primary:   #1c1917;   /* stone-900  */
+  --color-text-secondary: #44403c;   /* stone-700  */
+  --color-text-tertiary:  #78716c;   /* stone-500  */
 
-  /* Backgrounds – off-white / warm slate */
-  --color-bg-primary:   #f8fafc;     /* slate-50  – main card bg (off-white) */
-  --color-bg-secondary: #f1f5f9;     /* slate-100 – subtle section bg       */
-  --color-bg-tertiary:  #e2e8f0;     /* slate-200 – tertiary / disabled     */
-  --color-bg-page:      linear-gradient(160deg, #f1f5f9 0%, #e9f0f4 100%);
+  /* Backgrounds – warm sand / cream */
+  --color-bg-primary:   #faf9f7;     /* warm off-white – main card bg   */
+  --color-bg-secondary: #f5f4f1;     /* warm stone-100 – section bg     */
+  --color-bg-tertiary:  #e7e5e4;     /* stone-200      – tertiary       */
+  --color-bg-page:      linear-gradient(160deg, #faf7f2 0%, #f2ede4 100%);
 
-  /* Borders – slate */
-  --color-border-light:  #e2e8f0;    /* slate-200 */
-  --color-border-medium: #cbd5e1;    /* slate-300 */
-  --color-border-dark:   #94a3b8;    /* slate-400 */
+  /* Borders – warm stone */
+  --color-border-light:  #e7e5e4;    /* stone-200  */
+  --color-border-medium: #d6d3d1;    /* stone-300  */
+  --color-border-dark:   #a8a29e;    /* stone-400  */
 
-  /* Shadows */
-  --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.06);
-  --shadow-md: 0 4px 8px rgba(15, 23, 42, 0.09);
-  --shadow-lg: 0 10px 20px rgba(15, 23, 42, 0.12);
-  --shadow-xl: 0 20px 30px rgba(15, 23, 42, 0.16);
+  /* Shadows – warm-toned */
+  --shadow-sm: 0 1px 3px rgba(28, 25, 23, 0.07);
+  --shadow-md: 0 4px 8px rgba(28, 25, 23, 0.10);
+  --shadow-lg: 0 10px 20px rgba(28, 25, 23, 0.13);
+  --shadow-xl: 0 20px 30px rgba(28, 25, 23, 0.18);
 
   /* Transitions */
   --transition-fast: 150ms ease;
@@ -86,9 +87,9 @@ button {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: linear-gradient(90deg, #134e4a 0%, #0f766e 100%); /* teal-900 → teal-700 */
-  border-bottom: 1px solid #0d9488;
-  box-shadow: 0 2px 8px rgba(13, 148, 136, 0.25);
+  background: linear-gradient(90deg, #1e1b4b 0%, #3730a3 100%); /* indigo-950 → indigo-700 */
+  border-bottom: 1px solid #4338ca;
+  box-shadow: 0 2px 10px rgba(67, 56, 202, 0.30);
 }
 
 .top-nav-inner {
@@ -109,12 +110,12 @@ button {
 .top-nav-logo {
   font-size: 1.25rem;
   font-weight: 700;
-  color: #f0fdfa;          /* teal-50 – bright on dark bg */
+  color: #eef2ff;          /* indigo-50 – bright on dark indigo */
   letter-spacing: -0.02em;
 }
 .top-nav-tagline {
   font-size: 0.7rem;
-  color: #5eead4;          /* teal-300 – softer on dark bg */
+  color: #a5b4fc;          /* indigo-300 – softer on dark indigo */
   text-transform: uppercase;
   letter-spacing: 0.08em;
   margin-top: 1px;
@@ -131,7 +132,7 @@ button {
   padding: 10px 16px;
   border: 0;
   background: transparent;
-  color: #99f6e4;          /* teal-200 – readable on dark bg */
+  color: #c7d2fe;          /* indigo-200 – readable on dark indigo */
   font-weight: 500;
   font-size: 0.95rem;
   cursor: pointer;
@@ -140,11 +141,11 @@ button {
   transition: color var(--transition-fast), background var(--transition-fast);
 }
 .top-nav-tab:hover {
-  color: #f0fdfa;
+  color: #eef2ff;
   background: rgba(255, 255, 255, 0.12);
 }
 .top-nav-tab.active {
-  color: #f0fdfa;
+  color: #eef2ff;
   font-weight: 600;
   background: rgba(255, 255, 255, 0.15);
 }
@@ -155,7 +156,7 @@ button {
   right: 16px;
   bottom: 6px;
   height: 2px;
-  background: #5eead4;    /* teal-300 underline */
+  background: #fbbf24;    /* amber-400 golden underline */
   border-radius: 1px;
 }
 
@@ -164,22 +165,22 @@ button {
   align-items: center;
   gap: 16px;
   font-size: 0.85rem;
-  color: #99f6e4;          /* teal-200 on dark nav */
+  color: #c7d2fe;          /* indigo-200 on dark indigo nav */
 }
 .top-nav-stat {
   white-space: nowrap;
 }
 .top-nav-stat.accent {
-  color: #5eead4;
+  color: #fbbf24;          /* amber-400 golden highlight */
   font-weight: 600;
 }
 .top-nav-stat.muted {
-  color: #5eead4;
-  opacity: 0.75;
+  color: #a5b4fc;
+  opacity: 0.85;
 }
 
 .nav-strip {
-  background: #e9f0f4;     /* custom warm slate – slightly teal-tinted */
+  background: #ede9e4;     /* warm sand strip under indigo nav */
   border-bottom: 1px solid var(--color-border-medium);
 }
 .nav-strip-inner {
@@ -370,7 +371,7 @@ button {
 
 .category-card.active {
   border-color: var(--color-primary);
-  background: linear-gradient(135deg, var(--color-primary-lighter) 0%, #f0fdfa 100%);
+  background: linear-gradient(135deg, var(--color-primary-lighter) 0%, #faf9f7 100%);
   box-shadow: var(--shadow-md);
   transform: translateY(-2px);
 }
@@ -534,7 +535,7 @@ button {
 
 .question-prompt {
   border: 2px solid var(--color-primary-light);
-  background: linear-gradient(135deg, var(--color-primary-lighter) 0%, #f0fdfa 100%);
+  background: linear-gradient(135deg, var(--color-primary-lighter) 0%, #faf9f7 100%);
   border-radius: 14px;
   padding: 16px 18px;
   display: grid;
@@ -612,7 +613,7 @@ button {
 
 .option.selected {
   border-color: var(--color-primary);
-  background: linear-gradient(135deg, var(--color-primary-lighter) 0%, #f0fdfa 100%);
+  background: linear-gradient(135deg, var(--color-primary-lighter) 0%, #faf9f7 100%);
   box-shadow: var(--shadow-sm);
 }
 
@@ -624,7 +625,7 @@ button {
 
 .option.correct {
   border-color: var(--color-success);
-  background: linear-gradient(135deg, var(--color-success-lighter) 0%, #ecfdf5 100%);
+  background: linear-gradient(135deg, var(--color-success-lighter) 0%, #f0fdf4 100%);
   box-shadow: var(--shadow-sm);
 }
 
@@ -636,7 +637,7 @@ button {
 
 .option.wrong {
   border-color: var(--color-danger);
-  background: linear-gradient(135deg, var(--color-danger-lighter) 0%, #fff1f2 100%);
+  background: linear-gradient(135deg, var(--color-danger-lighter) 0%, #fef2f2 100%);
   box-shadow: var(--shadow-sm);
 }
 
