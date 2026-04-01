@@ -30,6 +30,22 @@ export default function App(): JSX.Element {
   const [showOverview, setShowOverview] = useState(false);
   const [showTestResult, setShowTestResult] = useState(false);
   const [confirmAction, setConfirmAction] = useState<"reset" | "end" | null>(null);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  const totalQuestions = useMemo(
+    () =>
+      questionGroups.reduce(
+        (sum, g) =>
+          sum +
+          g.categories.reduce(
+            (cs, cat) => cs + cat.sections.reduce((ss, sec) => ss + sec.questions.length, 0),
+            0
+          ),
+        0
+      ),
+    []
+  );
+  const totalAnswered = Object.keys(answersByQuestionId).length;
 
   const selectedGroup = useMemo(
     () => questionGroups.find((item) => item.id === selectedGroupId) ?? questionGroups[0],
@@ -166,70 +182,139 @@ export default function App(): JSX.Element {
   };
 
   return (
-    <div className="app-wrap">
-      <header className="top-nav">
-        <div className="top-nav-inner">
-          <div className="top-nav-brand">
-            <span className="top-nav-logo">Taxi Licens</span>
-            <span className="top-nav-tagline">Frågebank</span>
-          </div>
-          <nav className="top-nav-tabs" role="tablist">
-            {questionGroups.map((group) => (
-              <button
-                key={group.id}
-                role="tab"
-                type="button"
-                className={`top-nav-tab ${selectedGroup.id === group.id ? "active" : ""}`}
-                onClick={() => selectGroup(group.id)}
-              >
-                {group.name}
-              </button>
-            ))}
-          </nav>
-          <div className="top-nav-stats">
-            <span className="top-nav-stat">{selectedSection.questions.length} frågor</span>
-            <span className="top-nav-stat accent">{answeredCount} klara</span>
-            <span className="top-nav-stat muted">{remainingCount} kvar</span>
+    <div className="app-layout">
+      <aside className={`sidebar ${sidebarOpen ? "sidebar-open" : ""}`}>
+        <div className="sidebar-header">
+          <div className="sidebar-logo-mark">TL</div>
+          <div className="sidebar-brand-text">
+            <span className="sidebar-title">Taxi Licens</span>
+            <span className="sidebar-tagline">Frågebank</span>
           </div>
         </div>
-      </header>
 
-      <div className="nav-strip">
-        <div className="nav-strip-inner">
-          <div className="nav-strip-group">
-            <span className="nav-strip-label">Kategori</span>
-            <div className="nav-strip-pills">
-              {selectedGroup.categories.map((category) => (
+        <nav className="sidebar-nav" aria-label="Ämnesnavigation">
+          {questionGroups.map((group) => {
+            const isGroupActive = selectedGroup.id === group.id;
+            return (
+              <div key={group.id} className="sidebar-group-block">
                 <button
-                  key={category.id}
                   type="button"
-                  className={`nav-pill ${selectedCategory.id === category.id ? "active" : ""}`}
-                  onClick={() => selectCategory(category.id)}
+                  className={`sidebar-group-item ${isGroupActive ? "active" : ""}`}
+                  onClick={() => {
+                    selectGroup(group.id);
+                    setSidebarOpen(false);
+                  }}
                 >
-                  {category.name}
+                  <span className="sidebar-group-indicator" />
+                  <span className="sidebar-group-name">{group.name}</span>
                 </button>
-              ))}
-            </div>
+
+                {isGroupActive && (
+                  <div className="sidebar-sub">
+                    {group.categories.map((cat) => {
+                      const isCatActive = selectedCategory.id === cat.id;
+                      return (
+                        <div key={cat.id} className="sidebar-cat-block">
+                          <button
+                            type="button"
+                            className={`sidebar-cat-item ${isCatActive ? "active" : ""}`}
+                            onClick={() => {
+                              selectCategory(cat.id);
+                              setSidebarOpen(false);
+                            }}
+                          >
+                            {cat.name}
+                          </button>
+
+                          {isCatActive && (
+                            <div className="sidebar-sections">
+                              {cat.sections.map((sec) => {
+                                const isSecActive = selectedSection.id === sec.id;
+                                const secAnswered = sec.questions.filter(
+                                  (q) => answersByQuestionId[q.id] !== undefined
+                                ).length;
+                                return (
+                                  <button
+                                    key={sec.id}
+                                    type="button"
+                                    className={`sidebar-sec-item ${isSecActive ? "active" : ""}`}
+                                    onClick={() => {
+                                      selectSection(sec.id);
+                                      setSidebarOpen(false);
+                                    }}
+                                  >
+                                    <span className="sidebar-sec-dot" />
+                                    <span className="sidebar-sec-name">{sec.name}</span>
+                                    <span className="sidebar-sec-count">
+                                      {secAnswered}/{sec.questions.length}
+                                    </span>
+                                  </button>
+                                );
+                              })}
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })}
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </nav>
+
+        <div className="sidebar-footer">
+          <div className="sidebar-progress">
+            <div
+              className="sidebar-progress-fill"
+              style={{
+                width:
+                  totalQuestions > 0 ? `${Math.round((totalAnswered / totalQuestions) * 100)}%` : "0%",
+              }}
+            />
           </div>
-          <div className="nav-strip-group">
-            <span className="nav-strip-label">Sektion</span>
-            <div className="nav-strip-chips">
-              {selectedCategory.sections.map((section) => (
-                <button
-                  key={section.id}
-                  type="button"
-                  className={`nav-chip ${selectedSection.id === section.id ? "active" : ""}`}
-                  onClick={() => selectSection(section.id)}
-                >
-                  {section.name}
-                </button>
-              ))}
-            </div>
+          <span className="sidebar-progress-label">
+            {totalAnswered} / {totalQuestions} frågor klara
+          </span>
+        </div>
+      </aside>
+
+      {sidebarOpen && (
+        <div
+          className="sidebar-overlay"
+          role="button"
+          tabIndex={-1}
+          aria-label="Stäng meny"
+          onClick={() => setSidebarOpen(false)}
+          onKeyDown={(e) => e.key === "Escape" && setSidebarOpen(false)}
+        />
+      )}
+
+      <div className="main-area">
+        <div className="main-topbar">
+          <button
+            type="button"
+            className="topbar-menu-btn"
+            aria-label="Öppna meny"
+            onClick={() => setSidebarOpen(true)}
+          >
+            ☰
+          </button>
+          <div className="topbar-crumb">
+            <span className="crumb-group">{selectedGroup.name}</span>
+            <span className="crumb-sep">›</span>
+            <span className="crumb-cat">{selectedCategory.name}</span>
+            <span className="crumb-sep">›</span>
+            <span className="crumb-section">{selectedSection.name}</span>
+          </div>
+          <div className="topbar-stats">
+            <span className="topbar-stat-done">{answeredCount}</span>
+            <span className="topbar-stat-sep">/</span>
+            <span className="topbar-stat-total">{selectedSection.questions.length}</span>
           </div>
         </div>
-      </div>
 
-      <main className="main-content">
+        <main className="main-content">
 
         <section className="card question-card">
         <div className="question-header">
@@ -461,7 +546,8 @@ export default function App(): JSX.Element {
           </div>
         </section>
         )}
-      </main>
+        </main>
+      </div>
     </div>
   );
 }
