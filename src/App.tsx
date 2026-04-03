@@ -206,7 +206,10 @@ export default function App(): JSX.Element {
                   }}
                 >
                   <span className="sidebar-group-indicator" />
-                  <span className="sidebar-group-name">{group.name}</span>
+                  <span className="sidebar-group-text">
+                    <span className="sidebar-tier-label sidebar-tier-label--group">Ämnesgrupp</span>
+                    <span className="sidebar-group-name">{group.name}</span>
+                  </span>
                 </button>
 
                 {isGroupActive && (
@@ -223,11 +226,13 @@ export default function App(): JSX.Element {
                               setSidebarOpen(false);
                             }}
                           >
-                            {cat.name}
+                            <span className="sidebar-tier-label sidebar-tier-label--cat">Kategori</span>
+                            <span className="sidebar-cat-name">{cat.name}</span>
                           </button>
 
                           {isCatActive && (
                             <div className="sidebar-sections">
+                              <span className="sidebar-sections-heading">Sektioner</span>
                               {cat.sections.map((sec) => {
                                 const isSecActive = selectedSection.id === sec.id;
                                 const secAnswered = sec.questions.filter(
