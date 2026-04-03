@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import { questionGroups } from "./data/questionBank";
 import { Category, CategoryGroup, QuestionSection } from "./types/questions";
 
@@ -31,6 +31,8 @@ export default function App(): JSX.Element {
   const [showTestResult, setShowTestResult] = useState(false);
   const [confirmAction, setConfirmAction] = useState<"reset" | "end" | null>(null);
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [navLeaveConfirmOpen, setNavLeaveConfirmOpen] = useState(false);
+  const pendingNavigationRef = useRef<(() => void) | null>(null);
 
   const totalQuestions = useMemo(
     () =>
@@ -95,6 +97,37 @@ export default function App(): JSX.Element {
     selectedSection.questions.length > 0
       ? Math.round((correctCount / selectedSection.questions.length) * 100)
       : 0;
+
+  /** True if user has chosen an answer or revealed the key in this section */
+  const currentSectionHasProgress = useMemo(
+    () =>
+      selectedSection.questions.some(
+        (q) =>
+          answersByQuestionId[q.id] !== undefined || (checkedByQuestionId[q.id] ?? false)
+      ),
+    [selectedSection, answersByQuestionId, checkedByQuestionId]
+  );
+
+  const runOrConfirmNavigation = (action: () => void): void => {
+    if (!currentSectionHasProgress) {
+      action();
+      return;
+    }
+    pendingNavigationRef.current = action;
+    setNavLeaveConfirmOpen(true);
+  };
+
+  const confirmLeaveSection = (): void => {
+    const fn = pendingNavigationRef.current;
+    pendingNavigationRef.current = null;
+    setNavLeaveConfirmOpen(false);
+    fn?.();
+  };
+
+  const cancelLeaveSection = (): void => {
+    pendingNavigationRef.current = null;
+    setNavLeaveConfirmOpen(false);
+  };
 
   const resetQuestionView = (): void => {
     setQuestionIndex(0);
@@ -201,8 +234,14 @@ export default function App(): JSX.Element {
                   type="button"
                   className={`sidebar-group-item ${isGroupActive ? "active" : ""}`}
                   onClick={() => {
-                    selectGroup(group.id);
-                    setSidebarOpen(false);
+                    if (group.id === selectedGroupId) {
+                      setSidebarOpen(false);
+                      return;
+                    }
+                    runOrConfirmNavigation(() => {
+                      selectGroup(group.id);
+                      setSidebarOpen(false);
+                    });
                   }}
                 >
                   <span className="sidebar-group-indicator" />
@@ -222,8 +261,14 @@ export default function App(): JSX.Element {
                             type="button"
                             className={`sidebar-cat-item ${isCatActive ? "active" : ""}`}
                             onClick={() => {
-                              selectCategory(cat.id);
-                              setSidebarOpen(false);
+                              if (cat.id === selectedCategoryId) {
+                                setSidebarOpen(false);
+                                return;
+                              }
+                              runOrConfirmNavigation(() => {
+                                selectCategory(cat.id);
+                                setSidebarOpen(false);
+                              });
                             }}
                           >
                             <span className="sidebar-tier-label sidebar-tier-label--cat">Kategori</span>
@@ -244,8 +289,14 @@ export default function App(): JSX.Element {
                                     type="button"
                                     className={`sidebar-sec-item ${isSecActive ? "active" : ""}`}
                                     onClick={() => {
-                                      selectSection(sec.id);
-                                      setSidebarOpen(false);
+                                      if (sec.id === selectedSectionId) {
+                                        setSidebarOpen(false);
+                                        return;
+                                      }
+                                      runOrConfirmNavigation(() => {
+                                        selectSection(sec.id);
+                                        setSidebarOpen(false);
+                                      });
                                     }}
                                   >
                                     <span className="sidebar-sec-dot" />
@@ -482,6 +533,33 @@ export default function App(): JSX.Element {
           </div>
         </section>
       )}
+
+        {navLeaveConfirmOpen && (
+        <section
+          className="modal-backdrop"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="nav-leave-title"
+        >
+          <div className="modal confirm-modal">
+            <h3 id="nav-leave-title" className="confirm-title">
+              Lämna pågående test?
+            </h3>
+            <p className="confirm-message">
+              Du har börjat svara eller visa facit i denna sektion. Vill du byta till en annan del?
+              Dina svar sparas om du väljer samma sektion igen senare.
+            </p>
+            <div className="confirm-actions">
+              <button type="button" className="question-top-btn" onClick={cancelLeaveSection}>
+                Stanna kvar
+              </button>
+              <button type="button" className="actions-check" onClick={confirmLeaveSection}>
+                Ja, byt
+              </button>
+            </div>
+          </div>
+        </section>
+        )}
 
         {confirmAction && (
         <section className="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="confirm-title">
