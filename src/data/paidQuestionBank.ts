@@ -1,4 +1,12 @@
 import type { CategoryGroup, Question, QuestionSection } from "../types/questions";
+import paidSakerhet1PrisinformationScenario from "../assets/paid-sakerhet1-prisinformation-scenario.png";
+import paidSakerhet1AbsKontrollampaScenario from "../assets/paid-sakerhet1-abs-kontrollampa-scenario.png";
+import paidSakerhet1BarnVagScenario from "../assets/paid-sakerhet1-barn-vag-scenario.png";
+import paidSakerhet1BussHallplatsScenario from "../assets/paid-sakerhet1-buss-hallplats-scenario.png";
+import paidSakerhet1BilbalteAbcdScenario from "../assets/paid-sakerhet1-bilbalte-abcd-scenario.png";
+import paidSakerhet1RollatorScenario from "../assets/paid-sakerhet1-rollator-scenario.png";
+import paidSakerhet1BarnKorsningScenario from "../assets/paid-sakerhet1-barn-korsning-scenario.png";
+import paidSakerhet1PsykosDefinitionScenario from "../assets/paid-sakerhet1-psykos-definition-scenario.png";
 import paidKarta1KarlstadScenario from "../assets/paid-karta1-karlstad-scenario.png";
 import paidKarta1KarlstadUppdrag2Scenario from "../assets/paid-karta1-karlstad-uppdrag2-scenario.png";
 import paidKarta1KarlstadUppdrag3Scenario from "../assets/paid-karta1-karlstad-uppdrag3-scenario.png";
@@ -1039,6 +1047,514 @@ const paidKarta2Questions: Question[] = [
   },
 ];
 
+/** Betald Säkerhet 1 — frågor med tillhörande bilder. Svar A=0 … D=3. */
+const paidSakerhet1Questions: Question[] = [
+  {
+    id: "paid-sakerhet-1-q1",
+    text: "Fyra personer ska åka från centrum till flygplatsen en söndagsmorgon kl. 05.30. Sträckan är 5 km. Vad blir priset för resan enligt Prisinformationens jämförpris?",
+    questionImage: paidSakerhet1PrisinformationScenario,
+    options: ["Ca 135 kronor", "Ca 160 kronor", "Ca 170 kronor", "Ca 185 kronor"],
+    correctIndex: 0,
+  },
+  {
+    id: "paid-sakerhet-1-q2",
+    text: "Du ska skjutsa en mamma och hennes 14-åriga dotter i din taxi. Vem är ansvarig för att dottern använder bilbältet?",
+    options: ["Jag som förare", "14-åringen själv", "Mamma som vårdnadshavare"],
+    correctIndex: 0,
+  },
+  {
+    id: "paid-sakerhet-1-q3",
+    text: "Ett barn som är 6 år ska åka i din taxi. Vilken typ av säkerhetsutrustning är lämpligast för detta barn?",
+    options: ["Babyskydd", "Bälteskudde", "Bilbarnstol"],
+    correctIndex: 1,
+  },
+  {
+    id: "paid-sakerhet-1-q4",
+    text: "Vad är riktigt om vad du som taxiförare får berätta om vad som hänt i din bil?",
+    options: [
+      "Jag är skyldig att berätta vad som har hänt i bilen om en journalist frågar",
+      "Om jag ska vittna i en rättegång har jag rätt att låta bli att berätta sådant som har hänt i bilen",
+      "Jag har samma tystnadsplikt som en läkare eller advokat",
+      "Vilken tystnadsplikt jag har framgår vanligen av en överenskommelse med åkeriet eller beställningscentralen",
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: "paid-sakerhet-1-q5",
+    text: "Vilket av följande påverkar risken för vattenplaning mest?",
+    options: [
+      "Bakdäckens lufttryck",
+      "Däckens omkrets",
+      "Däckens mönsterdjup",
+      "Framdäckens lufttryck",
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-sakerhet-1-q6",
+    text: "Du kommer till en trafikolycksplats där flera personer har skadats och blöder. Vilken skyddsutrustning är viktigast att du använder?",
+    options: ["Skyddsglasögon", "Gummihandskar", "Andningsskydd", "Skoskydd"],
+    correctIndex: 1,
+  },
+  {
+    id: "paid-sakerhet-1-q7",
+    text: "Du misstänker att din kund är drogpåverkad. Han uppträder hotfullt mot dig. Vad gäller?",
+    options: [
+      "Jag får avbryta transporten och avvisa kunder",
+      "Jag måste fullfölja transporten om kunden begär det",
+      "Jag måste tillkalla polis för att avvisa kunden",
+      "Jag måste åka med kunden till närmaste sjukhus",
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: "paid-sakerhet-1-q8",
+    text: "Du får en körning där kunden är vuxen och har cerebral pares (CP). Vad innebär detta?",
+    options: [
+      "Kunden kan ha svårt att ta emot information",
+      "Kunden kan ha okontrollerade rörelser",
+      "Kunden saknar begrepp om att använda pengar",
+      "Kunden har dålig lokalkännedom",
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: "paid-sakerhet-1-q9",
+    text: "Vad bör du göra för att minska miljöeffekterna vid kallstart?",
+    options: [
+      "Tomgångsköra med förhöjt",
+      "Varvtal minst 1 minut",
+      "Tomgångsköra minst 2 minuter",
+      "Köra direkt men med lätt gaspådrag",
+      "Tomgångsköra minst 3 minuter",
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: "paid-sakerhet-1-q10",
+    text: "Din kund får ett epileptiskt anfall. Hur ska du agera för att hjälpa honom?",
+    options: [
+      "Skydda honom från att slå sig",
+      "Ge honom något att dricka",
+      "Genast föra honom till sjukhus",
+      "Hålla fast honom",
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: "paid-sakerhet-1-q11",
+    text: "När du kontrollerar motoroljan i din personbil ser du att den är gråvit. Vilken är den troligaste orsaken?",
+    options: [
+      "Mineralolja har blandats med syntetisk olja",
+      "Oljan har blivit överhettad och skadad",
+      "Kylvatten har blandats med motoroljan",
+      "Delsyntetisk olja har blandats med syntetisk olja",
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-sakerhet-1-q12",
+    text: "Vad är riktigt beträffande katalysatorn i en bensindriven bil?",
+    options: [
+      "Avgaserna blir renade från alla skadliga ämnen",
+      "För att fungera effektivt måste den uppnå en hög temperatur",
+      "Den fungerar effektivt redan från start",
+      "Alla sotpartiklar i avgaserna tas bort",
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: "paid-sakerhet-1-q13",
+    text: "Hur länge får du använda dubbdäck på din taxi om det inte är vinterväglag eller förväntas bli vinterväglag?",
+    options: [
+      "Till och med 28 februari",
+      "Till och med 31 mars",
+      "Till och med första vardagen efter påsk",
+      "Till och med 30 april",
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: "paid-sakerhet-1-q14",
+    text: "Höger riktningsljus börjar blinka fortare än det vänstra på din bil. Vad kan det bero på?",
+    options: [
+      "Säkringen har för högt amperetal",
+      "Glödlampan är av fel typ",
+      "Glödlampan är trasig",
+      "Säkringen har för lågt amperetal",
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-sakerhet-1-q15",
+    text: "Vad innebär det om den här kontrollampan tänds under färd?",
+    questionImage: paidSakerhet1AbsKontrollampaScenario,
+    options: [
+      "Det är för lite vätska i bromssystemet",
+      "Det låsningsfria bromssystemet är aktiverat",
+      "Det låsningsfria bromssystemet är ur funktion",
+      "Det automatiska bränslesystemet är ur funktion",
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-sakerhet-1-q16",
+    text: "Din taxi har navigationsutrustning (GPS). Vilket navigationssystem stör uppmärksamheten mest under körning?",
+    options: [
+      "Ett med information som tal",
+      "De olika typerna stör lika mycket",
+      "Informationen genom bild och text",
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-sakerhet-1-q17",
+    text: "Vad menas med demenstillstånd?",
+    options: [
+      "Minnessvårigheter orsakade av sjukdom i hjärnan",
+      "Ökad rädsla för andra människor",
+      "Sömnlöshet och oro",
+      "Nedsatt rörelseförmåga på grund av ålder",
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: "paid-sakerhet-1-q18",
+    text: "Hur stor andel av personbilsförarna som dör i trafikolyckor varje år beräknas ha alkohol i kroppen?",
+    options: ["5–10 %", "15–20 %", "25–30 %", "55–60 %"],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-sakerhet-1-q19",
+    text: "Du har köpt en doftgran och placerat den i din taxibil. Kan den orsaka några hälsobesvär för dina kunder?",
+    options: [
+      "Nej, en enda doftgran kan inte orsaka några besvär",
+      "Ja, den kan orsaka huvudvärk, men enbart i kombination med parfymämnen",
+      "Ja, den kan orsaka luftvägsbesvär, men enbart om kunden åker längre sträcka",
+      "Ja, den kan utlösa ett astmaanfall",
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: "paid-sakerhet-1-q20",
+    text: "Vilka är de vanligaste problemen för en person som har reumatism?",
+    options: [
+      "Ångest och oro",
+      "Dålig balans",
+      "Värk och svullnader i lederna",
+      "Skakningar i armar och ben",
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-sakerhet-1-q21",
+    text: "Du tar en rökpaus utanför din taxi. Kan det påverka din nästa kunds hälsa?",
+    options: [
+      "Ja, kunden kan få allergiska besvär",
+      "Nej, passiv rökning är inte hälsofarligt",
+      "Nej, om inte röken har blåst in i bilen",
+      "Ja, kunden kan få ett epileptiskt anfall",
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: "paid-sakerhet-1-q22",
+    text: "Hur kan du som förare minska risken för olyckor?",
+    options: [
+      "Jag kör impulsivt",
+      "Jag kör med säkerhetsmarginaler",
+      "Jag tränar reaktionsförmågan",
+      "Jag kör offensivt",
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: "paid-sakerhet-1-q23",
+    text: "Kan en alkoholpåverkad bilförare bli straffad för rattfylleri om han eller hon har mindre än 0,2 promille alkohol i blodet?",
+    options: [
+      "Ja, om det kan antas att föraren inte kan framföra fordonet på ett betryggande sätt",
+      "Ja, men endast om föraren blir inblandad i en trafikolycka",
+      "Ja, eftersom vi har en nollgräns för alkohol i samband med bilkörning",
+      "Nej",
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: "paid-sakerhet-1-q24",
+    text: "Du vet att din passagerare på en lång sjukresa är diabetiker. I början av resan blir han allt mer lågmäld och verkar vara på väg att förlora medvetandet. Vad bör du göra först?",
+    options: [
+      "Jag stannar bilen och uppmanar passageraren att ta en insulininjektion",
+      "Jag stannar bilen och öppnar dörren så att passageraren får frisk luft",
+      "Jag stannar bilen och uppmanar passageraren att äta något som innehåller socker",
+      "Jag försöker få kontakt med det sjukhus vi är på väg till och kör dit så fort som möjligt",
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-sakerhet-1-q25",
+    text: "Hur ska du agera mot en kund som har Parkinsons sjukdom?",
+    options: [
+      "Jag frågar om kunden har några speciella önskemål om hjälp",
+      "Jag ser till att kunden sitter med stöd för armarna",
+      "Jag kontrollerar om kunden har något signalmärke eller hälsokort på sig",
+      "Jag ringer omedelbart till 112",
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: "paid-sakerhet-1-q26",
+    text: "Du kör i 30 km/tim. Hur bör du agera i situationen på bilden?",
+    questionImage: paidSakerhet1BarnVagScenario,
+    options: [
+      "Jag fortsätter i samma hastighet och är beredd på att bromsa",
+      "Jag stannar och låter gruppen med barn lämna området",
+      "Jag sänker hastigheten och är beredd på att bromsa",
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-sakerhet-1-q27",
+    text: "Vad bör du göra med använd motorolja?",
+    options: [
+      "Hälla den i ett kommunalt avlopp, eftersom den då avskiljs på reningsverket",
+      "Bränna upp den",
+      "Lämna in den till en miljöstation, eftersom den klassas som miljöfarligt avfall",
+      "Spara och använda den som smörjmedel, exempelvis till cykelkedjan",
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-sakerhet-1-q28",
+    text: "Du råkar ut för en frontalkrock med din bil. Bilen har krockkudden. Har det någon betydelse om du använder bilbälte i den situationen?",
+    options: [
+      "Nej, krockkudden ersätter bilbältet",
+      "Ja, krockkudden är ett komplement till bilbältet",
+      "Ja, om jag använder bilbälte kan jag inte skydda mig genom att kasta mig åt sidan",
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: "paid-sakerhet-1-q29",
+    text: "Vilket är det viktigaste skälet till att du som taxiförare bör undvika parfym och andra starka dofter i bilen?",
+    options: [
+      "Parfymen kan dölja andra dofter, till exempel kolmonoxidläckage från avgassystemet",
+      "Doften kan utlösa ett astmaanfall hos en passagerare med astma",
+      "Passagerarna kanske inte tycker om parfymen",
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: "paid-sakerhet-1-q30",
+    text: "Bussen har stannat vid en hållplats och du ska köra rakt fram i situationen på bilden. Vilket kan bli det första olyckstillbud som du ska vara beredd på?",
+    questionImage: paidSakerhet1BussHallplatsScenario,
+    options: [
+      "Att fotgängare går ut på det andra övergångsstället",
+      "Att trafik kommer från höger i korsningen",
+      "Att fotgängare går ut framför bussen",
+      "Att fotgängare går ut på det första övergångsstället",
+      "Att bussen lämnar hållplatsen utan att tydligt visa sina avsikter",
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-sakerhet-1-q31",
+    text: "Du kör en taxi som är utrustad med airbag på passagerarsidan. Vad är sant om att placera en kund som är kortare än 140 cm på främre passagerarsäte?",
+    options: [
+      "Det är farligt enbart om personen inte använder bilbälte",
+      "Det är farligt enbart om bilen körs i hög hastighet",
+      "Det är farligt oavsett bilens hastighet",
+      "Det är farligt enbart om personen sitter i en bilbarnstol",
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-sakerhet-1-q32",
+    text: "Din kund har nedsatt rörelseförmåga och du kan inte köra ända fram till hotellets entré. Hur ska du hantera kundens bagage?",
+    options: [
+      "Jag frågar kunden var han vill ha det",
+      "Jag bär fram det till hotellets entré",
+      "Jag ställer det utanför bilen",
+      "Jag bär in det till receptionen",
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: "paid-sakerhet-1-q33",
+    text: "På vilken av bilderna används bilbältet bäst för att skydda vid en trafikolycka?",
+    questionImage: paidSakerhet1BilbalteAbcdScenario,
+    options: ["Bild A", "Bild B", "Bild C", "Bild D"],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-sakerhet-1-q34",
+    text: "En taxiförare har just fått besked om att en närstående till honom har blivit svårt sjuk. Kan det påverka hans körförmåga?",
+    options: [
+      "Ja, han kan få svårt att koncentrera sig",
+      "Nej",
+      "Ja, han blir sannolikt mer uppmärksam i trafiken",
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: "paid-sakerhet-1-q35",
+    text: "Du kommer fram till en olycksplats och ser att en person blöder kraftigt i benet. Du låter honom lägga sig ned. Vad bör du mer göra?",
+    options: [
+      "Hålla benet lågt och binda om skadan med exempelvis en halsduk",
+      "Hålla benet högt och binda om skadan med exempelvis en halsduk",
+      "Hålla benet högt och lämna såret öppet för att blodet ska rensa bort smuts och bakterier",
+      "Hålla benet lågt och lämna såret öppet för att blodet ska rensa bort smuts och bakterier",
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: "paid-sakerhet-1-q36",
+    text: "Gör det någon skillnad för miljön om man kör med breda lågprofildäck i stället för smalare standarddäck?",
+    options: [
+      "Ja, luftmotståndet ökar markant med breda däck",
+      "Ja, rullmotståndet ökar markant med breda däck",
+      "Nej",
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: "paid-sakerhet-1-q37",
+    text: "Du ska lasta rollatorn på bilden i din taxi. Vilken bokstav markerar den spärr som måste frigöras när du ska fälla ihop rollatorn?",
+    questionImage: paidSakerhet1RollatorScenario,
+    options: ["Bokstav A", "Bokstav B", "Bokstav C", "Bokstav D"],
+    correctIndex: 0,
+  },
+  {
+    id: "paid-sakerhet-1-q38",
+    text: "Vilken är den största risken i situationen på bilden?",
+    questionImage: paidSakerhet1BarnKorsningScenario,
+    options: [
+      "Barnet i korsningen kan cykla omkull",
+      "Det kan komma en bil från vänster i korsningen",
+      "Det kan komma ytterligare ett barn från höger i korsningen",
+      "Det kan komma en bil från höger i korsningen",
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-sakerhet-1-q39",
+    text: "Vilken sjukdom beskrivs texten på bilden?",
+    questionImage: paidSakerhet1PsykosDefinitionScenario,
+    options: ["Afasi", "Apati", "Allergi", "Psykos"],
+    correctIndex: 3,
+  },
+  {
+    id: "paid-sakerhet-1-q40",
+    text: "Vid säkerhetskontroll upptäcker du att det är för lite vätska i behållaren med bromsvätska. Vad bör du göra?",
+    options: [
+      "Omedelbart lämna in bilen på verkstad eftersom man inte får fylla på sådan vätska själv",
+      "Fortsätta köra som vanligt och låta verkstaden fylla på bromsvätska vid den ordinarie servicen",
+      "Själv fylla på med bromsvätska enligt instruktionsboken",
+      "Själv fylla på med samma sorts olja som finns i motorn",
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: "paid-sakerhet-1-q41",
+    text: "Kunden du hämtar har vit käpp, vad tyder det på?",
+    options: [
+      "Att kunden är synskadad",
+      "Att kunden har nedsatt rörelseförmåga",
+      "Att kunden är hörselskadad",
+      "Att kunden är dement",
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: "paid-sakerhet-1-q42",
+    text: "Vilket förnyelsebart bränsle blandas in i nästan all bensin i Sverige i dag?",
+    options: ["Benzen", "Biogas", "Diesel", "Etanol"],
+    correctIndex: 3,
+  },
+  {
+    id: "paid-sakerhet-1-q43",
+    text: "Du startar bilen som har kall motor. Hur snart bör du börja köra för att miljön ska påverkas så lite som möjligt av bilens avgaser?",
+    options: [
+      "Efter 1 minut",
+      "Omgående",
+      "Efter 3 minuter",
+      "När motorn har uppnått normal arbetstemperatur",
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: "paid-sakerhet-1-q44",
+    text: "Du upptäcker att motortemperaturen är för hög. Vad kan felet vara?",
+    options: [
+      "Värmen i kupén är för låg",
+      "Kylvätskan innehåller för mycket glykol",
+      "Värmen i kupén är hög",
+      "Fläkten till kylaren har gått sönder",
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: "paid-sakerhet-1-q45",
+    text: "Vilken är den viktigaste anledningen till att man ska lägga en medvetslös person i stabilt sidoläge?",
+    options: [
+      "För att lättare kunna avgöra om personen andas",
+      "För att minska blödningsrisken",
+      "För att förhindra att personen kvävs",
+      "För att förhindra att personen blir nedkyld",
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-sakerhet-1-q46",
+    text: "Din taxi är utrustad med krockkudde på passagerarplatsen fram. Hur lång bör passageraren minst vara för att sitta säkert där?",
+    options: ["100 cm", "120 cm", "140 cm", "160 cm"],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-sakerhet-1-q47",
+    text: "Vad är fobi?",
+    options: [
+      "En stark överdriven rädsla för en sak eller en situation",
+      "En psykisk störning som inverkar på synfältet",
+      "En oförklarlig nedstämdhet under en längre period",
+      "Ett stort behov av uppmärksamhet",
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: "paid-sakerhet-1-q48",
+    text: "Din kund har demens. Vad innebär det?",
+    options: [
+      "Kunden har talsvårigheter",
+      "Kunden har nedsatt rörelseförmåga",
+      "Kunden har minnessvårigheter",
+      "Kunden har svåra allergier",
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-sakerhet-1-q49",
+    text: "Säkringen till helljuslampan har gått sönder. Vad händer om du monterar en säkring med för lågt amperetal?",
+    options: [
+      "Lampan lyser svagare",
+      "Lampan lyser starkare",
+      "Risken för kabelbrand ökar",
+      "Det är större risk att säkringen går sönder",
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: "paid-sakerhet-1-q50",
+    text: "Vad bör du göra inför vintern för att undvika kostsamma reparationer på ditt fordon?",
+    options: [
+      "Byta till vintertermostat",
+      "Byta motor- och växellådsolja",
+      "Kontrollera att frostskyddet i kylarvätskan är tillräckligt",
+      "Justera framvagnen",
+    ],
+    correctIndex: 2,
+  },
+];
+
 /**
  * Betald frågebank — egna sektioner och frågor (kopplas inte till Teoriprovet).
  * Lägg till `Question`-objekt i respektive sektions `questions`-array.
@@ -1051,7 +1567,7 @@ export const paidQuestionGroup: CategoryGroup = {
       id: "paid-sakerhet",
       name: "Säkerhet",
       sections: [
-        section("paid-sakerhet-1", "Säkerhet 1"),
+        section("paid-sakerhet-1", "Säkerhet 1", paidSakerhet1Questions),
         section("paid-sakerhet-2", "Säkerhet 2"),
         section("paid-sakerhet-3", "Säkerhet 3"),
       ],
