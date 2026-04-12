@@ -1,5 +1,7 @@
-import { useMemo, useRef, useState } from "react";
+import { type FormEvent, useMemo, useRef, useState } from "react";
+import { persistPaidSessionActive, readPaidSessionActive, validatePaidAdminCredentials } from "./auth/paidSession";
 import { questionGroups } from "./data/questionBank";
+import { PAID_GROUP_ID, paidQuestionGroup } from "./data/paidQuestionBank";
 import { Category, CategoryGroup, QuestionSection } from "./types/questions";
 
 type CheckedMap = Record<string, boolean>;
@@ -20,6 +22,7 @@ const findInitial = (): {
 
 export default function App(): JSX.Element {
   const initial = findInitial();
+  const [paidSessionActive, setPaidSessionActive] = useState(readPaidSessionActive);
   const [selectedGroupId, setSelectedGroupId] = useState(initial.group.id);
   const [selectedCategoryId, setSelectedCategoryId] = useState(initial.category.id);
   const [selectedSectionId, setSelectedSectionId] = useState(initial.section.id);
@@ -32,11 +35,20 @@ export default function App(): JSX.Element {
   const [confirmAction, setConfirmAction] = useState<"reset" | "end" | null>(null);
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [navLeaveConfirmOpen, setNavLeaveConfirmOpen] = useState(false);
+  const [loginModalOpen, setLoginModalOpen] = useState(false);
+  const [loginEmail, setLoginEmail] = useState("");
+  const [loginPassword, setLoginPassword] = useState("");
+  const [loginError, setLoginError] = useState<string | null>(null);
   const pendingNavigationRef = useRef<(() => void) | null>(null);
+
+  const visibleQuestionGroups = useMemo(
+    () => (paidSessionActive ? [...questionGroups, paidQuestionGroup] : questionGroups),
+    [paidSessionActive]
+  );
 
   const totalQuestions = useMemo(
     () =>
-      questionGroups.reduce(
+      visibleQuestionGroups.reduce(
         (sum, g) =>
           sum +
           g.categories.reduce(
@@ -45,13 +57,14 @@ export default function App(): JSX.Element {
           ),
         0
       ),
-    []
+    [visibleQuestionGroups]
   );
   const totalAnswered = Object.keys(answersByQuestionId).length;
 
   const selectedGroup = useMemo(
-    () => questionGroups.find((item) => item.id === selectedGroupId) ?? questionGroups[0],
-    [selectedGroupId]
+    () =>
+      visibleQuestionGroups.find((item) => item.id === selectedGroupId) ?? visibleQuestionGroups[0],
+    [selectedGroupId, visibleQuestionGroups]
   );
 
   const selectedCategory = useMemo(
@@ -137,7 +150,7 @@ export default function App(): JSX.Element {
   };
 
   const selectGroup = (groupId: string): void => {
-    const group = questionGroups.find((item) => item.id === groupId);
+    const group = visibleQuestionGroups.find((item) => item.id === groupId);
     if (!group) return;
 
     const firstCategory = group.categories[0];
@@ -214,6 +227,35 @@ export default function App(): JSX.Element {
     setShowTestResult(false);
   };
 
+  const logoutPaidSession = (): void => {
+    persistPaidSessionActive(false);
+    setPaidSessionActive(false);
+    setLoginModalOpen(false);
+    if (selectedGroupId === PAID_GROUP_ID) {
+      const fallback = questionGroups[0];
+      const firstCategory = fallback.categories[0];
+      const firstSection = firstCategory.sections[0];
+      setSelectedGroupId(fallback.id);
+      setSelectedCategoryId(firstCategory.id);
+      setSelectedSectionId(firstSection.id);
+      resetQuestionView();
+    }
+  };
+
+  const submitPaidLogin = (e: FormEvent): void => {
+    e.preventDefault();
+    setLoginError(null);
+    if (validatePaidAdminCredentials(loginEmail, loginPassword)) {
+      persistPaidSessionActive(true);
+      setPaidSessionActive(true);
+      setLoginModalOpen(false);
+      setLoginPassword("");
+      setLoginError(null);
+    } else {
+      setLoginError("Fel e-post eller lösenord.");
+    }
+  };
+
   return (
     <div className="app-layout">
       <aside className={`sidebar ${sidebarOpen ? "sidebar-open" : ""}`}>
@@ -226,7 +268,7 @@ export default function App(): JSX.Element {
         </div>
 
         <nav className="sidebar-nav" aria-label="Ämnesnavigation">
-          {questionGroups.map((group) => {
+          {visibleQuestionGroups.map((group) => {
             const isGroupActive = selectedGroup.id === group.id;
             return (
               <div key={group.id} className="sidebar-group-block">
@@ -320,6 +362,31 @@ export default function App(): JSX.Element {
         </nav>
 
         <div className="sidebar-footer">
+          <div className="sidebar-auth">
+            {paidSessionActive ? (
+              <>
+                <p className="sidebar-auth-status">Inloggad — betald frågebank upplåst</p>
+                <button
+                  type="button"
+                  className="sidebar-auth-btn sidebar-auth-btn--outline"
+                  onClick={() => logoutPaidSession()}
+                >
+                  Logga ut
+                </button>
+              </>
+            ) : (
+              <button
+                type="button"
+                className="sidebar-auth-btn"
+                onClick={() => {
+                  setLoginError(null);
+                  setLoginModalOpen(true);
+                }}
+              >
+                Logga in
+              </button>
+            )}
+          </div>
           <div className="sidebar-progress">
             <div
               className="sidebar-progress-fill"
@@ -557,6 +624,59 @@ export default function App(): JSX.Element {
                 Ja, byt
               </button>
             </div>
+          </div>
+        </section>
+        )}
+
+        {loginModalOpen && (
+        <section
+          className="modal-backdrop"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="login-modal-title"
+        >
+          <div className="modal login-modal">
+            <div className="modal-header">
+              <h3 id="login-modal-title">Logga in — betald frågebank</h3>
+              <button
+                className="secondary"
+                type="button"
+                onClick={() => {
+                  setLoginModalOpen(false);
+                  setLoginError(null);
+                }}
+              >
+                Stäng
+              </button>
+            </div>
+            <form className="login-form" onSubmit={submitPaidLogin}>
+              <label className="login-field">
+                <span>E-post</span>
+                <input
+                  type="email"
+                  autoComplete="username"
+                  value={loginEmail}
+                  onChange={(e) => setLoginEmail(e.target.value)}
+                  required
+                />
+              </label>
+              <label className="login-field">
+                <span>Lösenord</span>
+                <input
+                  type="password"
+                  autoComplete="current-password"
+                  value={loginPassword}
+                  onChange={(e) => setLoginPassword(e.target.value)}
+                  required
+                />
+              </label>
+              {loginError && <p className="login-error">{loginError}</p>}
+              <div className="login-form-actions">
+                <button type="submit" className="actions-check">
+                  Logga in
+                </button>
+              </div>
+            </form>
           </div>
         </section>
         )}
