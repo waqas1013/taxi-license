@@ -11,6 +11,14 @@ import paidSakerhet2RullstolTrappaScenario from "../assets/paid-sakerhet2-rullst
 import paidSakerhet2BarnsakerhetslasScenario from "../assets/paid-sakerhet2-barnsakerhetslas-scenario.png";
 import paidSakerhet2FobiTextScenario from "../assets/paid-sakerhet2-fobi-text-scenario.png";
 import paidSakerhet2SvangHogerGangandeScenario from "../assets/paid-sakerhet2-svang-hoger-gangande-scenario.png";
+import paidSakerhet3BromsvatskaVarningScenario from "../assets/paid-sakerhet3-bromsvatska-varning-scenario.png";
+import paidSakerhet3MotortemperaturVarningScenario from "../assets/paid-sakerhet3-motortemperatur-varning-scenario.png";
+import paidSakerhet3BilbalteAbcdScenario from "../assets/paid-sakerhet3-bilbalte-abcd-scenario.png";
+import paidSakerhet3SkogsvagViltScenario from "../assets/paid-sakerhet3-skogsvag-vilt-scenario.png";
+import paidSakerhet3HjartsymbolHalsbandScenario from "../assets/paid-sakerhet3-hjartsymbol-halsband-scenario.png";
+import paidSakerhet3NeurologisktMarkeAbcdScenario from "../assets/paid-sakerhet3-neurologiskt-marke-abcd-scenario.png";
+import paidSakerhet3TakboxScenario from "../assets/paid-sakerhet3-takbox-scenario.png";
+import paidSakerhet3EpilepsiMarkeScenario from "../assets/paid-sakerhet3-epilepsi-marke-scenario.png";
 import paidKarta1KarlstadScenario from "../assets/paid-karta1-karlstad-scenario.png";
 import paidKarta1KarlstadUppdrag2Scenario from "../assets/paid-karta1-karlstad-uppdrag2-scenario.png";
 import paidKarta1KarlstadUppdrag3Scenario from "../assets/paid-karta1-karlstad-uppdrag3-scenario.png";
@@ -2066,6 +2074,413 @@ const paidSakerhet2Questions: Question[] = [
   },
 ];
 
+/** Betald Säkerhet 3 — Svar A=0 … D=3, vid fem alternativ E=4. */
+const paidSakerhet3Questions: Question[] = [
+  {
+    id: "paid-sakerhet-3-q1",
+    text: "På vilket sätt bör du i första hand hjälpa en person som är omtöcknad på grund av diabetes?",
+    options: [
+      "Placera i stabilt sidoläge",
+      "Utför Heimlich manöver",
+      "Se till att personen genast blir förd till sjukhus",
+      "Ge något sött att äta",
+      "Lossa kläderna kring halsen",
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: "paid-sakerhet-3-q2",
+    text: "Din kund är synskadad och har med sig sin ledarhund som har vit sele. Vad bör du göra först?",
+    options: [
+      "Tala om att hundar inte får följa med i taxibilar",
+      "Sätt dig ner bredvid hunden för att bekanta dig med den",
+      "Fråga kunden hur du ska uppträda mot hunden",
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-sakerhet-3-q3",
+    text: "Varningssymbolen tänds när du kör. När du kontrollerar behållaren för bromsvätska ser du att nivån är under minimum. Vad ska du göra?",
+    questionImage: paidSakerhet3BromsvatskaVarningScenario,
+    options: [
+      "Du bogserar bilen till närmaste verkstad",
+      "Du ser till att bilen bärgas till en verkstad",
+      "Du kör försiktigt till närmaste bensinstation",
+      "Du kör bilen till närmaste verkstad",
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: "paid-sakerhet-3-q4",
+    text: "Vad kan du göra för att minska fordonets bränsleförbrukning?",
+    options: [
+      "Undvika att använda den elektriska motorvärmaren vid temperaturer över +15 °C",
+      "Utföra regelbunden service",
+      "Alltid använda konstantfarthållaren",
+      "Värma upp motorn på tomgång",
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: "paid-sakerhet-3-q5",
+    text: "Du kör en kund som plötsligt faller ihop och får kramper. Vilken är den troligaste orsaken?",
+    options: [
+      "Kunden har fått ett epileptiskt anfall",
+      "Kunden är berusad",
+      "Kunden har fått insulinkänning",
+      "Kunden har drabbats av en stroke",
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: "paid-sakerhet-3-q6",
+    text: "Vad varnar kontrollampan på bilden för?",
+    questionImage: paidSakerhet3MotortemperaturVarningScenario,
+    options: [
+      "Låg bromsvätskenivå",
+      "Låg oljetryck",
+      "Låg spolarvätskenivå",
+      "Hög motortemperatur",
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: "paid-sakerhet-3-q7",
+    text: "På din taxibil är däcken märkta med M+S. Vad betyder denna märkning?",
+    options: [
+      "De är anpassade till körning med medelstor belastning",
+      "De är anpassade speciellt för taxikörning",
+      "De är anpassade till körning på vinterväglag",
+      "De är anpassade till körning på sommarväglag",
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-sakerhet-3-q8",
+    text: "Av vilken anledning bör bromsvätskan bytas ut med några års mellanrum?",
+    options: [
+      "Den drar till sig vatten",
+      "Den drar till sig luft",
+      "Den blir trögflytande",
+      "Den drar till sig smuts",
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: "paid-sakerhet-3-q9",
+    text: "Du kommer fram till en olycksplats och hittar en kvinna som klagar på att hon fryser. Hon ser blek och kallsvettig ut. Hur bör du göra?",
+    options: [
+      "Se till att hon går omkring för att hålla sig varm",
+      "Se till att hon lägger sig ned med benen höjda och att du lägger en filt om henne",
+      "Be henne att sätta sig och ge henne något varmt att dricka",
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: "paid-sakerhet-3-q10",
+    text: "Hur bör du göra för att minska de negativa effekterna på miljön vid kallstart?",
+    options: [
+      "Du börjar köra direkt men undviker att belasta motorn hårt",
+      "Du låter motorn gå på tomgång i minst en minut innan du börjar köra",
+      "Du låter motorn gå med förhöjt varvtal i minst en minut innan du börjar köra",
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: "paid-sakerhet-3-q11",
+    text: "På vilken av bilderna används bilbältet bäst för att skydda vid en trafikolycka?",
+    questionImage: paidSakerhet3BilbalteAbcdScenario,
+    options: ["Bild A", "Bild B", "Bild C", "Bild D"],
+    correctIndex: 1,
+  },
+  {
+    id: "paid-sakerhet-3-q12",
+    text: "Du ser i backspegeln att du kommer att bli påkörd bakifrån. Vad kan du göra för att skydda nacken mot skador?",
+    options: [
+      "Böja huvudet framåt och undvika att vrida huvudet",
+      "Bromsa hårt",
+      "Luta kroppen så långt framåt som möjligt och hålla hårt i ratten",
+      "Pressa huvudet bakåt mot nackskyddet och undvika att vrida huvudet",
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: "paid-sakerhet-3-q13",
+    text: "Vad bör i första hand avgöra hur fort du kör i den här situationen?",
+    questionImage: paidSakerhet3SkogsvagViltScenario,
+    options: [
+      "Hastighetsbegränsningen på vägen",
+      "Risken för att bli bländad av solen",
+      "Risken för vilt",
+      "Bilens skick och last",
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-sakerhet-3-q14",
+    text: "Den 1 februari ska du koppla en släpvagn till din taxibil. Det är vinterväglag och bilen är utrustad med dubbdäck. Vilka däck får du använda på släpet?",
+    options: [
+      "Antingen vinterdäck eller dubbdäck",
+      "Enbart vinterdäck",
+      "Enbart dubbdäck",
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-sakerhet-3-q15",
+    text: "Vilken grupp av förare har oftare svårt att hinna med att överblicka trafiken i korsningar?",
+    options: [
+      "Män 18–24 år",
+      "Kvinnor 18–24 år",
+      "Förare över 65 år",
+      "Förare 35–50 år",
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-sakerhet-3-q16",
+    text: "Vilken är den viktigaste anledningen till att man har sänkt hastighetsbegränsningen från 50 km/h till 30 km/h i vissa tätorter?",
+    options: [
+      "Att bullernivån ska bli lägre för de boende",
+      "Att antalet svåra olyckor ska minska",
+      "Att koldioxidutsläppen ska minska",
+      "Att kolmonoxidutsläppen ska minska",
+      "Att slitaget på vägbanan ska minska",
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: "paid-sakerhet-3-q17",
+    text: "När ska du byta ut bilbarnstolen mot till exempel en bilbälteskudde?",
+    options: [
+      "När barnet kan sitta utan stöd",
+      "När barnet väger 15 kg",
+      "När barnet fyllt 3 år",
+      "När barnets huvud är i höjd med bilbarnstolens överkant",
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: "paid-sakerhet-3-q18",
+    text: "Din taxibil har krockkudde både på förarplatsen och passagerarplatsen fram. Vilket alternativ är rätt?",
+    options: [
+      "En bilbarnstol i framsätet måste vara framåtvänd",
+      "Du ska sitta så nära krockkudden som möjligt",
+      "Personer som är kortare än 135 cm ska sitta i baksätet",
+      "Krockkudden kan i vissa fall ersätta bilbältet",
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-sakerhet-3-q19",
+    text: "Vid vilket av följande tillfällen ska taxametern besiktas när du har bytt däck?",
+    options: [
+      "När spårvidden ändras med mer än 5 %",
+      "När bromssträckans längd påverkas med mer än 5 %",
+      "När mätningen av vägsträckan ändras med mer än 5 %",
+      "När du har bytt från odubbade vinterdäck till dubbdäck",
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: "paid-sakerhet-3-q20",
+    text: "Du har bytt däck på bilen. Vad ska du göra med de utslitna däcken?",
+    options: [
+      "Lämna dem till däckförsäljaren för återvinning",
+      "Slänga dem bland de brännbara soporna",
+      "Slänga dem bland grovsoporna",
+      "Du måste själv lämna dem till en miljöstation",
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: "paid-sakerhet-3-q21",
+    text: "Din kund behöver rollator när han går och ska ha med rollatorn på resan. Hur gör du?",
+    options: [
+      "Du erbjuder kunden hjälp in i bilen och tar sedan hand om rollatorn",
+      "Du tar hand om rollatorn och ber kunden sätta sig i bilen",
+      "Du lägger in rollatorn i bagageutrymmet och hjälper sedan kunden in i bilen",
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: "paid-sakerhet-3-q22",
+    text: "Du kör en person som plötsligt får väldiga smärtor i armar och rygg. Personen bär denna symbol runt halsen. Vad bör du omedelbart göra?",
+    questionImage: paidSakerhet3HjartsymbolHalsbandScenario,
+    options: [
+      "Se till att personen sitter med stöd för armarna",
+      "Ge personen andningshjälp med mun-mot-mun-metoden",
+      "Lossa kläderna runt halsen",
+      "Larma 112",
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-sakerhet-3-q23",
+    text: "Du har en kund som får ett astmaanfall med hosta och andningssvårigheter. Vilken hjälp bör du ge först?",
+    options: [
+      "Tala lugnande och försöka få kundens uppmärksamhet riktad mot något annat",
+      "Larma ambulans genom att ringa 112",
+      "Lyfta ut kunden ur bilen och placera honom eller henne i stabilt sidoläge (framstupa sidoläge)",
+      "Öppna bilens dörr så att kunden får frisk luft och ta fram eventuell medicin",
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: "paid-sakerhet-3-q24",
+    text: "Du hör ett mekaniskt skrapande ljud när du bromsar. Måste du vidta någon åtgärd?",
+    options: [
+      "Ja, kontrollera bromsvätskans nivå",
+      "Ja, kontrollera bromsbeläggens tjocklek",
+      "Ja, kontrollera servocylinderns funktion",
+      "Nej, eftersom ljudet beror på att ABS-bromsen aktiverades",
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: "paid-sakerhet-3-q25",
+    text: "Vilket av märkena markerar att en person är drabbad av en neurologisk sjukdom?",
+    questionImage: paidSakerhet3NeurologisktMarkeAbcdScenario,
+    options: ["Märke A", "Märke B", "Märke C", "Märke D"],
+    correctIndex: 1,
+  },
+  {
+    id: "paid-sakerhet-3-q26",
+    text: "Din bil är manuellt växlad. Vad kan du göra för att minska bilens bränsleförbrukning?",
+    options: [
+      "Använda konstantfarthållaren så ofta som möjligt",
+      "Alltid köra på 4:ans växel vid farter under 50 km/h",
+      "Motorbromsa så lite som möjligt",
+      "Växla upp tidigt och köra på så hög växel som möjligt",
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: "paid-sakerhet-3-q27",
+    text: "Vad kan förlänga din reaktionstid när du kör?",
+    options: [
+      "För lågt lufttryck i däcken",
+      "Samtal i mobiltelefon",
+      "Bristfälliga bromsar",
+      "Felaktig hjulinställning",
+      "Halt väglag",
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: "paid-sakerhet-3-q28",
+    text: "Varför bör du inte ha takboxen på bilen när du inte använder den?",
+    questionImage: paidSakerhet3TakboxScenario,
+    options: [
+      "Takboxen gör att du får betydligt längre bromssträcka",
+      "Takboxen gör att bilen får längre tyngdpunkt",
+      "Takboxen skapar onödigt luftmotstånd som ökar bränsleförbrukningen",
+      "Takboxen gör att bilen blir överstyrd",
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-sakerhet-3-q29",
+    text: "Du får en kund som bär denna symbol. Vilket symtom kan sjukdomen ge?",
+    questionImage: paidSakerhet3EpilepsiMarkeScenario,
+    options: [
+      "Kunden kan drabbas av hjärtsvikt",
+      "Kunden kan få svårt att andas",
+      "Kunden kan hamna i insulinkoma",
+      "Kunden kan få kramper och muskelryckningar",
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: "paid-sakerhet-3-q30",
+    text: "Du får ett köruppdrag där kunden är kraftigt alkoholpåverkad men på gott humör. Vad bör du göra?",
+    options: [
+      "Du begär förskottsbetalning och fullföljer uppdraget",
+      "Du kontaktar sambandscentralen och informerar om vem personen är",
+      "Du nekar kunden att åka med",
+      "Du ber kunden att ta med sig en nykter person",
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: "paid-sakerhet-3-q31",
+    text: "Hur stora krafter kan en människa utsättas för vid en frontalkrock med två likvärdiga bilar vid en hastighet av 70 km/h per fordon?",
+    options: [
+      "10 gånger kroppsvikten",
+      "20 gånger kroppsvikten",
+      "30 gånger kroppsvikten",
+      "50 gånger kroppsvikten",
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: "paid-sakerhet-3-q32",
+    text: "Du kör en kund som plötsligt blir blek, darrig, kallsvettig och irriterad. Vilken är den troligaste orsaken?",
+    options: [
+      "Kunden har diabetes",
+      "Kunden är berusad",
+      "Kunden har drabbats av ett epileptiskt anfall",
+      "Kunden har drabbats av en stroke",
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: "paid-sakerhet-3-q33",
+    text: "Du kommer fram som första bil till en trafikolycka. Vilket alternativ beskriver hur du ska prioritera?",
+    options: [
+      "1. Överblicka olycksplatsen 2. Varna andra trafikanter 3. Ge livräddande första hjälp 4. Larma 112",
+      "1. Larma 112 2. Ge livräddande första hjälp 3. Varna andra trafikanter 4. Överblicka olycksplatsen",
+      "1. Ge livräddande första hjälp 2. Larma 112 3. Överblicka olycksplatsen 4. Varna andra trafikanter",
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: "paid-sakerhet-3-q34",
+    text: "När på dygnet anses risken vara störst för olyckor som beror på trötthet?",
+    options: ["Kl. 21.00-24.00", "Kl. 02.00-05.00", "Kl. 07.00-10.00", "Kl. 14.00-17.00"],
+    correctIndex: 1,
+  },
+  {
+    id: "paid-sakerhet-3-q35",
+    text: "Inför vintern har du bytt till dubbdäck på din taxi. Vid körning dagen efter bytet känner du vibrationer och hör oljud från ett av hjulen på bilen. Vad är den troligaste orsaken?",
+    options: [
+      "Däcken har blivit ojämna under sommarförvaringen",
+      "Dubbar från däcken har lossnat",
+      "Fälgen har blivit skev under sommarförvaringen",
+      "Hjulbultar håller på att lossna",
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-sakerhet-3-q36",
+    text: "Hur många personer varje år beräknas dö i olyckor där någon inblandad har varit påverkad av alkohol?",
+    options: ["Ca 50 personer", "Ca 150 personer", "Ca 250 personer", "Ca 350 personer", "Ca 500 personer"],
+    correctIndex: 1,
+  },
+  {
+    id: "paid-sakerhet-3-q37",
+    text: "Du använder en medicin som du inte vet om den är trafikfarlig. Du känner dig dock yr av medicinen. Kan du dömas för rattfylleri om du trots detta kör bil?",
+    options: [
+      "Nej, eftersom medicin inte kan likställas med alkohol eller droger",
+      "Ja, men endast om du döms som vållande till en trafikolycka",
+      "Ja, om det kan antas att du inte kan köra bilen på ett betryggande sätt",
+      "Nej, inte om du har fått recept på medicinen av en läkare",
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-sakerhet-3-q38",
+    text: "Du ska lyfta tungt gods. Vilken lyftteknik bör du använda?",
+    options: [
+      "Du lyfter med böjda ben och böjd rygg",
+      "Du lyfter med böjda ben och rak rygg",
+      "Du lyfter med raka ben och böjd rygg",
+      "Du lyfter med raka ben och rak rygg",
+    ],
+    correctIndex: 1,
+  },
+];
+
 /**
  * Betald frågebank — egna sektioner och frågor (kopplas inte till Teoriprovet).
  * Lägg till `Question`-objekt i respektive sektions `questions`-array.
@@ -2080,7 +2495,7 @@ export const paidQuestionGroup: CategoryGroup = {
       sections: [
         section("paid-sakerhet-1", "Säkerhet 1", paidSakerhet1Questions),
         section("paid-sakerhet-2", "Säkerhet 2", paidSakerhet2Questions),
-        section("paid-sakerhet-3", "Säkerhet 3"),
+        section("paid-sakerhet-3", "Säkerhet 3", paidSakerhet3Questions),
       ],
     },
     {
