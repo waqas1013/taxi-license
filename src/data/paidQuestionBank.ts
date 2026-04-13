@@ -56,6 +56,7 @@ import paidLagstiftning1TaxameterBesiktningScenario from "../assets/paid-lagstif
 import paidLagstiftning1FornyaTaxiforarlegitimationScenario from "../assets/paid-lagstiftning1-fornya-taxiforarlegitimation-scenario.png";
 import paidLagstiftning1KoraOmLastbilMotandeScenario from "../assets/paid-lagstiftning1-kora-om-lastbil-motande-scenario.png";
 import paidLagstiftning1PrisinformationTaxibil2Scenario from "../assets/paid-lagstiftning1-prisinformation-taxibil-2-scenario.png";
+import paidLagstiftning2FotgangareOvergangsstalleScenario from "../assets/paid-lagstiftning2-fotgangare-overgangsstalle-scenario.png";
 import paidKarta1KarlstadScenario from "../assets/paid-karta1-karlstad-scenario.png";
 import paidKarta1KarlstadUppdrag2Scenario from "../assets/paid-karta1-karlstad-uppdrag2-scenario.png";
 import paidKarta1KarlstadUppdrag3Scenario from "../assets/paid-karta1-karlstad-uppdrag3-scenario.png";
@@ -3046,6 +3047,20 @@ const paidLagstiftning1Questions: Question[] = [
   },
 ];
 
+const paidLagstiftning2Questions: Question[] = [
+  {
+    id: "paid-lagstiftning-2-q1",
+    text: "Hur ska du uppträda i den här situationen?",
+    questionImage: paidLagstiftning2FotgangareOvergangsstalleScenario,
+    options: [
+      "Jag ska sakta in eller stanna för att visa att jag tänker väja",
+      "Jag kan köra vidare utan att stanna eftersom jag ser att fotgängaren har sett mig",
+      "Jag kan köra vidare eftersom fotgängaren befinner sig på mittrefugen",
+    ],
+    correctIndex: 0,
+  },
+];
+
 /**
  * Betald frågebank — egna sektioner och frågor (kopplas inte till Teoriprovet).
  * Lägg till `Question`-objekt i respektive sektions `questions`-array.
@@ -3068,7 +3083,7 @@ export const paidQuestionGroup: CategoryGroup = {
       name: "Lagstiftning",
       sections: [
         section("paid-lagstiftning-1", "Lagstiftning 1", paidLagstiftning1Questions),
-        section("paid-lagstiftning-2", "Lagstiftning 2"),
+        section("paid-lagstiftning-2", "Lagstiftning 2", paidLagstiftning2Questions),
         section("paid-lagstiftning-3", "Lagstiftning 3"),
         section("paid-lagstiftning-4", "Lagstiftning 4"),
         section("paid-lagstiftning-5", "Lagstiftning 5"),
