@@ -57,6 +57,41 @@ import paidLagstiftning1FornyaTaxiforarlegitimationScenario from "../assets/paid
 import paidLagstiftning1KoraOmLastbilMotandeScenario from "../assets/paid-lagstiftning1-kora-om-lastbil-motande-scenario.png";
 import paidLagstiftning1PrisinformationTaxibil2Scenario from "../assets/paid-lagstiftning1-prisinformation-taxibil-2-scenario.png";
 import paidLagstiftning2FotgangareOvergangsstalleScenario from "../assets/paid-lagstiftning2-fotgangare-overgangsstalle-scenario.png";
+import paidLagstiftning2Q11UserScenario from "../assets/paid-lagstiftning2-q11-user-scenario.png";
+import paidLagstiftning2Q12UserScenario from "../assets/paid-lagstiftning2-q12-user-scenario.png";
+import paidLagstiftning2Q13UserScenario from "../assets/paid-lagstiftning2-q13-user-scenario.png";
+import paidLagstiftning2Q14UserQuestion from "../assets/paid-lagstiftning2-q14-user-question.png";
+import paidLagstiftning2Q15UserQuestion from "../assets/paid-lagstiftning2-q15-user-question.png";
+import paidLagstiftning2Q15UserSupplement from "../assets/paid-lagstiftning2-q15-user-supplement.png";
+import paidLagstiftning2Q18UserQuestion from "../assets/paid-lagstiftning2-q18-user-question.png";
+import paidLagstiftning2Q18UserSupplement from "../assets/paid-lagstiftning2-q18-user-supplement.png";
+import paidLagstiftning2Q19UserQuestion from "../assets/paid-lagstiftning2-q19-user-question.png";
+import paidLagstiftning2Q19UserSupplement from "../assets/paid-lagstiftning2-q19-user-supplement.png";
+import paidLagstiftning2Q20UserQuestion from "../assets/paid-lagstiftning2-q20-user-question.png";
+import paidLagstiftning2Q20UserSupplement from "../assets/paid-lagstiftning2-q20-user-supplement.png";
+import paidLagstiftning2Q21UserQuestion from "../assets/paid-lagstiftning2-q21-user-question.png";
+import paidLagstiftning2Q21UserSupplement from "../assets/paid-lagstiftning2-q21-user-supplement.png";
+import paidLagstiftning2Q23UserQuestion from "../assets/paid-lagstiftning2-q23-user-question.png";
+import paidLagstiftning2Q23UserSupplement from "../assets/paid-lagstiftning2-q23-user-supplement.png";
+import paidLagstiftning2Q24UserQuestion from "../assets/paid-lagstiftning2-q24-user-question.png";
+import paidLagstiftning2Q24UserSupplement from "../assets/paid-lagstiftning2-q24-user-supplement.png";
+import paidLagstiftning2Q25UserSupplement from "../assets/paid-lagstiftning2-q25-user-supplement.png";
+import paidLagstiftning2Q26UserSupplement from "../assets/paid-lagstiftning2-q26-user-supplement.png";
+import paidLagstiftning2Q27UserSupplement from "../assets/paid-lagstiftning2-q27-user-supplement.png";
+import paidLagstiftning2Q28UserSupplement from "../assets/paid-lagstiftning2-q28-user-supplement.png";
+import paidLagstiftning2Q31UserSupplement from "../assets/paid-lagstiftning2-q31-user-supplement.png";
+import paidLagstiftning2Q32UserSupplement from "../assets/paid-lagstiftning2-q32-user-supplement.png";
+import paidLagstiftning2Q35UserSupplement from "../assets/paid-lagstiftning2-q35-user-supplement.png";
+import paidLagstiftning2Q36UserSupplement from "../assets/paid-lagstiftning2-q36-user-supplement.png";
+import paidLagstiftning2Q37UserSupplement from "../assets/paid-lagstiftning2-q37-user-supplement.png";
+import paidLagstiftning2Q39UserSupplement from "../assets/paid-lagstiftning2-q39-user-supplement.png";
+import paidLagstiftning2Q40UserSupplement from "../assets/paid-lagstiftning2-q40-user-supplement.png";
+import paidLagstiftning2Q41UserSupplement from "../assets/paid-lagstiftning2-q41-user-supplement.png";
+import paidLagstiftning2Q42UserSupplement from "../assets/paid-lagstiftning2-q42-user-supplement.png";
+import paidLagstiftning2Q43UserSupplement from "../assets/paid-lagstiftning2-q43-user-supplement.png";
+import paidLagstiftning2Q44UserSupplement from "../assets/paid-lagstiftning2-q44-user-supplement.png";
+import paidLagstiftning2Q45UserSupplement from "../assets/paid-lagstiftning2-q45-user-supplement.png";
+import paidLagstiftning2Q46UserSupplement from "../assets/paid-lagstiftning2-q46-user-supplement.png";
 import paidKarta1KarlstadScenario from "../assets/paid-karta1-karlstad-scenario.png";
 import paidKarta1KarlstadUppdrag2Scenario from "../assets/paid-karta1-karlstad-uppdrag2-scenario.png";
 import paidKarta1KarlstadUppdrag3Scenario from "../assets/paid-karta1-karlstad-uppdrag3-scenario.png";
@@ -3058,6 +3093,476 @@ const paidLagstiftning2Questions: Question[] = [
       "Jag kan köra vidare eftersom fotgängaren befinner sig på mittrefugen",
     ],
     correctIndex: 0,
+  },
+  {
+    id: "paid-lagstiftning-2-q2",
+    text: "Var ska taxameterns kontroll- och plomberingsrapport förvaras?",
+    options: ["Hos länsstyrelsen", "Hos vägverket", "I fordonet", "Hos tillståndshavaren"],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-lagstiftning-2-q3",
+    text: "När får du tidigast börja köra taxi den 14 juli enligt tidboksbladet?",
+    options: ["Kl 06.00", "Kl 00.00", "Kl 07.00", "Kl 09.00"],
+    correctIndex: 1,
+  },
+  {
+    id: "paid-lagstiftning-2-q4",
+    text: "Vem ansvarar för att en taxi som används vid skolskjutsning har rätt utrustning?",
+    options: [
+      "Föraren och tillståndshavaren",
+      "Föraren och skolstyrelsen",
+      "Föraren, tillståndshavaren och skolstyrelsen",
+      "Enbart föraren",
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: "paid-lagstiftning-2-q5",
+    text: "Vem ansvarar normalt för att ett 14-årigt barn använder bilbälte vid skolskjutsning i taxibil?",
+    options: [
+      "Barnet själv",
+      "Skolpersonalen om det finns sådan med i bilen",
+      "Barnets föräldrar om de finns med i bilen",
+      "Föraren",
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: "paid-lagstiftning-2-q6",
+    text: "Vilka fordon får du köra i yrkesmässig taxitrafik, förutom personbilar?",
+    options: ["Motorcyklar", "Lätta lastbilar", "Bussar", "Lastbilar oavsett vikt"],
+    correctIndex: 1,
+  },
+  {
+    id: "paid-lagstiftning-2-q7",
+    text: "Vilket påstående är rätt om prisinformationen i en taxi?",
+    options: [
+      "Den ska vara läsbar från varje passagerarplats i fordonet",
+      "Den ska vara tryckt på reflekterande material som är läsbart i mörker",
+      "Den ska vara fastsatt i den nedre vänstra hörnet av fordonets vindruta",
+      "Den ska finnas tillgänglig i pappersform så att kunden kan få ett exemplar",
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: "paid-lagstiftning-2-q8",
+    text: "Vem är ansvarig för att anteckningar om vilotider förs enligt bestämmelserna?",
+    options: [
+      "Enbart arbetsgivaren",
+      "Enbart företagets trafikansvarige",
+      "Enbart föraren",
+      "Både föraren och arbetsgivaren",
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: "paid-lagstiftning-2-q9",
+    text: "Vilka belysningar får inte användas samtidigt vid färd?",
+    options: [
+      "Halvljus och parkeringsljus",
+      "Helljus och dimljus",
+      "Helljus och parkeringsljus",
+      "Halvljus och dimljus",
+      "Parkeringsljus och dimljus",
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: "paid-lagstiftning-2-q10",
+    text: "Dygnsvilan för en förare i taxitrafik får delas upp. Vilket alternativ visar en riktig uppdelning av dygnsvilan?",
+    options: ["3 tim + 8 tim", "5 tim + 6 tim", "1 tim + 4 tim + 6 tim", "1 tim + 1 tim + 9 tim"],
+    correctIndex: 0,
+  },
+  {
+    id: "paid-lagstiftning-2-q11",
+    text: "Vid vilken av följande tidpunkter gäller hastighetsbegränsningen 50 km/h?",
+    questionImage: paidLagstiftning2Q11UserScenario,
+    options: [
+      "En söndag kl 08.00",
+      "En vardag som inte är dag före helgdag kl 20.00",
+      "En lördag kl 12.00",
+      "En vardag som inte är dag före helgdag kl 18.00",
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: "paid-lagstiftning-2-q12",
+    text: "Taxiföraren har stannat för att vänta på en kund. Är det tillåtet?",
+    questionImage: paidLagstiftning2Q12UserScenario,
+    options: ["Ja, i situation A", "Ja, i situation B", "Ja, i båda situationerna", "Nej"],
+    correctIndex: 1,
+  },
+  {
+    id: "paid-lagstiftning-2-q13",
+    text: "Vilket påstående är riktigt om gatan på bilden?",
+    questionImage: paidLagstiftning2Q13UserScenario,
+    options: [
+      "All fordonstrafik är förbjuden",
+      "Man får hämta kunder som bor vid gatan med taxi",
+      "All fordonstrafik",
+      "Endast fordonstrafik med särskild tillstånd är tillåtet",
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: "paid-lagstiftning-2-q14",
+    text: "Du har ett köruppdrag där fast pris ska gälla. När ska du senast registrera det fasta priset i taxametern? (Priset är inte bestämt av något externt samplaneringssystem)",
+    questionImage: paidLagstiftning2Q14UserQuestion,
+    options: [
+      "Innan jag har stannat bilen vid slutet av körningen",
+      "Vid slutet av körningen men innan kreditkort avläses",
+      "Efter halva körningen",
+      "När jag börjar körningen",
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: "paid-lagstiftning-2-q15",
+    text: "Vilket vägmärke används på huvudled för att varna för en farlig korsning?",
+    questionImage: paidLagstiftning2Q15UserQuestion,
+    options: ["Vägmärke A", "Vägmärke B", "Vägmärke C"],
+    correctIndex: 2,
+    explanationImage: paidLagstiftning2Q15UserSupplement,
+  },
+  {
+    id: "paid-lagstiftning-2-q16",
+    text: "Var på fordonet ska yrkestrafikmärket vara fastsatt?",
+    options: [
+      "På bildens vänstar sidoruta",
+      "I nedre vänstra hörnet av vindruta",
+      "Bredvid den bakre registreringsskylten",
+      "På bildens högra sidoruta",
+      "På instrumentbrädans högra sida",
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: "paid-lagstiftning-2-q17",
+    text: "När du ska börja ditt körpass upptäcker du att du glömt din personliga tidbok. Vad gäller?",
+    options: [
+      "Jag får påbörja en ny tidbok under förutsättning att jag använder högst två böcker samtidigt",
+      "Jag får påbörja en ny tidbok under förutsättning att jag makulerar den glömda boken direkt efter mitt körpass",
+      "Jag måste hämta tidboken innan jag börjar körpasset, eftersom jag inte får börja på en ny tidbok förrän den tidigare är avslutat",
+      "Jag får tillfälligt använda arbetsgivarens tidbok men endast för ett körpass",
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-lagstiftning-2-q18",
+    text: "Vad anger de gula vägmarkeringarna?",
+    questionImage: paidLagstiftning2Q18UserQuestion,
+    options: [
+      "Förbud att parkera",
+      "Förbud att stanna och parkera",
+      "Förbud att köra på den gula heldragna linjen",
+    ],
+    correctIndex: 0,
+    explanationImage: paidLagstiftning2Q18UserSupplement,
+  },
+  {
+    id: "paid-lagstiftning-2-q19",
+    text: "Du ska svänga till höger. Vad gäller?",
+    questionImage: paidLagstiftning2Q19UserQuestion,
+    options: [
+      "Jag får köra utan att stanna vid stopplinjen",
+      "Jag får köra men måste först stanna vid stopplinjen",
+      "Jag ska stanna vid stopplinjen och vänta på grönt ljus",
+    ],
+    correctIndex: 0,
+    explanationImage: paidLagstiftning2Q19UserSupplement,
+  },
+  {
+    id: "paid-lagstiftning-2-q20",
+    text: "Du avser att svänga in på vägen till vänster. Vad är det första du bör göra?",
+    questionImage: paidLagstiftning2Q20UserQuestion,
+    options: [
+      "Placera bilen intill mittlinjen",
+      "Ge tecken till vänster",
+      "Växla ner och motorbromsa",
+      "Bromsa",
+      "Kontrollera bakomvarande trafik",
+    ],
+    correctIndex: 4,
+    explanationImage: paidLagstiftning2Q20UserSupplement,
+  },
+  {
+    id: "paid-lagstiftning-2-q21",
+    text: "Taxiföraren har stannat för att släppa av en kund. Är det tillåtet?",
+    questionImage: paidLagstiftning2Q21UserQuestion,
+    options: [
+      "Ja, i situation A",
+      "Ja, i situation B",
+      "Ja, både i situation A och B",
+      "Nej, inte i någon av situationerna",
+    ],
+    correctIndex: 1,
+    explanationImage: paidLagstiftning2Q21UserSupplement,
+  },
+  {
+    id: "paid-lagstiftning-2-q22",
+    text: "Du är taxiförare och har körkort med behörighet B. Vilket av följande fordon får du köra?",
+    options: [
+      "Lastbil med totalvikt på 3,7 ton",
+      "Bil inrättad för 12 personer",
+      "Personbil med totalvikt på 3,2 ton",
+      "Personbil med tillkopplad tung släpvagn",
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-lagstiftning-2-q23",
+    text: "Du ska hämta en passagerare. Får du stanna som taxin på bilden?",
+    questionImage: paidLagstiftning2Q23UserQuestion,
+    options: [
+      "Ja, eftersom gatan är smal",
+      "Ja, om jag på så sätt kan underlätta för övrig trafik",
+      "Nej",
+      "Ja, men högst 1 minut",
+    ],
+    correctIndex: 2,
+    explanationImage: paidLagstiftning2Q23UserSupplement,
+  },
+  {
+    id: "paid-lagstiftning-2-q24",
+    text: "Du kör taxi och börjar ett körpass kl 13.00 den 4 augusti. Tidboksbladet visar dina vilotider de senaste dygnen. När måste du senast börja nästa viloperiod?",
+    questionImage: paidLagstiftning2Q24UserQuestion,
+    options: ["Kl 16.00 den 4 augusti", "Kl 21.30 den 4 augusti", "Kl 02.00 den 5 augusti", "Kl 19.00 den 4 augusti"],
+    correctIndex: 3,
+    explanationImage: paidLagstiftning2Q24UserSupplement,
+  },
+  {
+    id: "paid-lagstiftning-2-q25",
+    text: "Vilken högsta tillåtna hastighet gäller när du passerar detta vägmärke om inget annat anges?",
+    questionImage: paidLagstiftning2Q25UserSupplement,
+    options: ["30 km/h", "50 km/h", "70 km/h", "90 km/h"],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-lagstiftning-2-q26",
+    text: "Vilka får parkera här?",
+    questionImage: paidLagstiftning2Q26UserSupplement,
+    options: [
+      "Alla som kör färdtjänsttransport",
+      "Alla som kör sjuktransport",
+      "Alla rörelsehindrande med rullstol",
+      "Alla rörelsehindrande med särskild tillstånd",
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: "paid-lagstiftning-2-q27",
+    text: "Du får en körning den 24 september som beräknas pågå från kl 05.00 till kl 06.00. Kan du ta körning med tanke på den vilotid du har haft enligt tidboksbladet?",
+    questionImage: paidLagstiftning2Q27UserSupplement,
+    options: [
+      "Ja",
+      "Nej, det saknas 1 timmas vilotid",
+      "Nej, det saknas 2 timmars vilotid",
+      "Nej, det saknas 3 timmars vilotid",
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: "paid-lagstiftning-2-q28",
+    text: "Du ska fortsätta rakt fram. Gäller högerregeln i någon av korsningarna?",
+    questionImage: paidLagstiftning2Q28UserSupplement,
+    options: ["Ja, men enbart i korsning A", "Ja, men enbart i korsning B", "Ja, i korsning A och B", "Nej"],
+    correctIndex: 0,
+  },
+  {
+    id: "paid-lagstiftning-2-q29",
+    text: "En polisman begär att få se körpassrapporter från de senaste dygnen som ditt fordon använts i taxitrafik. För minst hur många dygn är du skyldig att visa upp kopior av körpassrapporterna?",
+    options: [
+      "För de två senaste dygnen",
+      "För de tre senaste dygnen",
+      "För de fyra senaste dygnen",
+      "För de fem senaste dygnen",
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: "paid-lagstiftning-2-q30",
+    text: "Vad ska du anteckna i tidboken innan du börjar ett körpass med taxi?",
+    options: [
+      "Den närmaste föregående dygnsvilan",
+      "De två närmast föregående dygnsvilorna",
+      "De tre närmast föregående dygnsvilorna",
+      "De sju närmast föregående dygnsvilorna",
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: "paid-lagstiftning-2-q31",
+    text: "Du ska svänga vänster i korsningen. Måste du ge tecken åt vänster med körriktningsvisaren?",
+    questionImage: paidLagstiftning2Q31UserSupplement,
+    options: [
+      "Nej, eftersom mötande trafik har rött ljus",
+      "Ja, eftersom jag ska svänga",
+      "Nej, eftersom trafiksignalen visare grön pil",
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: "paid-lagstiftning-2-q32",
+    text: "Du ska svänga vänster i korsningen. Vilka regler gäller?",
+    questionImage: paidLagstiftning2Q32UserSupplement,
+    options: [
+      "Jag kör eftersom mötande bilarna har rött ljus",
+      "Jag måste stanna för att invänta grön konturpil",
+      "Jag låter de mötande bilarna köra först",
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-lagstiftning-2-q33",
+    text: "Din taxiförarlegitimation kan bli återkallad om du begår ett brott. För hur lång tid blir den minst återkallad?",
+    options: ["1 år", "2 år", "3 år", "4 år", "5 år"],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-lagstiftning-2-q34",
+    text: "Vid vilket av följande tillfällen ska taxametern besiktigas?",
+    options: [
+      "När jag byter däck så att mätningen av vägsträckan ändras med mer än 2 procent",
+      "När bilen byter ägare",
+      "Vid kontrollbesiktningen av bilen",
+      "Vid den årliga registreringsbesiktning",
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: "paid-lagstiftning-2-q35",
+    text: "Du parkerar din bil lördag kl. 20.00. När får du senast hämta den?",
+    questionImage: paidLagstiftning2Q35UserSupplement,
+    options: ["Söndag kl. 7.00", "Söndag kl. 24.00", "Måndag kl. 7.00", "Lördag kl. 24.00"],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-lagstiftning-2-q36",
+    text: "Vilken tid får du inte parkera?",
+    questionImage: paidLagstiftning2Q36UserSupplement,
+    options: ["Lördag kl 7", "Lördag kl 13", "Söndag kl 9", "Söndag kl 17"],
+    correctIndex: 1,
+  },
+  {
+    id: "paid-lagstiftning-2-q37",
+    text: "Vad innebär polisens tecken?",
+    questionImage: paidLagstiftning2Q37UserSupplement,
+    options: [
+      "Mötande ska stanna och du ska stanna",
+      "Mötande ska stanna och du ska köra",
+      "Mötande ska köra och du ska stanna",
+      "Både ska köra men långsamt",
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-lagstiftning-2-q38",
+    text: "Vad gäller när du kör personbil med en bromsad släpvagn?",
+    options: [
+      "Högsta tillåtna hastighet är 80 km/h",
+      "Jag måste ha med både bilens och släpvagnens registreringsbevis",
+      "Jag måste köra på vägrenen om det finns en sådan",
+      "Släpvagnen måste ha sommardäck om bilen har sommardäck",
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: "paid-lagstiftning-2-q39",
+    text: "Är någon av bilarna felparkerad?",
+    questionImage: paidLagstiftning2Q39UserSupplement,
+    options: ["Ja, båda bilarna", "Nej, ingen av bilarna", "Ja, den mörka bilen", "Ja, den ljusa bilen"],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-lagstiftning-2-q40",
+    text: "Du kör på motorväg och närmar dig ett fordon från accelerationsfält",
+    questionImage: paidLagstiftning2Q40UserSupplement,
+    options: [
+      "Jag måste byta till vänstra körfält",
+      "Jag behöver inte anpassa hans inkörning underlättas",
+      "Jag måste anpassa hastigheten för att inkörningen underlättas",
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-lagstiftning-2-q41",
+    text: "Du kommer fram till det här vägmärket. Vad gäller?",
+    questionImage: paidLagstiftning2Q41UserSupplement,
+    options: [
+      "Du måste svänga höger",
+      "Du får inte svänga vänster",
+      "Du får svänga höger eller vänster",
+      "Du måste svänga vänster",
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-lagstiftning-2-q42",
+    text: "I vilken situation får du stanna?",
+    questionImage: paidLagstiftning2Q42UserSupplement,
+    options: ["I situation på bild A", "I situation på bild B", "I situation på bild C"],
+    correctIndex: 1,
+  },
+  {
+    id: "paid-lagstiftning-2-q43",
+    text: "På vilken av de två situationer gäller högerregel?",
+    questionImage: paidLagstiftning2Q43UserSupplement,
+    options: ["På bild A", "På bild B", "Ingen"],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-lagstiftning-2-q44",
+    text: "Får du köra in på den här vägen med taxi för att lämna av en kund?",
+    questionImage: paidLagstiftning2Q44UserSupplement,
+    options: [
+      "Ja om jag kör i gångfart",
+      "Ja men endast om kunden bor vid den vägen",
+      "Ja om jag kör med lägre hastighet än 30km/h",
+      "Nej",
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: "paid-lagstiftning-2-q45",
+    text: "Du blir stoppad i en poliskontroll den 19 september kl 16.00 och visar detta tidboksbladet. Är uttagen vilotid tillräcklig?",
+    questionImage: paidLagstiftning2Q45UserSupplement,
+    options: [
+      "Ja",
+      "Nej, det saknas 1 timme vilotid",
+      "Nej, det saknas 2 timme vilotid",
+      "Nej, det saknas 3 timme vilotid",
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: "paid-lagstiftning-2-q46",
+    text: "Du ska fortsätta rakt fram. Har du väjningsplikt mot bilen i någon av korsningarna?",
+    questionImage: paidLagstiftning2Q46UserSupplement,
+    options: ["Ja, men endast i korsning A", "Ja, men endast i korsning B", "Ja, i båda korsningarna", "Nej"],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-lagstiftning-2-q47",
+    text: "Vilken typ av tariff är inte tillåten att använda i trafik med privatpersoner som kunder?",
+    options: ["Brytpunktstariff", "Tidstariff", "Summatariff", "Sträcktariff"],
+    correctIndex: 0,
+  },
+  {
+    id: "paid-lagstiftning-2-q48",
+    text: "Du kör på en väg där det finns båda vita och orangefärgade linjer på din del av körbanan. Vad innebär detta för dig?",
+    options: [
+      "Jag kan välja att följa antingen de vita eller de orangefärgade linjerna",
+      "Jag ska följa de vita linjerna",
+      "Jag ska följa de orangefärgade linjerna",
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-lagstiftning-2-q49",
+    text: "Under en vecka kör du taxi torsdag, fredag och lördag. Vid varje tillfälle kör du från kl. 07.00 till kl. 17.00. För hur många kalenderdygn måste du göra anteckningar i tidboken denna vecka?",
+    options: ["Tre", "Fyra", "Fem", "Sex"],
+    correctIndex: 1,
   },
 ];
 
