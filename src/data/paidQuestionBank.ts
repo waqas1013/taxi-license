@@ -113,6 +113,31 @@ import paidLagstiftning3OvergangsstalleTillaggstavlaScenario from "../assets/pai
 import paidLagstiftning3KorsningAbVajningspliktHogerScenario from "../assets/paid-lagstiftning3-korsning-ab-vajningsplikt-hoger-scenario.png";
 import paidLagstiftning3ForbudParkeringTiderScenario from "../assets/paid-lagstiftning3-forbud-parkering-tider-scenario.png";
 import paidLagstiftning3VagfarjaKoScenario from "../assets/paid-lagstiftning3-vagfarja-ko-scenario.png";
+import paidLagstiftning4TatortUpphorHastighetScenario from "../assets/paid-lagstiftning4-tatort-upphor-hastighet-scenario.png";
+import paidLagstiftning4JarnvagskorsningScenario from "../assets/paid-lagstiftning4-jarnvagskorsning-scenario.png";
+import paidLagstiftning4LattSlapAbcScenario from "../assets/paid-lagstiftning4-latt-slap-abc-scenario.png";
+import paidLagstiftning4VolvoV70VikterScenario from "../assets/paid-lagstiftning4-volvo-v70-vikter-scenario.png";
+import paidLagstiftning4OmkorningForbudenScenario from "../assets/paid-lagstiftning4-omkorning-forbuden-scenario.png";
+import paidLagstiftning4VajningspliktHogerAbcdScenario from "../assets/paid-lagstiftning4-vajningsplikt-hoger-abcd-scenario.png";
+import paidLagstiftning4ForetradeHogerAbcdScenario from "../assets/paid-lagstiftning4-foretrade-hoger-abcd-scenario.png";
+import paidLagstiftning4TidboksbladKorpassOkt4Scenario from "../assets/paid-lagstiftning4-tidboksblad-korpass-okt4-scenario.png";
+import paidLagstiftning4VilotidsnoteringarAbcdScenario from "../assets/paid-lagstiftning4-vilotidsnoteringar-abcd-scenario.png";
+import paidLagstiftning4VagmarkeTaxiStannaAbScenario from "../assets/paid-lagstiftning4-vagmarke-taxi-stanna-ab-scenario.png";
+import paidLagstiftning4SparvagnVarningsljusScenario from "../assets/paid-lagstiftning4-sparvagn-varningsljus-scenario.png";
+import paidLagstiftning4SvangaVansterHuvudledScenario from "../assets/paid-lagstiftning4-svanga-vanster-huvudled-scenario.png";
+import paidLagstiftning4StannaHeldragenKantlinjeScenario from "../assets/paid-lagstiftning4-stanna-heldragen-kantlinje-scenario.png";
+import paidLagstiftning4DatumzonParkeringScenario from "../assets/paid-lagstiftning4-datumzon-parkering-scenario.png";
+import paidLagstiftning4StannaParkera15minScenario from "../assets/paid-lagstiftning4-stanna-parkera-15min-scenario.png";
+import paidLagstiftning4TaxizonTisdagScenario from "../assets/paid-lagstiftning4-taxizon-tisdag-scenario.png";
+import paidLagstiftning4RegbevisBagagePassagerareScenario from "../assets/paid-lagstiftning4-regbevis-bagage-passagerare-scenario.png";
+import paidLagstiftning4GrontLjusStoppskyltScenario from "../assets/paid-lagstiftning4-gront-ljus-stoppskylt-scenario.png";
+import paidLagstiftning4ForbudPersonbilPasseraScenario from "../assets/paid-lagstiftning4-forbud-personbil-passera-scenario.png";
+import paidLagstiftning4BroInringatVagmarkeScenario from "../assets/paid-lagstiftning4-bro-inringat-vagmarke-scenario.png";
+import paidLagstiftning4BeFordonskombinationScenario from "../assets/paid-lagstiftning4-be-fordonskombination-scenario.png";
+import paidLagstiftning4VanstersvangVajningspliktMotandeAbcdScenario from "../assets/paid-lagstiftning4-vanstersvang-vajningsplikt-motande-abcd-scenario.png";
+import paidLagstiftning4MarsKalenderGataParkeringScenario from "../assets/paid-lagstiftning4-mars-kalender-gata-parkering-scenario.png";
+import paidLagstiftning4VanstersvangGronPilMotenScenario from "../assets/paid-lagstiftning4-vanstersvang-gron-pil-moten-scenario.png";
+import paidLagstiftning4SkolskjutsskyltTandScenario from "../assets/paid-lagstiftning4-skolskjutsskylt-tand-scenario.png";
 import paidKarta1KarlstadScenario from "../assets/paid-karta1-karlstad-scenario.png";
 import paidKarta1KarlstadUppdrag2Scenario from "../assets/paid-karta1-karlstad-uppdrag2-scenario.png";
 import paidKarta1KarlstadUppdrag3Scenario from "../assets/paid-karta1-karlstad-uppdrag3-scenario.png";
@@ -4069,6 +4094,502 @@ const paidLagstiftning3Questions: Question[] = [
   },
 ];
 
+const paidLagstiftning4Questions: Question[] = [
+  {
+    id: "paid-lagstiftning-4-q1",
+    text: "Vem kan ställas till ansvar om ett fordon används i taxitrafik utan att vara försett med yrkestrafikmärke?",
+    options: [
+      "Både ägaren och beställningscentralen",
+      "Enbart föraren",
+      "Enbart ägaren",
+      "Både föraren och tillståndshavaren",
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: "paid-lagstiftning-4-q2",
+    text: "Vilken högsta tillåtna hastighet gäller när du passerat detta vägmärke om inget annat anges?",
+    questionImage: paidLagstiftning4TatortUpphorHastighetScenario,
+    options: ["30 km/h", "50 km/h", "70 km/h", "90 km/h"],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-lagstiftning-4-q3",
+    text: "Vilket påstående är riktigt om prisinformationen på taxibilar?",
+    options: [
+      "Den ska vara tryckt på reflekterande material som är läsbart i mörker",
+      "Den ska vara läsbar utifrån om man står minst två meter från sidan på fordonet",
+      "Den ska illustreras med symboler fastställda av vägverket",
+      "Den ska vara fastsatt i det nedre vänstra hörnet av fordonets vindruta",
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: "paid-lagstiftning-4-q4",
+    text: "Tåget har just passerat. Får du passera järnvägskorsningen i den här situationen?",
+    questionImage: paidLagstiftning4JarnvagskorsningScenario,
+    options: [
+      "Ja, eftersom bommarna är uppe",
+      "Ja, om sikten i korsningen är god",
+      "Nej",
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-lagstiftning-4-q5",
+    text: "Räknas släpet som lätt släpfordon i något av dessa fall?",
+    questionImage: paidLagstiftning4LattSlapAbcScenario,
+    options: ["Ja, enligt A", "Ja, enligt B", "Ja, enligt C", "Nej"],
+    correctIndex: 0,
+  },
+  {
+    id: "paid-lagstiftning-4-q6",
+    text: "Din taxi är en Volvo V70. Du har i bagageutrymmet last som väger 350kg. Hur många passagerare kan du ta om varje passagerare väger 70kg?",
+    questionImage: paidLagstiftning4VolvoV70VikterScenario,
+    options: ["1", "2", "3", "4"],
+    correctIndex: 1,
+  },
+  {
+    id: "paid-lagstiftning-4-q7",
+    text: "För vilket av dessa transporter krävs det att du har taxiförarlegitimation?",
+    options: [
+      "En persontransport med motorcykel",
+      "En persontransport med en buss som tar 9-17 passagerare",
+      "En persontransport med en personbil i linjetrafik",
+      "En persontransport med en buss som tar fler än 17 passagerare",
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-lagstiftning-4-q8",
+    text: "Efter ett dygns vila har du kört taxi från kl. 16.00. Du har gjort uppehåll i arbetet mellan 19.00 och 22.00 då du får en långkörning till Stockholm. Den tar precis 10 timmar utan paus och lika lång tid tillbaka. Du startar hemresan från Stockholm kl. 16.00. Hur många timmar får du då köra som mest utan ny vila enligt vilotidsförordningen?",
+    options: ["Tre", "Fem", "Sju", "Tio"],
+    correctIndex: 0,
+  },
+  {
+    id: "paid-lagstiftning-4-q9",
+    text: "Vad innebär vägmärket?",
+    questionImage: paidLagstiftning4OmkorningForbudenScenario,
+    options: [
+      "En tvåhjulig motorcykel får köra om en personbil",
+      "All omkörning är förbjuden",
+      "En personbil får köra om en lastbil",
+      "En lastbil får köra om en tvåhjulig motorcykel",
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: "paid-lagstiftning-4-q10",
+    text: "Får en taxiförare göra tillfälliga avvikelser från reglerna om dygnsvila?",
+    options: [
+      "Ja, på direkt order av arbetsgivaren, som då tar över ansvaret.",
+      "Ja, om föraren har blivit inblandad i en trafikolycka och därför är försenad.",
+      "Ja, körningen får slutföras om föraren inte hinner tillbaka till stationeringsorten i tid.",
+      "Ja, när föraren utfört andra arbetsuppgifter än körning får dygnsvilan förkortas med högst två timmar",
+      "Nej, aldrig",
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: "paid-lagstiftning-4-q11",
+    text: "Du ska fortsätta köra rakt fram. Vilken av följande situationer har du väjningsplikt mot bilen från höger?",
+    questionImage: paidLagstiftning4VajningspliktHogerAbcdScenario,
+    options: ["I situation A", "I situation B", "I situation C", "I situation D"],
+    correctIndex: 3,
+  },
+  {
+    id: "paid-lagstiftning-4-q12",
+    text: "Du ska fortsätta rakt fram. I vilken situation ska du lämna företräde till bilen från höger?",
+    questionImage: paidLagstiftning4ForetradeHogerAbcdScenario,
+    options: ["I situation A", "I situation B", "I situation C", "I situation D"],
+    correctIndex: 0,
+  },
+  {
+    id: "paid-lagstiftning-4-q13",
+    text: "Du har slutat ditt körpass den 4 oktober kl. 04.00. När kan du tidigast börja nästa körpass enligt tidboksbladet?",
+    questionImage: paidLagstiftning4TidboksbladKorpassOkt4Scenario,
+    options: ["13.00", "14.00", "15.00", "16.00"],
+    correctIndex: 1,
+  },
+  {
+    id: "paid-lagstiftning-4-q14",
+    text: "Du jobbar som tidningsbud kl. 04.00-07.00, kör skolbarn i 07.00-10.00, arbetar i beställningscentralens växel kl. 12.00-13.00 samt kör skolbarn igen kl. 13.00-15.00. Vilka vilotidsnoteringar är riktiga för denna arbetsdag enligt vilotidsförordningen?",
+    questionImage: paidLagstiftning4VilotidsnoteringarAbcdScenario,
+    options: ["Bild A", "Bild B", "Bild C", "Bild D"],
+    correctIndex: 0,
+  },
+  {
+    id: "paid-lagstiftning-4-q15",
+    text: "Efter 11 timmars ledighet kör du taxi en måndag kl. 17.00 – 02.00 med en ny viloperiod kl. 20.00 – 21.00. När får du tidigast börja köra taxi på tisdagen enligt vilotidsförordningen?",
+    options: ["Kl. 09.00", "Kl. 10.00", "Kl. 11.00", "Kl. 12.00"],
+    correctIndex: 1,
+  },
+  {
+    id: "paid-lagstiftning-4-q16",
+    text: "Du kör taxi en måndag kl. 8.00. Efter vilket eller vilka vägmärken får du stanna för att vänta på en passagerare som dröjer?",
+    questionImage: paidLagstiftning4VagmarkeTaxiStannaAbScenario,
+    options: [
+      "Enbart efter märkena på bild A",
+      "Enbart efter märket på bild B",
+      "Efter märken på både bild A och B",
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-lagstiftning-4-q17",
+    text: "Vad gäller när ett fordon ska köra in på motorväg från ett accelerationsfält?",
+    options: [
+      "Den som kör på motorväg har väjningsplikt mot trafik som kommer från accelerationsfält",
+      "Den som ska lämna accelerationsfältet ska göra det så sent som möjligt",
+      "Den som ska lämna accelerationsfältet ska alltid köra i högsta tillåtna hastighet.",
+      "Den som kör på motorväg är skyldig att underlätta infart för trafik som kommer från accelerationsfält",
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: "paid-lagstiftning-4-q18",
+    text: "Vilken funktion har de blinkade gula lamporna?",
+    questionImage: paidLagstiftning4SparvagnVarningsljusScenario,
+    options: [
+      "De visar att högerregeln gäller i korsningen",
+      "De visar att spårvagnsförare har väjningsplikt i korsningen",
+      "De varnar fordonsförare för att en spårvagn närmar sig korsningen",
+      "De varnar fordonsförare för att ett fordon närmar sig korsningen",
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-lagstiftning-4-q19",
+    text: "Du ska svänga vänster i korsningen. Vad gäller?",
+    questionImage: paidLagstiftning4SvangaVansterHuvudledScenario,
+    options: [
+      "Jag har väjningsplikt mot all korsande trafik",
+      "All korsande trafik har väjningsplikt mot mig",
+      "Jag har väjningsplikt mot trafik från höger",
+      "Jag har väjningsplikt mot mötande trafik",
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: "paid-lagstiftning-4-q20",
+    text: "Du behöver stanna för att släppa av en passagerare. Vad gäller här?",
+    questionImage: paidLagstiftning4StannaHeldragenKantlinjeScenario,
+    options: [
+      "Jag får stanna intill den heldragna kantlinjen.",
+      "Jag får stanna intill trottoarkanten.",
+      "Jag får inte stanna.",
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: "paid-lagstiftning-4-q21",
+    text: "Du är anställd som förare i ett taxiföretag. Får du köra en skolskjuts med en buss som har sittplats för 10 passagerare?",
+    options: [
+      "Ja, alltid",
+      "Ja, men enbart om bussen är registrerad som taxifordon",
+      "Nej, aldrig",
+      "Ja, men enbart om jag har körkort med behörigheten D",
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: "paid-lagstiftning-4-q22",
+    text: "Du ska parkera din taxi fredagen den 12:e så att den kan stå kvar så länge som möjligt. På vilken sida av gatan ska du enligt vägmärket parkera och hur länge får taxin stå kvar innan du måste flytta den?",
+    questionImage: paidLagstiftning4DatumzonParkeringScenario,
+    options: [
+      "På den sida som har udda husnummer. Taxin får stå kvar till lördag 24.00",
+      "På den sida som har udda husnummer. Taxin får stå kvar till söndag kl. 24.00",
+      "På den sida som har jämna husnummer. Taxin får stå kvar till lördag kl. 24.00",
+      "På den sida som har jämna husnummer. Taxin får stå kvar till söndag kl. 24.00",
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-lagstiftning-4-q23",
+    text: "Polisen begär att få se dina körpassrapporter vid en poliskontroll. För vilket eller vilka körpass är du skyldig att visa upp kopior av körpassrapporter?",
+    options: [
+      "Enbart för det senaste föregående körpasset",
+      "Enbart körpassen under det senaste dygnet",
+      "Enbart körpassen under de två senaste dygnen",
+      "Körpassen under de sju senaste dygnen.",
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-lagstiftning-4-q24",
+    text: "Vid vilken av följande tidpunkter är det enligt vägmärkena tillåtet att stanna och parkera 15 min?",
+    questionImage: paidLagstiftning4StannaParkera15minScenario,
+    options: [
+      "En vardag som inte är dag före helgdag kl. 07.00",
+      "En vardag som inte är dag före helgdag kl. 17.00",
+      "En vardag som inte är dag före helgdag kl. 15.00",
+      "En lördag kl. 08.00",
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: "paid-lagstiftning-4-q25",
+    text: "Du kör taxi en helgfri tisdag och klockan är 20.00. Får du stanna efter vägmärkena för att släppa av en kund?",
+    questionImage: paidLagstiftning4TaxizonTisdagScenario,
+    options: [
+      "Nej, det är förbjudet både att stanna och parkera",
+      "Ja, det är tillåtet",
+      "Nej, det är tillåtet enbart klockan 06-18",
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: "paid-lagstiftning-4-q26",
+    text: "Du är ledig måndag och tisdag och börjar köra taxi onsdag kl. 07.00. Du gör ett uppehåll i arbetet mellan 11.00 och 15.00. När måste du senast sluta köra enligt vilotidsförordningen om du inte gör ett nytt uppehåll?",
+    options: ["kl. 22.00", "kl. 23.00", "kl. 24.00", "kl. 01.00"],
+    correctIndex: 1,
+  },
+  {
+    id: "paid-lagstiftning-4-q27",
+    text: "Efter 11 timmars vila börjar du köra taxi kl. 07.00. Du har rast och vilar både kl. 11.00 12.00 och kl. 18.00 19.00. När måste du senast sluta detta körpass enligt vilotidsförordningen?",
+    options: ["kl. 20.00", "kl. 21.00", "kl. 22.00", "kl. 23.00"],
+    correctIndex: 1,
+  },
+  {
+    id: "paid-lagstiftning-4-q28",
+    text: "Du kör taxi med enligt registreringsbeviset, dina kunders bagage väger 320 kg. Hur många passagerare får du ta med dig om de i genomsnitt väger 70 kg?",
+    questionImage: paidLagstiftning4RegbevisBagagePassagerareScenario,
+    options: [
+      "1 passagerare",
+      "2 passagerare",
+      "3 passagerare",
+      "4 passagerare",
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-lagstiftning-4-q29",
+    text: "Får du svänga höger i korsningen på bilden?",
+    questionImage: paidLagstiftning4GrontLjusStoppskyltScenario,
+    options: [
+      "Ja, jag får svänga höger utan att stanna",
+      "Ja, men jag måste först stanna eftersom det finns en stoppskylt",
+      "Nej, jag måste stanna och vänta tills konturpilen visar grönt ljus",
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: "paid-lagstiftning-4-q30",
+    text: "Efter ett dygns vila har du kört taxi från kl. 16.00. Du har gjort uppehåll i arbetet mellan kl. 19.00 och kl. 22.00 då du får en långkörning till Stockholm. Den tar precis 10 timmar utan paus och lika lång tid tillbaka. När får du tidigast starta hemfärden från Stockholm enligt vilotidsförordningen?",
+    options: [
+      "Kl. 10.00",
+      "Kl. 12.00",
+      "Kl. 14.00",
+      "Kl. 16.00",
+      "Kl. 19.00",
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: "paid-lagstiftning-4-q31",
+    text: "Vilka av följande fordon får passera vägmärket?",
+    questionImage: paidLagstiftning4ForbudPersonbilPasseraScenario,
+    options: [
+      "Tvåhjuliga fordon och motorcyklar med sidvagn",
+      "Tvåhjuliga motorcyklar och mopeder",
+      "Enbart cyklar och mopeder klass II",
+      "Alla fordon utom personbilar",
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: "paid-lagstiftning-4-q32",
+    text: "Vad innebär det inringade vägmärket?",
+    questionImage: paidLagstiftning4BroInringatVagmarkeScenario,
+    options: [
+      "Trafiken på bron är enkelriktad",
+      "Jag ska lämna företräde till mötande trafik om utrymmet inte räcker till för möte",
+      "Mötande trafik ska lämna mig företräde om utrymmet inte räcker till för möte",
+      "Endast ett fordon i taget får vistas på bron",
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-lagstiftning-4-q33",
+    text: "I vilket fall krävs behörighet BE för att få köra den här fordonskombinationen?",
+    questionImage: paidLagstiftning4BeFordonskombinationScenario,
+    options: [
+      "Bilens tjänstevikt är 1 100 kg och släpets totalvikt är 1 200 kg",
+      "Bilens tjänstevikt är 1 000 kg och släpets totalvikt är 900 kg",
+      "Så snart släpvagnens totalvikt överstiger 750 kg",
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: "paid-lagstiftning-4-q34",
+    text: "Du är anställd som taxiförare och din tidbok är fulltecknad. Vad ska du göra med tidboken?",
+    options: [
+      "Jag lämnar den till den arbetsgivare som jag har fått boken från. Därefter börjar jag på nästa tidbok",
+      "Jag behåller den i ett år för att kunna lämna den till arbetsgivaren om denne begär det",
+      "Jag har den med i bilen en vecka. Därefter lämnar jag den till den arbetsgivare som jag har fått boken från",
+      "Jag har den med mig i bilen tre arbetsdagar. Därefter lämnar jag den till arbetsgivaren",
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-lagstiftning-4-q35",
+    text: "Du har fått en kontrollrapport från senaste besiktningen av taxameterutrustningen i din taxi. Var ska rapporten i original förvaras?",
+    options: [
+      "I betryggande förvar hos den som utfört kontrollen",
+      "I taxin",
+      "I betryggande förvar i taxiföretagets lokaler",
+      "Hos polismyndigheten eller länsstyrelsen",
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: "paid-lagstiftning-4-q36",
+    text: "Vilka fordon får du köra i yrkesmässig taxitrafik, förutom personbilar?",
+    options: [
+      "Lastbilar oavsett vikt",
+      "Bussar",
+      "Lätta lastbilar",
+      "Motorcyklar",
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-lagstiftning-4-q37",
+    text: "Du ska stanna för att släppa av en passagerare vid en vägkorsning. Vilket avstånd måste det minst vara till korsningen?",
+    options: ["3 meter", "5 meter", "10 meter", "20 meter", "30 meter"],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-lagstiftning-4-q38",
+    text: "Du har tappat bort din taxiförarlegitimation och ansökt om en ny. Får du i väntan på provisorisk eller ny legitimation köra taxi?",
+    options: [
+      "Ja, men högst ett dygn",
+      "Ja, men högst en vecka",
+      "Ja, men högst en månad",
+      "Nej",
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: "paid-lagstiftning-4-q39",
+    text: "Du ska skjutsa en mamma med ett tvåårigt barn. Det finns ingen särskild skyddsutrustning till barnet. Får barnet lov att åka med i din taxi?",
+    options: [
+      "Ja, men endast en kort sträcka och barnet måste då sitta i baksätet",
+      "Nej, aldrig",
+      "Ja, men endast en kort sträcka och barnet måste då sitta i framsätet i mammans knä",
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: "paid-lagstiftning-4-q40",
+    text: "Du behöver vända bilen i en korsning och måste backa. Vad gäller?",
+    options: [
+      "Jag får inte hindra någon annan trafikant",
+      "Jag måste lämna företräde enbart för oskyddade trafikanter",
+      "Andra trafikanter måste visa hänsyn och väja för mig",
+      "Jag måste lämna företräde enbart för andra fordonsförare",
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: "paid-lagstiftning-4-q41",
+    text: "Vad gäller när du kör personbil med en bromsad släpvagn?",
+    options: [
+      "Jag måste ha med både bilens och släpvagnens registreringsbevis",
+      "Högsta tillåtna hastighet är 80 km/h",
+      "Släpvagnen måste ha sommardäck om bilen har sommardäck",
+      "Jag måste köra på vägrenen om det finns en sådan",
+    ],
+    correctIndex: 1,
+  },
+  {
+    id: "paid-lagstiftning-4-q42",
+    text: "Efter 11 timmars ledighet kör du taxi en lördag klockan 18.00 – 04.00 med en ny viloperiod klockan 20.00 – 21.00. På söndagen börjar du köra igen klockan 12.00. När måste du senast påbörja ytterligare en viloperiod under söndagen enligt vilotidsförordningen?",
+    options: ["kl. 14.00", "kl. 15.00", "kl. 16.00", "kl. 17.00"],
+    correctIndex: 1,
+  },
+  {
+    id: "paid-lagstiftning-4-q43",
+    text: "Du ska svänga till vänster. I vilka situationer på bilderna har du väjningsplikt mot mötande fordon?",
+    questionImage: paidLagstiftning4VanstersvangVajningspliktMotandeAbcdScenario,
+    options: [
+      "Enbart i A och B",
+      "Enbart i C och D",
+      "Enbart i A, B och C",
+      "I alla situationer",
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-lagstiftning-4-q44",
+    text: "Du närmar dig en korsning där högerregeln gäller. Vilka fordon som kommer från höger ska du lämna företräde?",
+    options: [
+      "Alla fordon",
+      "Enbart motorfordon",
+      "Enbart fordon med fler än två hjul",
+      "Enbart motordrivna fordon",
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: "paid-lagstiftning-4-q45",
+    text: "Får du stanna med din taxi på en markerad busshållplats, om du inte hindrar linjetrafiken?",
+    options: [
+      "Ja, för att svara i mobiltelefonen",
+      "Ja, för att lasta eller lossa gods, eller för att släppa av eller ta upp passagerare",
+      "Ja, men bara för att släppa av eller ta upp passagerare",
+      "Nej",
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-lagstiftning-4-q46",
+    text: "Det är den 9 mars enligt bild A. Gatan på bild B är inte huvudled och saknar anvisningar om parkering. Får du parkera där?",
+    questionImage: paidLagstiftning4MarsKalenderGataParkeringScenario,
+    options: [
+      "Ja, men högst 7 dygn",
+      "Ja, under obegränsad tid",
+      "Ja, men högst 24 timmar",
+      "Nej",
+    ],
+    correctIndex: 2,
+  },
+  {
+    id: "paid-lagstiftning-4-q47",
+    text: "Du ska svänga till vänster i situationen på bilden. Hur ska du göra?",
+    questionImage: paidLagstiftning4VanstersvangGronPilMotenScenario,
+    options: [
+      "Fortsätta köra men vara beredd på att den mötande bilen kanske inte stannar",
+      "Sakta ned och lämna den mötande bilen företräde eftersom det är jag som svänger",
+      "Stanna vid stopplinjen eftersom huvudsignalen visar rött sken",
+    ],
+    correctIndex: 0,
+  },
+  {
+    id: "paid-lagstiftning-4-q48",
+    text: "Du kör skolskjuts med din taxi. Du har en genomlyst skolskjutsskylt på bilen. När ska den vara tänd?",
+    questionImage: paidLagstiftning4SkolskjutsskyltTandScenario,
+    options: [
+      "Enbart 100 m efter på- eller avstigning",
+      "Enbart 100 m före på- eller avstigning",
+      "Enbart 100 m före och efter på- eller avstigning",
+      "Under hela skolskjutsningen",
+      "Enbart i mörker",
+    ],
+    correctIndex: 3,
+  },
+  {
+    id: "paid-lagstiftning-4-q49",
+    text: "Vad innebär begreppet personbil?",
+    options: [
+      "Att bilen är inrättad för högst 8 passagerare",
+      "Att bilen får användas endast till att skjutsa passagerare",
+      "Att bilen väger högst 3500 kg",
+    ],
+    correctIndex: 2,
+  },
+];
+
 /**
  * Betald frågebank — egna sektioner och frågor (kopplas inte till Teoriprovet).
  * Lägg till `Question`-objekt i respektive sektions `questions`-array.
@@ -4093,7 +4614,7 @@ export const paidQuestionGroup: CategoryGroup = {
         section("paid-lagstiftning-1", "Lagstiftning 1", paidLagstiftning1Questions),
         section("paid-lagstiftning-2", "Lagstiftning 2", paidLagstiftning2Questions),
         section("paid-lagstiftning-3", "Lagstiftning 3", paidLagstiftning3Questions),
-        section("paid-lagstiftning-4", "Lagstiftning 4"),
+        section("paid-lagstiftning-4", "Lagstiftning 4", paidLagstiftning4Questions),
         section("paid-lagstiftning-5", "Lagstiftning 5"),
         section("paid-lagstiftning-6", "Lagstiftning 6"),
       ],
